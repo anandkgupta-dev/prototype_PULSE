@@ -1,0 +1,126 @@
+3	3	NUMBER	LS	ROOT-S-VP-LS	NONE	ROOT	0.08	3.	<3_(qualifier_value)	3+_Score	NONE	NONE	NONE	<3_(qualifier_value)	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	3.	<3_(qualifier_value)	3+_Score	NONE	NONE	NONE	<3_(qualifier_value)	0.0	0.0	NA	NA
+
+Matt	Matt	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Owen	0.08	Matt_Owen,	Mats	NONE	NONE	NONE	NONE	Mats	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Owen	Owen	PERSON	NNP	ROOT-S-NP-NP-NNP	Matt-years	came	0.08	Matt_Owen,	Mats	NONE	NONE	NONE	NONE	Mats	0.0	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.08	Matt_Owen,	Mats	NONE	NONE	NONE	NONE	Mats	0.0	0.0	NA	NA
+43	43	DURATION	CD	ROOT-S-NP-NP-NP-CD	NONE	years	0.08	43_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-NP-NP-NNS	43-old	Owen	0.08	43_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-NP-ADJP-JJ	under	years	0.08	43_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-ADJP-PP-IN	Kenzie	old	0.08	under_Dr_Kenzie	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-ADJP-PP-NP-NNP	NONE	Kenzie	0.08	under_Dr_Kenzie	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Kenzie	Kenzie	PERSON	NNP	ROOT-S-NP-NP-ADJP-PP-NP-NNP	Dr	under	0.08	under_Dr_Kenzie	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+came	come	O	VBD	ROOT-S-VP-VBD	Owen-had	ROOT	0.08	came	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-SBAR-IN	NONE	had	0.08	in	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+had	have	O	VBD	ROOT-S-VP-SBAR-S-VP-VBD	in-transplant-ago	came	0.15	had	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+a	a	O	DT	ROOT-S-VP-SBAR-S-VP-NP-DT	NONE	transplant	0.15	a_lung_transplant	Transplantation	Transplanted_tissue	Lung_Transplantation	Lung	Entire_lung	Lung	0.1	0.0	NA	NA
+lung	lung	O	NN	ROOT-S-VP-SBAR-S-VP-NP-NN	NONE	transplant	0.08	a_lung_transplant	Transplantation	Transplanted_tissue	Lung_Transplantation	Lung	Entire_lung	Lung	0.1	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+transplant	transplant	O	NN	ROOT-S-VP-SBAR-S-VP-NP-NN	a-lung	had	0.08	a_lung_transplant	Transplantation	Transplanted_tissue	Lung_Transplantation	Lung	Entire_lung	Lung	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+a	a	DATE	DT	ROOT-S-VP-SBAR-S-VP-NP-DT	NONE	week	0.15	a_week_ago.	week	/week	NONE	NONE	NONE	week	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	NA
+week	week	DATE	NN	ROOT-S-VP-SBAR-S-VP-ADVP-NP-NN	a	ago	0.08	a_week_ago.	week	/week	NONE	NONE	NONE	week	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	NA
+ago	ago	DATE	RB	ROOT-S-VP-SBAR-S-VP-ADVP-RB	week	had	0.08	a_week_ago.	week	/week	NONE	NONE	NONE	week	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	a_week_ago.	week	/week	NONE	NONE	NONE	week	0.2	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	MRSA	0.62	He	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	MRSA	0.54	is	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+MRSA	MRSA	O	NNP	ROOT-S-VP-NP-NP-NNP	He-is-+-precautions	ROOT	0.08	MRSA_+	MRSA_-_Methicillin_resistant_Staphylococcus_aureus_infection	Methicillin_resistant_Staphylococcus_aureus_(organism)	Encounter_due_to_methicillin_resistant_Staphylococcus_aureus	NONE	NONE	Methicillin_resistant_Staphylococcus_aureus_(organism)	0.2	0.0	Future_Alert/Warning/AbnormalResult	PatientIntroduction_AdmissionReason/Diagnosis
++	+	O	CC	ROOT-S-VP-NP-CC	NONE	MRSA	0.08	MRSA_+	MRSA_-_Methicillin_resistant_Staphylococcus_aureus_infection	Methicillin_resistant_Staphylococcus_aureus_(organism)	Encounter_due_to_methicillin_resistant_Staphylococcus_aureus	NONE	NONE	Methicillin_resistant_Staphylococcus_aureus_(organism)	0.2	0.5	Future_Alert/Warning/AbnormalResult	PatientIntroduction_AdmissionReason/Diagnosis
+on	on	O	IN	ROOT-S-VP-NP-NP-IN	NONE	precautions	0.38	on_contact_precautions.	Precaution	Contact_precautions_-_transmission_based_precautions	Contact_with	contact_person	Communication_Contact	Contact_with	0.2	0.0	NA	PatientIntroduction_AdmissionReason/Diagnosis
+contact	contact	O	NN	ROOT-S-VP-NP-NP-NP-NN	NONE	precautions	0.08	on_contact_precautions.	Precaution	Contact_precautions_-_transmission_based_precautions	Contact_with	contact_person	Communication_Contact	Contact_with	0.2	0.5	MyShift_RiskManagement	PatientIntroduction_AdmissionReason/Diagnosis
+precautions	precaution	O	NNS	ROOT-S-VP-NP-NP-NP-NNS	on-contact	MRSA	0.08	on_contact_precautions.	Precaution	Contact_precautions_-_transmission_based_precautions	Contact_with	contact_person	Communication_Contact	Contact_with	0.2	0.0	MyShift_RiskManagement	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	on_contact_precautions.	Precaution	Contact_precautions_-_transmission_based_precautions	Contact_with	contact_person	Communication_Contact	Contact_with	0.3	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	having	0.62	He	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	having	0.54	is	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+having	have	O	VBG	ROOT-S-VP-VP-VBG	He-is-problems	ROOT	0.08	having	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	MyShift_Status	NA
+problems	problem	O	NNS	ROOT-S-VP-VP-NP-NP-NNS	with	having	0.08	problems	Problems_-_What_subject_filter	Problem	NONE	NONE	NONE	Problems_-_What_subject_filter	0.3	0.0	MyShift_Status	NA
+with	with	O	IN	ROOT-S-VP-VP-NP-PP-IN	recovery	problems	0.08	with_his_recovery	Recovery_-_action	Recovery_-_ActInvoiceAdjudicationPaymentGroupCode	Recovery_-_healing_process	NONE	NONE	Recovery_-_healing_process	0.3	0.0	MyShift_Status	NA
+his	he	O	PRP$	ROOT-S-VP-VP-NP-PP-NP-NP-PRP$	NONE	recovery	0.15	with_his_recovery	Recovery_-_action	Recovery_-_ActInvoiceAdjudicationPaymentGroupCode	Recovery_-_healing_process	NONE	NONE	Recovery_-_healing_process	0.3	0.0	MyShift_Status	PatientIntroduction_AdmissionReason/Diagnosis
+recovery	recovery	O	NN	ROOT-S-VP-VP-NP-PP-NP-NP-NN	his-due	with	0.08	with_his_recovery	Recovery_-_action	Recovery_-_ActInvoiceAdjudicationPaymentGroupCode	Recovery_-_healing_process	NONE	NONE	Recovery_-_healing_process	0.3	0.0	MyShift_Status	PatientIntroduction_AdmissionReason/Diagnosis
+due	due	O	JJ	ROOT-S-VP-VP-NP-PP-NP-ADJP-JJ	to	recovery	0.08	due_to_infection.	Infection	Pathogenicity_Aspects	NONE	NONE	NONE	Infection	0.3	0.0	MyShift_Status	PatientIntroduction_AdmissionReason/Diagnosis
+to	to	O	TO	ROOT-S-VP-VP-NP-PP-NP-ADJP-PP-TO	infection	due	0.08	due_to_infection.	Infection	Pathogenicity_Aspects	NONE	NONE	NONE	Infection	0.3	0.0	MyShift_Status	PatientIntroduction_AdmissionReason/Diagnosis
+infection	infection	O	NN	ROOT-S-VP-VP-NP-PP-NP-ADJP-PP-NP-NN	NONE	to	0.08	due_to_infection.	Infection	Pathogenicity_Aspects	NONE	NONE	NONE	Infection	0.3	0.5	MyShift_Status	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	due_to_infection.	Infection	Pathogenicity_Aspects	NONE	NONE	NONE	Infection	0.4	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	is	0.62	He	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	He-on	ROOT	0.54	is	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-IN	IVabs	is	0.38	on_IVabs	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+IVabs	ivab	O	NNS	ROOT-S-VP-PP-NP-NP-NNS	before	on	0.08	on_IVabs	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	Medication_Medicine
+before	before	O	IN	ROOT-S-VP-PP-NP-PP-PP-IN	and-now-on	IVabs	0.08	before	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+and	and	O	CC	ROOT-S-VP-PP-NP-PP-CC	NONE	before	0.23	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+now	now	DATE	RB	ROOT-S-VP-PP-NP-PP-ADVP-RB	NONE	before	0.08	now	Now_(temporal_qualifier)	NONE	NONE	NONE	NONE	Now_(temporal_qualifier)	0.4	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-IN	abs	before	0.38	on_oral_abs.	Oral	NONE	NONE	NONE	NONE	Oral	0.4	0.0	NA	NA
+oral	oral	O	JJ	ROOT-S-VP-PP-NP-PP-PP-NP-JJ	NONE	abs	0.08	on_oral_abs.	Oral	NONE	NONE	NONE	NONE	Oral	0.4	0.5	Medication_Medicine	Medication_Medicine
+abs	ab	O	NNS	ROOT-S-VP-PP-NP-PP-PP-NP-NNS	oral	on	0.08	on_oral_abs.	Oral	NONE	NONE	NONE	NONE	Oral	0.4	0.0	Medication_Medicine	Medication_Medicine
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	on_oral_abs.	Oral	NONE	NONE	NONE	NONE	Oral	0.5	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	caring	0.62	He	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	caring	0.54	is	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+self	self	O	NN	ROOT-S-VP-NP-NN	NONE	caring	0.08	self_caring	Caring	care_activity	NONE	NONE	NONE	Caring	0.5	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+caring	caring	O	NN	ROOT-S-VP-NP-NN	He-is-self-and-ambulant	ROOT	0.08	self_caring	Caring	care_activity	NONE	NONE	NONE	Caring	0.5	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+and	and	O	CC	ROOT-S-VP-NP-CC	NONE	caring	0.23	and	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+ambulant	ambulant	O	NN	ROOT-S-VP-NP-NN	NONE	caring	0.08	ambulant.	Ambulation	NONE	NONE	NONE	NONE	Ambulation	0.5	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	ambulant.	Ambulation	NONE	NONE	NONE	NONE	Ambulation	0.5	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	is	0.62	He	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	He-on	ROOT	0.54	is	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-IN	drugs	is	0.38	on_anti_rejection_drugs.	Pharmaceutical_Preparations	Pharmacologic_Substance	Dosage_Forms	Pharmacy_(field)	Procedures_involving_the_use_of_pharmaceuticals	Rejection_Due_to_Device-Patient_Incompatibility	0.5	0.0	NA	NA
+anti	anti	O	JJ	ROOT-S-VP-PP-NP-JJ	NONE	drugs	0.08	on_anti_rejection_drugs.	Pharmaceutical_Preparations	Pharmacologic_Substance	Dosage_Forms	Pharmacy_(field)	Procedures_involving_the_use_of_pharmaceuticals	Rejection_Due_to_Device-Patient_Incompatibility	0.5	0.0	Medication_Medicine	MyShift_OtherObservation
+rejection	rejection	O	NN	ROOT-S-VP-PP-NP-NN	NONE	drugs	0.08	on_anti_rejection_drugs.	Pharmaceutical_Preparations	Pharmacologic_Substance	Dosage_Forms	Pharmacy_(field)	Procedures_involving_the_use_of_pharmaceuticals	Rejection_Due_to_Device-Patient_Incompatibility	0.6	0.0	Medication_Medicine	MyShift_OtherObservation
+drugs	drug	O	NNS	ROOT-S-VP-PP-NP-NNS	anti-rejection	on	0.08	on_anti_rejection_drugs.	Pharmaceutical_Preparations	Pharmacologic_Substance	Dosage_Forms	Pharmacy_(field)	Procedures_involving_the_use_of_pharmaceuticals	Rejection_Due_to_Device-Patient_Incompatibility	0.6	0.5	Medication_Medicine	MyShift_OtherObservation
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	on_anti_rejection_drugs.	Pharmaceutical_Preparations	Pharmacologic_Substance	Dosage_Forms	Pharmacy_(field)	Procedures_involving_the_use_of_pharmaceuticals	Rejection_Due_to_Device-Patient_Incompatibility	0.6	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-S-NP-PRP	NONE	showered	0.62	He	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-S-VP-VBD	NONE	showered	0.15	had	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+showered	shower	O	VBN	ROOT-S-S-VP-VP-VBN	He-had-independently	am	0.08	showered	Household_shower	Safety_showers	NONE	NONE	NONE	Household_shower	0.6	0.0	MyShift_ActivitiesOfDailyLiving	NA
+independently	independently	O	RB	ROOT-S-S-VP-VP-ADVP-RB	NONE	showered	0.08	independently	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_ActivitiesOfDailyLiving	NA
+this	this	O	DT	ROOT-S-NP-DT	NONE	am	0.15	this	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+am	be	O	VBP	ROOT-S-VP-VBP	showered-this	ROOT	0.08	am.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	am.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+
+His	he	O	PRP$	ROOT-S-NP-PRP$	NONE	healing	0.08	His_wounds	Wounds_-_qualifier	Injury_wounds	NONE	NONE	NONE	Injury_wounds	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+wounds	wound	O	NNS	ROOT-S-NP-NNS	NONE	healing	0.08	His_wounds	Wounds_-_qualifier	Injury_wounds	NONE	NONE	NONE	Injury_wounds	0.7	0.5	MyShift_Wounds/Skin	NA
+healing	healing	O	NN	ROOT-S-NP-NN	His-wounds	slowly	0.08	healing	Wound_Healing	Healed	NONE	NONE	NONE	Healed	0.7	0.0	MyShift_Wounds/Skin	NA
+slowly	slowly	O	RB	ROOT-S-VP-ADVP-RB	healing	ROOT	0.08	slowly.	Slow	NONE	NONE	NONE	NONE	Slow	0.7	0.0	MyShift_Wounds/Skin	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	slowly.	Slow	NONE	NONE	NONE	NONE	Slow	0.7	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	is	0.62	He	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	He-for	ROOT	0.54	is	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+for	for	O	IN	ROOT-S-VP-PP-IN	review	is	0.23	for_wound_nurse_review	Review_[Publication_Type]	Act_Class_-_review	Breast_Feeding	Nurses	Injury_wounds	Injury_wounds	0.7	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+wound	wound	O	NN	ROOT-S-VP-PP-NP-NP-NN	NONE	review	0.15	for_wound_nurse_review	Review_[Publication_Type]	Act_Class_-_review	Breast_Feeding	Nurses	Injury_wounds	Injury_wounds	0.7	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+nurse	nurse	O	NN	ROOT-S-VP-PP-NP-NP-NN	NONE	review	0.08	for_wound_nurse_review	Review_[Publication_Type]	Act_Class_-_review	Breast_Feeding	Nurses	Injury_wounds	Injury_wounds	0.7	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+review	review	O	NN	ROOT-S-VP-PP-NP-NP-NN	wound-nurse-for	for	0.08	for_wound_nurse_review	Review_[Publication_Type]	Act_Class_-_review	Breast_Feeding	Nurses	Injury_wounds	Injury_wounds	0.7	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+for	for	O	IN	ROOT-S-VP-PP-IN	wound	review	0.23	for_his_surgical_wound	Injury_wounds	Surgical_wound	Wounds_-_qualifier	Operative_Surgical_Procedures	NONE	Operative_Surgical_Procedures	0.7	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+his	he	O	PRP$	ROOT-S-VP-PP-NP-PP-NP-NP-PRP$	NONE	wound	0.15	for_his_surgical_wound	Injury_wounds	Surgical_wound	Wounds_-_qualifier	Operative_Surgical_Procedures	NONE	Operative_Surgical_Procedures	0.8	0.0	PatientIntroduction_Gender	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+surgical	surgical	O	JJ	ROOT-S-VP-PP-NP-PP-NP-NP-JJ	NONE	wound	0.08	for_his_surgical_wound	Injury_wounds	Surgical_wound	Wounds_-_qualifier	Operative_Surgical_Procedures	NONE	Operative_Surgical_Procedures	0.8	0.5	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+wound	wound	O	NN	ROOT-S-VP-PP-NP-NP-NN	his-surgical-dressing	for	0.15	for_his_surgical_wound	Injury_wounds	Surgical_wound	Wounds_-_qualifier	Operative_Surgical_Procedures	NONE	Operative_Surgical_Procedures	0.8	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+dressing	dress	O	VBG	ROOT-S-VP-PP-NP-PP-NP-VP-VBG	afternoon	wound	0.08	dressing	Sterile_coverings	Dressing_of_skin_or_wound	Dressing_self-care	Dressing-_activity_of_daily_living	dress_garment	Sterile_coverings	0.8	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+this	this	DATE	DT	ROOT-S-VP-PP-NP-PP-NP-VP-NP-TMP-DT	NONE	afternoon	0.15	this_afternoon.	Afternoon	NONE	NONE	NONE	NONE	Afternoon	0.8	0.0	Appointment/Procedure_Time	Appointment/Procedure_Time
+afternoon	afternoon	DATE	NN	ROOT-S-VP-PP-NP-PP-NP-VP-NP-TMP-NN	this	dressing	0.08	this_afternoon.	Afternoon	NONE	NONE	NONE	NONE	Afternoon	0.8	0.0	Appointment/Procedure_Time	Appointment/Procedure_Time
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	this_afternoon.	Afternoon	NONE	NONE	NONE	NONE	Afternoon	0.8	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	is	0.62	He	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	He-on	ROOT	0.54	is	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-IN	endone	is	0.38	on_regular_endone	Regular	NONE	NONE	NONE	NONE	Regular	0.8	0.0	NA	NA
+regular	regular	O	JJ	ROOT-S-VP-PP-NP-NP-NP-JJ	NONE	endone	0.08	on_regular_endone	Regular	NONE	NONE	NONE	NONE	Regular	0.8	0.0	Medication_Medicine	Medication_Medicine
+endone	endone	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	regular-and-morphine-for	on	0.08	on_regular_endone	Regular	NONE	NONE	NONE	NONE	Regular	0.8	0.0	Medication_Medicine	Medication_Medicine
+and	and	O	CC	ROOT-S-VP-PP-NP-NP-CC	NONE	endone	0.23	and	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+PRN	prn	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	NONE	morphine	0.08	PRN_morphine	Morphine	Morphine_Measurement	Satyrinae	Morphina	NONE	Morphine	0.9	0.0	Medication_Dosage	Medication_Medicine
+morphine	morphine	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	PRN	endone	0.08	PRN_morphine	Morphine	Morphine_Measurement	Satyrinae	Morphina	NONE	Morphine	0.9	1.0	Medication_Medicine	Medication_Medicine
+for	for	O	IN	ROOT-S-VP-PP-NP-PP-IN	pain	endone	0.23	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain	0.9	0.0	Medication_Medicine	NA
+pain	pain	O	NN	ROOT-S-VP-PP-NP-PP-NP-NN	NONE	for	0.08	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain	0.9	0.0	Medication_Medicine	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain	0.9	0.0	NA	NA
+
+All	all	O	DT	ROOT-S-NP-DT	NONE	obs	0.08	All_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+obs	ob	O	NNS	ROOT-S-NP-NNS	All	stable	0.08	All_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	stable	0.08	are	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-NP-DT	NONE	stable	0.08	all_stable._nil_othe_complaints	Chief_complaint_(finding)	Stable_status	Nil	Patient_Condition_Code_-_Stable	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-ADJP-JJ	obs-are-all	ROOT	0.08	all_stable._nil_othe_complaints	Chief_complaint_(finding)	Stable_status	Nil	Patient_Condition_Code_-_Stable	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	all_stable._nil_othe_complaints	Chief_complaint_(finding)	Stable_status	Nil	Patient_Condition_Code_-_Stable	NONE	Stable_status	1.0	0.0	NA	NA
+
+nil	nil	O	NN	ROOT-S-NP-NN	NONE	complaints	0.08	all_stable._nil_othe_complaints	Chief_complaint_(finding)	Stable_status	Nil	Patient_Condition_Code_-_Stable	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+othe	othe	O	NN	ROOT-S-NP-NN	NONE	complaints	0.08	all_stable._nil_othe_complaints	Chief_complaint_(finding)	Stable_status	Nil	Patient_Condition_Code_-_Stable	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+complaints	complaint	O	NNS	ROOT-S-NP-NNS	nil-othe	raised	0.08	all_stable._nil_othe_complaints	Chief_complaint_(finding)	Stable_status	Nil	Patient_Condition_Code_-_Stable	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+raised	raise	O	VBD	ROOT-S-VP-VBD	complaints	ROOT	0.08	raised.	Raised	NONE	NONE	NONE	NONE	Raised	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	raised.	Raised	NONE	NONE	NONE	NONE	Raised	1.0	0.0	NA	NA
+

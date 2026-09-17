@@ -1,0 +1,72 @@
+4	4	NUMBER	LS	ROOT-S-VP-LS	NONE	ROOT	0.14	4.	+4	NONE	NONE	NONE	NONE	+4	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	4.	+4	NONE	NONE	NONE	NONE	+4	0.0	0.0	NA	NA
+
+Neil	Neil	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Paganus	0.14	Neil_Paganus,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Paganus	Paganus	PERSON	NNP	ROOT-S-NP-NP-NNP	Neil-39	came	0.14	Neil_Paganus,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.43	Neil_Paganus,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+39	39	NUMBER	CD	ROOT-S-NP-NP-NP-CD	under	Paganus	0.14	39	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	Kenzie	39	0.14	under_Dr_Kenzie,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-PP-NP-NNP	NONE	Kenzie	0.14	under_Dr_Kenzie,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Kenzie	Kenzie	PERSON	NNP	ROOT-S-NP-NP-PP-NP-NNP	Dr	under	0.14	under_Dr_Kenzie,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.43	under_Dr_Kenzie,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Paganus-in-with	ROOT	0.14	came	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.14	in	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	allergies	in	0.43	with_severe_allergies	Hypersensitivity	Response_to_antigens	Allergy_Specialty	severe_allergy	Allergic	Severe_(severity_modifier)	0.2	0.0	NA	NA
+severe	severe	O	JJ	ROOT-S-VP-PP-PP-NP-JJ	NONE	allergies	0.14	with_severe_allergies	Hypersensitivity	Response_to_antigens	Allergy_Specialty	severe_allergy	Allergic	Severe_(severity_modifier)	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+allergies	allergy	O	NNS	ROOT-S-VP-PP-PP-NP-NNS	severe	with	0.14	with_severe_allergies	Hypersensitivity	Response_to_antigens	Allergy_Specialty	severe_allergy	Allergic	Severe_(severity_modifier)	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	history	came	0.43	with_the_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Medical_History	0.2	0.0	NA	NA
+the	the	O	DT	ROOT-S-VP-PP-NP-NP-DT	NONE	history	0.14	with_the_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Medical_History	0.3	0.0	NA	NA
+history	history	O	NN	ROOT-S-VP-PP-NP-NP-NN	the-of	with	0.14	with_the_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Medical_History	0.3	0.0	NA	NA
+of	of	O	IN	ROOT-S-VP-PP-NP-PP-IN	Asthma	history	0.29	of_Asthma.	Asthma	NONE	NONE	NONE	NONE	Asthma	0.3	0.0	NA	NA
+Asthma	asthma	O	NN	ROOT-S-VP-PP-NP-PP-NP-NN	NONE	of	0.14	of_Asthma.	Asthma	NONE	NONE	NONE	NONE	Asthma	0.3	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_ChronicCondition
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	of_Asthma.	Asthma	NONE	NONE	NONE	NONE	Asthma	0.3	0.0	NA	NA
+
+he	he	O	PRP	ROOT-S-NP-PRP	NONE	had	0.14	he	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-VP-VBD	he-difficulty	ROOT	0.29	had	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+difficulty	difficulty	O	NN	ROOT-S-VP-NP-NP-NN	of	had	0.14	difficulty	Difficulty	NONE	NONE	NONE	NONE	Difficulty	0.4	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+of	of	O	IN	ROOT-S-VP-NP-PP-IN	breathing	difficulty	0.29	of_breathing	Inspiration_function	Respiration	respiratory_gaseous_exchange_in_organisms	NONE	NONE	Respiration	0.4	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+breathing	breathing	O	NN	ROOT-S-VP-NP-PP-NP-NP-NN	and-chesty	of	0.14	of_breathing	Inspiration_function	Respiration	respiratory_gaseous_exchange_in_organisms	NONE	NONE	Respiration	0.4	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+and	and	O	CC	ROOT-S-VP-NP-PP-NP-CC	NONE	breathing	0.57	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	MyShift_OtherObservation	NA
+very	very	O	RB	ROOT-S-VP-NP-PP-NP-NP-RB	NONE	chesty	0.14	very	Very	NONE	NONE	NONE	NONE	Very	0.4	0.0	MyShift_OtherObservation	NA
+chesty	chesty	O	JJ	ROOT-S-VP-NP-PP-NP-NP-JJ	very	breathing	0.14	chesty._febrile_@temp_38.8.	Fever	Temperature	cisplatin/etoposide/mitoxantrone/tamoxifen_protocol	38	Chest	Chest	0.4	0.0	MyShift_OtherObservation	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	chesty._febrile_@temp_38.8.	Fever	Temperature	cisplatin/etoposide/mitoxantrone/tamoxifen_protocol	38	Chest	Chest	0.5	0.0	NA	NA
+
+febrile	febrile	O	NN	ROOT-NP-NP-NN	NONE	@temp	0.14	chesty._febrile_@temp_38.8.	Fever	Temperature	cisplatin/etoposide/mitoxantrone/tamoxifen_protocol	38	Chest	Chest	0.5	0.0	MyShift_OtherObservation	MyShift_Status
+@temp	@temp	O	NN	ROOT-NP-NP-NN	febrile-38.8	ROOT	0.14	chesty._febrile_@temp_38.8.	Fever	Temperature	cisplatin/etoposide/mitoxantrone/tamoxifen_protocol	38	Chest	Chest	0.5	0.0	MyShift_OtherObservation	MyShift_Status
+38.8	38.8	NUMBER	CD	ROOT-NP-QP-CD	NONE	@temp	0.14	chesty._febrile_@temp_38.8.	Fever	Temperature	cisplatin/etoposide/mitoxantrone/tamoxifen_protocol	38	Chest	Chest	0.5	0.0	MyShift_OtherObservation	MyShift_Status
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	chesty._febrile_@temp_38.8.	Fever	Temperature	cisplatin/etoposide/mitoxantrone/tamoxifen_protocol	38	Chest	Chest	0.5	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	had	0.14	He	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-VP-VBD	He-cultures	ROOT	0.29	had	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_OtherObservation	NA
+blood	blood	O	NN	ROOT-S-VP-NP-NP-NP-NN	NONE	cultures	0.14	blood_cultures	Anthropological_Culture	Cultural_aspects	Laboratory_culture	Microbial_culture_(procedure)	Blood_culture	In_Blood	0.6	0.5	MyShift_OtherObservation	Appointment/Procedure_Status
+cultures	culture	O	NNS	ROOT-S-VP-NP-NP-NP-NNS	blood-taken-and-paracetamol	had	0.14	blood_cultures	Anthropological_Culture	Cultural_aspects	Laboratory_culture	Microbial_culture_(procedure)	Blood_culture	In_Blood	0.6	0.0	MyShift_OtherObservation	Appointment/Procedure_Status
+taken	take	O	VBN	ROOT-S-VP-NP-NP-VP-VBN	NONE	cultures	0.14	taken	Taken	Take	NONE	NONE	NONE	Taken	0.6	0.0	MyShift_OtherObservation	Appointment/Procedure_Status
+and	and	O	CC	ROOT-S-VP-NP-CC	NONE	cultures	0.57	and	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+paracetamol	paracetamol	O	NNP	ROOT-S-VP-NP-NP-NP-NNP	given	cultures	0.14	paracetamol	Acetaminophen	NONE	NONE	NONE	NONE	Acetaminophen	0.6	1.0	Medication_Medicine	Medication_Medicine
+given	give	O	VBN	ROOT-S-VP-NP-NP-PP-VBN	with	paracetamol	0.14	given	GIVEN	Entity_Name_Part_Type_-_given	Give_-_dosing_instruction_imperative	NONE	NONE	Entity_Name_Part_Type_-_given	0.6	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-NP-NP-PP-PP-IN	effect	given	0.43	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.7	0.0	Medication_Status	Medication_Status
+good	good	O	JJ	ROOT-S-VP-NP-NP-PP-PP-NP-JJ	NONE	effect	0.14	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.7	0.0	Medication_Status	Medication_Status
+effect	effect	O	NN	ROOT-S-VP-NP-NP-PP-PP-NP-NN	good	with	0.14	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.7	0.0	Medication_Status	Medication_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.7	0.0	NA	NA
+
+Team	Team	O	NNP	ROOT-S-S-NP-NNP	NONE	informed	0.14	Team	Team	NONE	NONE	NONE	NONE	Team	0.7	0.0	MyShift_OtherObservation	NA
+was	be	O	VBD	ROOT-S-S-VP-VBD	NONE	informed	0.14	was	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	NA
+informed	inform	O	VBN	ROOT-S-S-VP-VP-VBN	Team-was-and-changed	ROOT	0.14	informed	Informed	Oprelvekin	Reporting	inform	NONE	Informed	0.8	0.0	MyShift_OtherObservation	NA
+and	and	O	CC	ROOT-S-CC	NONE	informed	0.57	and	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+they	they	O	PRP	ROOT-S-S-NP-PRP	NONE	changed	0.14	they	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Medication_Status	NA
+have	have	O	VBP	ROOT-S-S-VP-VBP	NONE	changed	0.14	have	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Medication_Status	NA
+changed	change	O	VBN	ROOT-S-S-VP-VP-VBN	they-have-antibiotics	informed	0.14	changed	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changed_status	0.8	0.0	Medication_Status	NA
+his	he	O	PRP$	ROOT-S-S-VP-VP-NP-PRP$	NONE	antibiotics	0.14	his_antibiotics.	Antibiotics	NONE	NONE	NONE	NONE	Antibiotics	0.8	0.0	Medication_Status	PatientIntroduction_Gender
+antibiotics	antibiotic	O	NNS	ROOT-S-S-VP-VP-NP-NNS	his	changed	0.14	his_antibiotics.	Antibiotics	NONE	NONE	NONE	NONE	Antibiotics	0.8	1.0	Medication_Status	Medication_Medicine
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	his_antibiotics.	Antibiotics	NONE	NONE	NONE	NONE	Antibiotics	0.9	0.0	NA	NA
+
+on	on	O	IN	ROOT-S-VP-PP-IN	diet	ROOT	0.14	on_general_diet,	Diet	General_diet	Dietetics	Generalized	Act_Code_-_General	Generalized	0.9	0.0	NA	NA
+general	general	O	JJ	ROOT-S-VP-PP-NP-NP-JJ	NONE	diet	0.14	on_general_diet,	Diet	General_diet	Dietetics	Generalized	Act_Code_-_General	Generalized	0.9	0.5	MyShift_Input/Diet	MyShift_Input/Diet
+diet	diet	O	NN	ROOT-S-VP-PP-NP-NP-NN	general-caring-and-ambulant	on	0.14	on_general_diet,	Diet	General_diet	Dietetics	Generalized	Act_Code_-_General	Generalized	0.9	0.5	MyShift_Input/Diet	MyShift_Input/Diet
+,	,	O	,	ROOT-S-VP-PP-NP-,	NONE	NONE	0.43	on_general_diet,	Diet	General_diet	Dietetics	Generalized	Act_Code_-_General	Generalized	0.9	0.0	NA	NA
+self	self	O	NN	ROOT-S-VP-PP-NP-NP-NN	NONE	caring	0.14	self_caring	Caring	care_activity	NONE	NONE	NONE	Caring	0.9	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+caring	caring	O	NN	ROOT-S-VP-PP-NP-NP-NN	self	diet	0.14	self_caring	Caring	care_activity	NONE	NONE	NONE	Caring	1.0	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+and	and	O	CC	ROOT-S-VP-PP-NP-CC	NONE	diet	0.57	and	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+ambulant	ambulant	O	NN	ROOT-S-VP-PP-NP-NP-NN	NONE	diet	0.14	ambulant.	Ambulation	NONE	NONE	NONE	NONE	Ambulation	1.0	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	ambulant.	Ambulation	NONE	NONE	NONE	NONE	Ambulation	1.0	0.0	NA	NA
+

@@ -1,0 +1,62 @@
+6	6	NUMBER	CD	ROOT-FRAG-NP-CD	NONE	ROOT	0.2	6.	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	6.	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+
+in	in	O	IN	ROOT-FRAG-PP-IN	room	ROOT	0.4	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.1	0.0	NA	NA
+room	room	O	NN	ROOT-FRAG-PP-NP-NN	4	in	0.2	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.1	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+4	4	NUMBER	CD	ROOT-FRAG-PP-NP-CD	NONE	room	0.2	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.1	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.1	0.0	NA	NA
+
+Hildi	Hildi	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Hutter	0.2	Hildi_Hutter,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Hutter	Hutter	PERSON	NNP	ROOT-S-NP-NP-NNP	Hildi-lady	came	0.2	Hildi_Hutter,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.6	Hildi_Hutter,	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+a	a	O	DT	ROOT-S-NP-NP-NP-DT	NONE	lady	0.2	a_lovely_91_year_old_lady	year	per_year	Old	NONE	NONE	year	0.2	0.0	NA	NA
+lovely	lovely	O	JJ	ROOT-S-NP-NP-NP-JJ	NONE	lady	0.2	a_lovely_91_year_old_lady	year	per_year	Old	NONE	NONE	year	0.2	0.0	NA	NA
+91	91	DURATION	CD	ROOT-S-NP-NP-NP-ADJP-CD	NONE	old	0.2	a_lovely_91_year_old_lady	year	per_year	Old	NONE	NONE	year	0.2	0.0	PatientIntroduction_Ageinyears	NA
+year	year	NUMBER	NN	ROOT-S-NP-NP-NP-ADJP-NN	NONE	old	0.2	a_lovely_91_year_old_lady	year	per_year	Old	NONE	NONE	year	0.2	0.0	PatientIntroduction_Ageinyears	NA
+old	old	DURATION	JJ	ROOT-S-NP-NP-NP-ADJP-JJ	91-year	lady	0.2	a_lovely_91_year_old_lady	year	per_year	Old	NONE	NONE	year	0.2	0.0	PatientIntroduction_Ageinyears	NA
+lady	lady	O	NN	ROOT-S-NP-NP-NP-NN	a-lovely-old-under	Hutter	0.2	a_lovely_91_year_old_lady	year	per_year	Old	NONE	NONE	year	0.3	0.0	PatientIntroduction_Gender	NA
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	Forbes	lady	0.2	under_Dr_Forbes,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.3	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-PP-NP-NNP	NONE	Forbes	0.2	under_Dr_Forbes,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Forbes	Forbes	PERSON	NNP	ROOT-S-NP-NP-PP-NP-NNP	Dr	under	0.2	under_Dr_Forbes,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.6	under_Dr_Forbes,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Hutter-is	ROOT	0.2	came	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-SBAR-S-S-PP-IN	with	is	0.4	in	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-SBAR-S-S-PP-PP-IN	UTI	in	0.2	with_UTI,	Urinary_tract_infection	AMBP_gene	NONE	NONE	NONE	Urinary_tract_infection	0.4	0.0	NA	NA
+UTI	utus	O	NN	ROOT-S-VP-SBAR-S-S-PP-PP-NP-NN	NONE	with	0.2	with_UTI,	Urinary_tract_infection	AMBP_gene	NONE	NONE	NONE	Urinary_tract_infection	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.6	with_UTI,	Urinary_tract_infection	AMBP_gene	NONE	NONE	NONE	Urinary_tract_infection	0.4	0.0	NA	NA
+she	she	O	PRP	ROOT-S-VP-SBAR-S-S-NP-PRP	NONE	is	0.4	she	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-SBAR-S-S-VP-VBZ	in-she-on-and-charted	came	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-SBAR-S-S-VP-PP-IN	IVabs	is	0.4	on_IVabs	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+IVabs	ivab	O	NNS	ROOT-S-VP-SBAR-S-S-VP-PP-NP-NNS	NONE	on	0.2	on_IVabs	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	Medication_Medicine	Medication_Medicine
+and	and	O	CC	ROOT-S-VP-SBAR-S-CC	NONE	is	0.4	and	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+the	the	O	DT	ROOT-S-VP-SBAR-S-S-NP-DT	NONE	doctors	0.2	the_doctors_just	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.5	0.0	NA	NA
+doctors	doctor	O	NNS	ROOT-S-VP-SBAR-S-S-NP-NNS	the	charted	0.2	the_doctors_just	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.5	0.0	NA	NA
+just	just	O	RB	ROOT-S-VP-SBAR-S-S-ADVP-RB	NONE	charted	0.2	the_doctors_just	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.6	0.0	NA	NA
+charted	chart	O	VBD	ROOT-S-VP-SBAR-S-S-VP-VBD	doctors-just-her-on-start	is	0.2	charted	Charts_(device)	Charts_(publication)	NONE	NONE	NONE	Charts_(publication)	0.6	0.0	NA	NA
+her	she	O	PRP$	ROOT-S-VP-SBAR-S-S-VP-NP-PRP$	NONE	charted	0.2	her	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+on	on	O	IN	ROOT-S-VP-SBAR-S-S-VP-PP-IN	abs	charted	0.4	on_oral_abs_to	Oral	NONE	NONE	NONE	NONE	Oral	0.6	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+oral	oral	O	JJ	ROOT-S-VP-SBAR-S-S-VP-PP-NP-JJ	NONE	abs	0.2	on_oral_abs_to	Oral	NONE	NONE	NONE	NONE	Oral	0.6	0.5	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Medication_Medicine
+abs	ab	O	NNS	ROOT-S-VP-SBAR-S-S-VP-PP-NP-NNS	oral	on	0.2	on_oral_abs_to	Oral	NONE	NONE	NONE	NONE	Oral	0.6	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+to	to	O	TO	ROOT-S-VP-SBAR-S-S-VP-S-VP-TO	NONE	start	0.2	on_oral_abs_to	Oral	NONE	NONE	NONE	NONE	Oral	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+start	start	O	VB	ROOT-S-VP-SBAR-S-S-VP-S-VP-VP-VB	to-tom	charted	0.2	start	Beginning	Started	NONE	NONE	NONE	Beginning	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+tom	tom	O	NN	ROOT-S-VP-SBAR-S-S-VP-S-VP-VP-NP-NN	NONE	start	0.2	tom.	PRPF6_gene	NONE	NONE	NONE	NONE	PRPF6_gene	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	tom.	PRPF6_gene	NONE	NONE	NONE	NONE	PRPF6_gene	0.7	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	confused	0.2	She	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	confused	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+very	very	O	RB	ROOT-S-VP-ADJP-RB	NONE	confused	0.2	very	Very	NONE	NONE	NONE	NONE	Very	0.8	0.0	MyShift_Status	MyShift_Status
+confused	confused	O	JJ	ROOT-S-VP-ADJP-JJ	She-is-very-today	ROOT	0.2	confused_today.	Today	Today_(temporal_qualifier)	Confusion	Precaution_Code_-_Confused	NONE	Precaution_Code_-_Confused	0.8	0.0	MyShift_Status	MyShift_Status
+today	today	DATE	NN	ROOT-S-VP-NP-TMP-NN	NONE	confused	0.2	confused_today.	Today	Today_(temporal_qualifier)	Confusion	Precaution_Code_-_Confused	NONE	Precaution_Code_-_Confused	0.8	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	confused_today.	Today	Today_(temporal_qualifier)	Confusion	Precaution_Code_-_Confused	NONE	Precaution_Code_-_Confused	0.8	0.0	NA	NA
+
+Her	she	O	PRP$	ROOT-S-S-NP-PRP$	NONE	obs	0.2	Her_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+obs	ob	O	NNS	ROOT-S-S-NP-NNS	Her	stable	0.2	Her_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-S-VP-VBP	NONE	stable	0.2	are	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-S-VP-ADJP-DT	NONE	stable	0.2	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-S-VP-ADJP-JJ	obs-are-all-and-afebrile	ROOT	0.2	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+and	and	O	CC	ROOT-S-CC	NONE	stable	0.4	and	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	afebrile	0.4	she	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	afebrile	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+afebrile	afebrile	O	JJ	ROOT-S-S-VP-ADJP-JJ	she-is	stable	0.2	afebrile.	Apyrexial	NONE	NONE	NONE	NONE	Apyrexial	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	afebrile.	Apyrexial	NONE	NONE	NONE	NONE	Apyrexial	1.0	0.0	NA	NA
+

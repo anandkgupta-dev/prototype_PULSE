@@ -1,0 +1,85 @@
+4	4	NUMBER	LS	ROOT-S-VP-LS	NONE	ROOT	0.29	4.	+4	NONE	NONE	NONE	NONE	+4	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+
+in	in	O	IN	ROOT-FRAG-PP-IN	room	ROOT	0.57	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.0	0.0	NA	NA
+room	room	O	NN	ROOT-FRAG-PP-NP-NN	4	in	0.14	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.1	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+4	4	NUMBER	CD	ROOT-FRAG-PP-NP-CD	NONE	room	0.29	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.1	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+
+Mindy	Mindy	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Thompson	0.14	Mindy_Thompson,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Thompson	Thompson	PERSON	NNP	ROOT-S-NP-NP-NNP	Mindy-old	came	0.14	Mindy_Thompson,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+16	16	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	years	0.14	16_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-ADJP-NP-NNS	16	old	0.14	16_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	years	Thompson	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+came	come	O	VBD	ROOT-S-VP-VBD	Thompson-in	ROOT	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	cyst	in	0.43	with_liver_cyst.	Cyst	Cyst_form_of_protozoa	Liver_cyst	Cystic	Liver	Liver	0.2	0.0	NA	NA
+liver	liver	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	cyst	0.14	with_liver_cyst.	Cyst	Cyst_form_of_protozoa	Liver_cyst	Cystic	Liver	Liver	0.2	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+cyst	cyst	O	NN	ROOT-S-VP-PP-PP-NP-NN	liver	with	0.14	with_liver_cyst.	Cyst	Cyst_form_of_protozoa	Liver_cyst	Cystic	Liver	Liver	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	came	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+came	come	O	VBD	ROOT-S-VP-VBD	She-in	ROOT	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-PP-IN	ago-had-and-with	came	0.57	in_just	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+just	just	O	RB	ROOT-S-VP-PP-PP-ADVP-NP-RB	NONE	hr	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+an	a	DATE	DT	ROOT-S-VP-PP-PP-ADVP-NP-DT	NONE	hr	0.14	an_hr_ago	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+hr	hr	DATE	NN	ROOT-S-VP-PP-PP-ADVP-NP-NN	just-an	ago	0.14	an_hr_ago	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+ago	ago	DATE	RB	ROOT-S-VP-PP-PP-ADVP-RB	hr	in	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+and	and	O	CC	ROOT-S-VP-PP-PRN-CC	NONE	had	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	had	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-VP-PP-PRN-S-VP-VBD	and-she-xray	in	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Appointment/Procedure_Status	NA
+xray	xray	O	NN	ROOT-S-VP-PP-PRN-S-VP-NP-NP-NN	and-ct-done	had	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Appointment/Procedure_Status	NA
+and	and	O	CC	ROOT-S-VP-PP-PRN-CC	NONE	xray	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Appointment/Procedure_Status	NA
+ct	ct	O	NN	ROOT-S-VP-PP-PRN-S-VP-NP-NP-NN	NONE	xray	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Appointment/Procedure_Status	NA
+done	do	O	VBN	ROOT-S-VP-PP-PRN-S-VP-NP-VP-VBN	NONE	xray	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Appointment/Procedure_Status	NA
+and	and	O	CC	ROOT-S-VP-PP-PRN-CC	NONE	in	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Appointment/Procedure_Status	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	results	in	0.43	with_pending_results.	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.4	0.0	Appointment/Procedure_Status	Appointment/Procedure_Status
+pending	pend	O	VBG	ROOT-S-VP-PP-PP-NP-VBG	NONE	results	0.14	with_pending_results.	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.4	0.0	Appointment/Procedure_Status	Appointment/Procedure_Status
+results	result	O	NNS	ROOT-S-VP-PP-PP-NP-NNS	pending	with	0.14	with_pending_results.	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.5	0.0	Appointment/Procedure_Status	Appointment/Procedure_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+Her	she	O	PRP$	ROOT-S-S-NP-PRP$	NONE	obs	0.14	Her_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+obs	ob	O	NNS	ROOT-S-S-NP-NNS	Her	stable	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-S-VP-VBP	NONE	stable	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-S-VP-ADJP-DT	NONE	stable	0.14	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.5	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-S-VP-ADJP-JJ	obs-are-all-and-complain	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	MyShift_Status
+and	and	O	CC	ROOT-S-CC	NONE	stable	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	complain	0.29	she_just	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+just	just	O	RB	ROOT-S-S-ADVP-RB	NONE	complain	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+complain	complain	O	VBP	ROOT-S-S-VP-VBP	she-just-of	stable	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_OtherObservation	NA
+of	of	O	IN	ROOT-S-S-VP-PP-IN	pain	complain	0.14	of_right_upper_quadrant_pain	Pain	Pain_NOS_Adverse_Event	Right_upper_quadrant_pain	Painless	Right	Right	0.6	0.0	MyShift_OtherObservation	NA
+right	right	O	JJ	ROOT-S-S-VP-PP-NP-NP-JJ	NONE	pain	0.14	of_right_upper_quadrant_pain	Pain	Pain_NOS_Adverse_Event	Right_upper_quadrant_pain	Painless	Right	Right	0.6	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+upper	upper	O	JJ	ROOT-S-S-VP-PP-NP-NP-JJ	NONE	pain	0.14	of_right_upper_quadrant_pain	Pain	Pain_NOS_Adverse_Event	Right_upper_quadrant_pain	Painless	Right	Right	0.6	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+quadrant	quadrant	O	JJ	ROOT-S-S-VP-PP-NP-NP-JJ	NONE	pain	0.14	of_right_upper_quadrant_pain	Pain	Pain_NOS_Adverse_Event	Right_upper_quadrant_pain	Painless	Right	Right	0.6	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+pain	pain	O	NN	ROOT-S-S-VP-PP-NP-NP-NN	right-upper-quadrant-relieved	of	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+which	which	O	WDT	ROOT-S-S-VP-PP-NP-SBAR-WHNP-WDT	NONE	relieved	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+was	be	O	VBD	ROOT-S-S-VP-PP-NP-SBAR-S-VP-VBD	NONE	relieved	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+relieved	relieve	O	VBN	ROOT-S-S-VP-PP-NP-SBAR-S-VP-VP-VBN	which-was-by-with	pain	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+by	by	O	IN	ROOT-S-S-VP-PP-NP-SBAR-S-VP-VP-PP-IN	morphine	relieved	0.14	by_morphine	Morphine	Morphine_Measurement	Satyrinae	Morphina	NONE	Morphine	0.7	0.0	NA	NA
+morphine	morphine	O	NN	ROOT-S-S-VP-PP-NP-SBAR-S-VP-VP-PP-NP-NN	NONE	by	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	1.0	Medication_Medicine	NA
+with	with	O	IN	ROOT-S-S-VP-PP-NP-SBAR-S-VP-VP-PP-IN	effect	relieved	0.43	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.7	0.0	NA	Medication_Status
+good	good	O	JJ	ROOT-S-S-VP-PP-NP-SBAR-S-VP-VP-PP-NP-JJ	NONE	effect	0.14	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.7	0.0	Medication_Status	Medication_Status
+effect	effect	O	NN	ROOT-S-S-VP-PP-NP-SBAR-S-VP-VP-PP-NP-NN	good	with	0.14	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.8	0.0	Medication_Status	Medication_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	is	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	She-for-organized	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+for	for	O	IN	ROOT-S-VP-PP-PP-IN	surgery-still	is	0.14	for_surgery	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	NONE	NONE	Operative_Surgical_Procedures	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+surgery	surgery	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	for	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+but	but	O	CC	ROOT-S-VP-PP-PRN-CC	NONE	still	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+still	still	O	RB	ROOT-S-VP-PP-PRN-ADVP-RB	but	for	0.14	still_to	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+to	to	O	TO	ROOT-S-VP-S-VP-TO	NONE	organized	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+be	be	O	VB	ROOT-S-VP-S-VP-VP-VB	NONE	organized	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+organized	organize	O	VBN	ROOT-S-VP-S-VP-VP-VP-VBN	to-be	is	0.14	organized.	Organized	NONE	NONE	NONE	NONE	Organized	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	got	0.14	He's	Helium	CYTIP_gene	NONE	NONE	NONE	Helium	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	got	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+got	get	O	VBD	ROOT-S-VP-VP-VBD	He-'s-mom-in	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+her	she	O	PRP$	ROOT-S-VP-VP-NP-PRP$	NONE	mom	0.14	her_mom	MoM	NONE	NONE	NONE	NONE	MoM	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+mom	mom	O	NN	ROOT-S-VP-VP-NP-NN	her	got	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	MyShift_OtherObservation
+in	in	O	IN	ROOT-S-VP-VP-PP-IN	attendance	got	0.57	in_attendance.	Attendance	Attendants	NONE	NONE	NONE	Attendance	1.0	0.0	NA	MyShift_OtherObservation
+attendance	attendance	O	NN	ROOT-S-VP-VP-PP-NP-NN	NONE	in	0.14	in_attendance.	Attendance	Attendants	NONE	NONE	NONE	Attendance	1.0	0.0	NA	MyShift_OtherObservation
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+

@@ -1,0 +1,87 @@
+2	2	NUMBER	LS	ROOT-S-VP-LS	NONE	ROOT	0.29	2.	+2	2+_Score	NONE	NONE	NONE	+2	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+
+Hercules	Hercules	O	NNP	ROOT-S-NP-NP-NNP	NONE	kokkinakis	0.14	Hercules_kokkinakis,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+kokkinakis	kokkinaki	O	NN	ROOT-S-NP-NP-NN	Hercules-yrs	came	0.14	Hercules_kokkinakis,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+76	76	DURATION	CD	ROOT-S-NP-NP-NP-CD	NONE	yrs	0.14	76_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-NP-NP-NNS	76-old	kokkinakis	0.14	76_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-NP-ADJP-JJ	under	yrs	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-ADJP-PP-IN	Kenzie	old	0.14	under_Dr_Kenzie	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-ADJP-PP-NP-NNP	NONE	Kenzie	0.14	under_Dr_Kenzie	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Kenzie	Kenzie	PERSON	NNP	ROOT-S-NP-NP-ADJP-PP-NP-NNP	Dr	under	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+came	come	O	VBD	ROOT-S-VP-VBD	kokkinakis-in-breathing	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	found	came	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+found	find	O	VBN	ROOT-S-VP-PP-S-VP-VBN	by	in	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+by	by	O	IN	ROOT-S-VP-PP-S-VP-PP-IN	wife	found	0.14	by_wife	wife	wife_-_RoleCode	NONE	NONE	NONE	wife_-_RoleCode	0.2	0.0	NA	NA
+wife	wife	O	NN	ROOT-S-VP-PP-S-VP-PP-NP-NP-NN	on	by	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-S-VP-PP-NP-PP-IN	floor	wife	0.43	on_the_floor	floor_(object)	Floor_-_story_of_building	NONE	NONE	NONE	floor_(object)	0.2	0.0	NA	NA
+the	the	O	DT	ROOT-S-VP-PP-S-VP-PP-NP-PP-NP-DT	NONE	floor	0.14	on_the_floor	floor_(object)	Floor_-_story_of_building	NONE	NONE	NONE	floor_(object)	0.2	0.0	NA	NA
+floor	floor	O	NN	ROOT-S-VP-PP-S-VP-PP-NP-PP-NP-NN	the	on	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+unconscious	unconscious	O	JJ	ROOT-S-VP-NP-ADJP-JJ	and-not	breathing	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	NA
+and	and	O	CC	ROOT-S-VP-NP-ADJP-CC	NONE	unconscious	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+not	not	O	RB	ROOT-S-VP-NP-ADJP-RB	NONE	unconscious	0.14	not_breathing.	Inspiration_function	Respiration	respiratory_gaseous_exchange_in_organisms	Negation	NONE	Negation	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+breathing	breathing	O	NN	ROOT-S-VP-NP-NN	unconscious	came	0.14	not_breathing.	Inspiration_function	Respiration	respiratory_gaseous_exchange_in_organisms	Negation	NONE	Negation	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-S-NP-PRP	NONE	got	0.57	He's_got_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Helium	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	got	0.14	He's_got_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Helium	0.3	0.0	NA	NA
+got	get	O	VBN	ROOT-S-S-VP-VP-VBN	He-'s-history-sleep-and-overweight	ROOT	0.14	He's_got_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Helium	0.3	0.0	NA	NA
+history	history	O	NN	ROOT-S-S-VP-VP-NP-NP-NN	on	got	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+on	on	O	IN	ROOT-S-S-VP-VP-NP-PP-IN	type	history	0.43	on_diabetes_type_2,	Diabetes	Diabetes_Mellitus	Type_-_attribute	Type_2	Diabetes_type	Diabetes	0.4	0.0	NA	NA
+diabetes	diabetes	O	NN	ROOT-S-S-VP-VP-NP-PP-NP-NN	NONE	type	0.14	on_diabetes_type_2,	Diabetes	Diabetes_Mellitus	Type_-_attribute	Type_2	Diabetes_type	Diabetes	0.4	0.5	PatientIntroduction_ChronicCondition	PatientIntroduction_AdmissionReason/Diagnosis
+type	type	O	NN	ROOT-S-S-VP-VP-NP-PP-NP-NN	diabetes-2	on	0.14	on_diabetes_type_2,	Diabetes	Diabetes_Mellitus	Type_-_attribute	Type_2	Diabetes_type	Diabetes	0.4	0.5	PatientIntroduction_ChronicCondition	PatientIntroduction_AdmissionReason/Diagnosis
+2	2	NUMBER	CD	ROOT-S-S-VP-VP-NP-PP-NP-CD	NONE	type	0.29	on_diabetes_type_2,	Diabetes	Diabetes_Mellitus	Type_-_attribute	Type_2	Diabetes_type	Diabetes	0.4	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_AdmissionReason/Diagnosis
+,	,	O	,	ROOT-S-S-VP-VP-,	NONE	NONE	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+sleep	sleep	O	VB	ROOT-S-S-VP-VP-S-VP-VB	apnoea	got	0.14	sleep_apnoea,	Apnea	Sleep	Apnea_Adverse_Event	Sleep_Apnea_Syndromes	Asleep	Sleep	0.4	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_Disease/ProblemHistory
+apnoea	apnoea	O	NN	ROOT-S-S-VP-VP-S-VP-NP-NN	NONE	sleep	0.14	sleep_apnoea,	Apnea	Sleep	Apnea_Adverse_Event	Sleep_Apnea_Syndromes	Asleep	Sleep	0.4	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_Disease/ProblemHistory
+,	,	O	,	ROOT-S-S-VP-VP-,	NONE	NONE	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+and	and	O	CC	ROOT-S-CC	NONE	got	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+he	he	O	PRP	ROOT-S-S-NP-PRP	NONE	overweight	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	overweight	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+overweight	overweight	O	JJ	ROOT-S-S-VP-ADJP-JJ	he-is	got	0.14	overweight.	Overweight	NONE	NONE	NONE	NONE	Overweight	0.5	0.0	PatientIntroduction_ChronicCondition	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-S-NP-PRP	NONE	stable	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	stable	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+stable	stable	O	JJ	ROOT-S-S-VP-ADJP-JJ	He-is-but-is	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_Status	NA
+but	but	O	CC	ROOT-S-CC	NONE	stable	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+he	he	O	PRP	ROOT-S-S-NP-PRP	NONE	is	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	he-still-on	stable	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+still	still	O	RB	ROOT-S-S-VP-ADVP-RB	NONE	is	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+on	on	O	IN	ROOT-S-S-VP-PP-IN	ventilator	is	0.43	on_ventilator.	Ventilator_-_respiratory_equipment	Location_Equipment_-_Ventilator	Household_ventilator	NONE	NONE	Ventilator_-_respiratory_equipment	0.6	0.0	NA	NA
+ventilator	ventilator	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	on	0.14	on_ventilator.	Ventilator_-_respiratory_equipment	Location_Equipment_-_Ventilator	Household_ventilator	NONE	NONE	Ventilator_-_respiratory_equipment	0.6	0.0	MyShift_Contraption	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	is	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	He-start	ROOT	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+to	to	O	TO	ROOT-S-VP-S-VP-TO	NONE	start	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+start	start	O	VB	ROOT-S-VP-S-VP-VP-VB	to-shift	is	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+physio	physio	O	NN	ROOT-S-VP-S-VP-VP-NP-NN	NONE	shift	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	Appointment/Procedure_Description	NA
+next	next	O	JJ	ROOT-S-VP-S-VP-VP-NP-JJ	NONE	shift	0.14	next_shift.	shift_displacement	Physical_Shift	NONE	NONE	NONE	Physical_Shift	0.7	0.0	Appointment/Procedure_Time	NA
+shift	shift	O	NN	ROOT-S-VP-S-VP-VP-NP-NN	physio-next	start	0.14	next_shift.	shift_displacement	Physical_Shift	NONE	NONE	NONE	Physical_Shift	0.7	0.0	Appointment/Procedure_Time	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	discharged	0.57	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+will	will	O	MD	ROOT-S-VP-MD	NONE	discharged	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+be	be	O	VB	ROOT-S-VP-VP-VB	NONE	discharged	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+discharged	discharge	O	VBN	ROOT-S-VP-VP-VP-VBN	He-will-be-to-soon	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Discharge/TransferPlan	NA
+to	to	O	TO	ROOT-S-VP-VP-VP-PP-TO	care	discharged	0.29	to_intensive_care	care_activity	intensive_care	Specialty_Type_-_Intensive_care	Caring	NONE	care_activity	0.8	0.0	Future_Discharge/TransferPlan	NA
+intensive	intensive	O	JJ	ROOT-S-VP-VP-VP-PP-NP-JJ	NONE	care	0.14	to_intensive_care	care_activity	intensive_care	Specialty_Type_-_Intensive_care	Caring	NONE	care_activity	0.8	0.0	Future_Discharge/TransferPlan	NA
+care	care	O	NN	ROOT-S-VP-VP-VP-PP-NP-NN	intensive	to	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Discharge/TransferPlan	NA
+as	as	O	RB	ROOT-S-VP-VP-VP-ADVP-ADVP-RB	NONE	soon	0.29	as_soon	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Discharge/TransferPlan	NA
+soon	soon	O	RB	ROOT-S-VP-VP-VP-ADVP-ADVP-RB	as-room	discharged	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+as	as	O	IN	ROOT-S-VP-VP-VP-ADVP-ADVP-RB	NONE	room	0.29	as_there	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+there	there	O	EX	ROOT-S-VP-VP-VP-ADVP-SBAR-SBAR-S-NP-EX	NONE	room	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+will	will	O	MD	ROOT-S-VP-MD	NONE	room	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+be	be	O	VB	ROOT-S-VP-VP-VB	NONE	room	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+room	room	O	NN	ROOT-S-VP-VP-VP-ADVP-SBAR-SBAR-S-VP-VP-NP-NN	as-there-will-be-or-worse	soon	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+or	or	O	CC	ROOT-S-VP-VP-VP-ADVP-SBAR-CC	NONE	room	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+if	if	O	IN	ROOT-S-VP-VP-VP-ADVP-SBAR-SBAR-IN	NONE	worse	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+he	he	O	PRP	ROOT-S-NP-PRP	NONE	worse	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	Future_Discharge/TransferPlan	PatientIntroduction_Gender
+gets	get	O	VBZ	ROOT-S-VP-VP-VP-ADVP-SBAR-SBAR-S-VP-VBZ	NONE	worse	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	Future_Discharge/TransferPlan	NA
+worse	worse	O	JJR	ROOT-S-VP-VP-VP-ADVP-SBAR-SBAR-S-VP-ADJP-JJR	if-he-gets	room	0.14	worse.	Worsening_pattern	Deterioration_of_status	Worse	Observation_Interpretation_-_worse	Bad	Deterioration_of_status	1.0	0.0	Future_Discharge/TransferPlan	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+

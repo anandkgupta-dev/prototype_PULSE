@@ -1,0 +1,36 @@
+This	this	O	DT	ROOT-S-NP-DT	NONE	bed	0.33	This	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	bed	0.67	is	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-VP-NP-NN	This-is-six	ROOT	0.33	bed_six.	Beds	Six	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+six	six	NUMBER	CD	ROOT-S-VP-NP-CD	NONE	bed	0.33	bed_six.	Beds	Six	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	bed_six.	Beds	Six	NONE	NONE	NONE	Beds	0.2	0.0	NA	NA
+
+Geoffrey	Geoffrey	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Castro	0.33	Geoffrey_Castro,	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Castro	Castro	PERSON	NNP	ROOT-S-NP-NP-NNP	Geoffrey-old	came	0.33	Geoffrey_Castro,	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.67	Geoffrey_Castro,	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+73	73	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	years	0.33	73_years_old	Old	year	per_year	NONE	NONE	year	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-ADJP-NP-NNS	73	old	0.33	73_years_old	Old	year	per_year	NONE	NONE	year	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	years-under	Castro	0.33	73_years_old	Old	year	per_year	NONE	NONE	year	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Hodgins	old	0.33	under_Dr_Hodgins,	Hodgkin_Disease	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.4	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Hodgins	0.33	under_Dr_Hodgins,	Hodgkin_Disease	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.4	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Hodgins	Hodgins	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	Dr	under	0.33	under_Dr_Hodgins,	Hodgkin_Disease	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.4	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.67	under_Dr_Hodgins,	Hodgkin_Disease	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.5	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Castro-in	ROOT	0.33	came	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.33	in	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	COPD	in	0.33	with_COPD.	Chronic_Obstructive_Airway_Disease	NONE	NONE	NONE	NONE	Chronic_Obstructive_Airway_Disease	0.6	0.0	NA	NA
+COPD	copd	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	with	0.33	with_COPD.	Chronic_Obstructive_Airway_Disease	NONE	NONE	NONE	NONE	Chronic_Obstructive_Airway_Disease	0.6	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	with_COPD.	Chronic_Obstructive_Airway_Disease	NONE	NONE	NONE	NONE	Chronic_Obstructive_Airway_Disease	0.6	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	changes	0.33	He	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	changes	0.67	is	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	changes	0.33	still	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_Status	NA
+the	the	O	DT	ROOT-S-VP-NP-DT	NONE	changes	0.33	the_same	Same	NONE	NONE	NONE	NONE	Same	0.8	0.0	MyShift_Status	NA
+same	same	O	JJ	ROOT-S-VP-NP-ADJP-JJ	no	changes	0.33	the_same	Same	NONE	NONE	NONE	NONE	Same	0.8	0.0	MyShift_Status	MyShift_Status
+no	no	O	DT	ROOT-S-VP-NP-ADJP-DT	NONE	same	0.33	no_changes._obs	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changed_status	0.8	0.0	MyShift_Status	MyShift_Status
+changes	change	O	NNS	ROOT-S-VP-NP-NNS	He-is-still-the-same	ROOT	0.33	no_changes._obs	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changed_status	0.8	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	no_changes._obs	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changed_status	0.9	0.0	MyShift_Status	NA
+
+obs	ob	O	NNS	ROOT-S-NP-NNS	NONE	stable	0.33	no_changes._obs	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changed_status	0.9	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	stable	0.33	are	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-VP-ADJP-DT	NONE	stable	0.33	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-ADJP-JJ	obs-are-all	ROOT	0.33	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+

@@ -1,0 +1,45 @@
+Jorge	Jorge	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	sanchez	0.33	Jorge_Antonio_sanchez,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Antonio	Antonio	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	sanchez	0.33	Jorge_Antonio_sanchez,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+sanchez	sanchez	PERSON	NN	ROOT-S-NP-NP-NN	Jorge-Antonio-bed	came	0.33	Jorge_Antonio_sanchez,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	Jorge_Antonio_sanchez,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-NP-NP-NN	1-old-under	sanchez	0.33	bed_1,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+1	1	NUMBER	CD	ROOT-S-NP-NP-NP-CD	NONE	bed	0.33	bed_1,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	bed_1,	Beds	NONE	NONE	NONE	NONE	Beds	0.2	0.0	NA	NA
+43	43	DURATION	CD	ROOT-S-NP-NP-ADJP-NP-CD	NONE	years	0.33	43_years_old	Old	year	per_year	NONE	NONE	year	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-NP-ADJP-NP-NNS	43	old	0.33	43_years_old	Old	year	per_year	NONE	NONE	year	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-NP-ADJP-JJ	years	bed	0.33	43_years_old	Old	year	per_year	NONE	NONE	year	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	Smith	bed	0.33	under_Dr_Smith,	Smith_(occupation)	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.3	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-PP-NP-NNP	NONE	Smith	0.33	under_Dr_Smith,	Smith_(occupation)	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Smith	Smith	PERSON	NNP	ROOT-S-NP-NP-PP-NP-NNP	Dr	under	0.33	under_Dr_Smith,	Smith_(occupation)	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	under_Dr_Smith,	Smith_(occupation)	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	sanchez-in-for	ROOT	0.33	came	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.33	in	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	BP	in	0.33	with_high_BP	High	Abnormally_high	Value_Above_Reference_Range	NONE	NONE	High	0.4	0.0	NA	NA
+high	high	O	JJ	ROOT-S-VP-PP-PP-NP-JJ	NONE	BP	0.33	with_high_BP	High	Abnormally_high	Value_Above_Reference_Range	NONE	NONE	High	0.4	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+BP	bp	O	NN	ROOT-S-VP-PP-PP-NP-NN	high	with	0.33	with_high_BP	High	Abnormally_high	Value_Above_Reference_Range	NONE	NONE	High	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+for	for	O	IN	ROOT-S-VP-PP-IN	investigation	came	0.67	for_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	PatientIntroduction_CarePlan	PatientIntroduction_AdmissionReason/Diagnosis
+investigation	investigation	O	NN	ROOT-S-VP-PP-NP-NN	NONE	for	0.33	for_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	PatientIntroduction_CarePlan	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	NA	NA
+
+he	he	O	PRP	ROOT-S-NP-PRP	NONE	had	0.67	he_already	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+already	already	O	RB	ROOT-S-ADVP-RB	NONE	had	0.33	he_already	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+had	have	O	VBD	ROOT-S-VP-VBD	he-already-test	ROOT	0.33	had	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+all	all	O	DT	ROOT-S-VP-NP-NP-DT	NONE	test	0.67	all_test	Laboratory_Procedures	Testing	Tests_(qualifier_value)	NONE	NONE	Testing	0.6	0.0	Appointment/Procedure_Status	NA
+test	test	O	NN	ROOT-S-VP-NP-NP-NN	all-done	had	0.33	all_test	Laboratory_Procedures	Testing	Tests_(qualifier_value)	NONE	NONE	Testing	0.6	0.0	Appointment/Procedure_Status	NA
+done	do	O	VBN	ROOT-S-VP-NP-VP-VP-VBN	and-awaiting	test	0.33	done	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	Appointment/Procedure_Status	NA
+and	and	O	CC	ROOT-S-VP-NP-VP-CC	NONE	done	0.33	and	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	Appointment/Procedure_Status	NA
+awaiting	await	O	VBG	ROOT-S-VP-NP-VP-VP-VBG	results	done	0.33	awaiting_results.	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.7	0.0	Appointment/Procedure_Status	Appointment/Procedure_Status
+results	result	O	NNS	ROOT-S-VP-NP-VP-VP-NP-NNS	NONE	awaiting	0.33	awaiting_results.	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.7	0.0	Appointment/Procedure_Status	Appointment/Procedure_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	awaiting_results.	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.8	0.0	NA	NA
+
+he	he	O	PRP	ROOT-S-NP-PRP	NONE	query	0.67	he	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	query	0.67	is	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+query	query	O	NN	ROOT-S-VP-NP-NP-NN	he-is-for-good	ROOT	0.33	query	Question_(inquiry)	NONE	NONE	NONE	NONE	Question_(inquiry)	0.8	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+for	for	O	IN	ROOT-S-VP-NP-PP-IN	discharge	query	0.67	for_discharge	Body_Fluid_Discharge	Patient_Discharge	Discharge,_body_substance	NONE	NONE	Patient_Discharge	0.9	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+discharge	discharge	O	NN	ROOT-S-VP-NP-PP-NP-NN	NONE	for	0.33	for_discharge	Body_Fluid_Discharge	Patient_Discharge	Discharge,_body_substance	NONE	NONE	Patient_Discharge	0.9	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+if	if	O	IN	ROOT-S-VP-SBAR-IN	NONE	good	0.33	if	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+all	all	O	DT	ROOT-S-VP-SBAR-S-NP-DT	NONE	good	0.67	all	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	NA
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	good	0.67	is	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	Future_Discharge/TransferPlan	NA
+good	good	O	JJ	ROOT-S-VP-SBAR-S-VP-ADJP-JJ	if-all-is	query	0.33	good.	Good	Manufactured_Supplies	NONE	NONE	NONE	Good	1.0	0.0	Future_Discharge/TransferPlan	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	good.	Good	Manufactured_Supplies	NONE	NONE	NONE	Good	1.0	0.0	NA	NA
+

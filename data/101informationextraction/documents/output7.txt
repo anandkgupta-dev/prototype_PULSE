@@ -1,0 +1,33 @@
+Maria	Maria	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Sanner	0.33	Maria_Sanner,	Mare_(mammal)	NPRL3_gene	NONE	NONE	NONE	Mare_(mammal)	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Sanner	Sanner	PERSON	NNP	ROOT-S-NP-NP-NNP	Maria-old	came	0.33	Maria_Sanner,	Mare_(mammal)	NPRL3_gene	NONE	NONE	NONE	Mare_(mammal)	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	Maria_Sanner,	Mare_(mammal)	NPRL3_gene	NONE	NONE	NONE	Mare_(mammal)	0.1	0.0	NA	NA
+88	88	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	years	0.33	88_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-ADJP-NP-NNS	88	old	0.33	88_years_old	Old	year	per_year	NONE	NONE	year	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	years-under	Sanner	0.33	88_years_old	Old	year	per_year	NONE	NONE	year	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Garcia	old	0.33	under_Dr_Garcia,	Garcia_serotype	Garcia_<plant>	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Doctor_-_Title	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NP-NNP	NONE	Garcia	0.33	under_Dr_Garcia,	Garcia_serotype	Garcia_<plant>	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Doctor_-_Title	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_AdmissionReason/Diagnosis
+Garcia	Garcia	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NP-NNP	Dr-bed	under	0.33	under_Dr_Garcia,	Garcia_serotype	Garcia_<plant>	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Doctor_-_Title	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_AdmissionReason/Diagnosis
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	under_Dr_Garcia,	Garcia_serotype	Garcia_<plant>	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Doctor_-_Title	0.3	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-ADJP-PP-NP-NP-NN	5	Garcia	0.33	bed_5,	Beds	NONE	NONE	NONE	NONE	Beds	0.4	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_CurrentBed
+5	5	NUMBER	CD	ROOT-S-NP-ADJP-PP-NP-NP-CD	NONE	bed	0.33	bed_5,	Beds	NONE	NONE	NONE	NONE	Beds	0.4	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	bed_5,	Beds	NONE	NONE	NONE	NONE	Beds	0.4	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Sanner-in-with	ROOT	0.33	came	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	originally	came	0.33	in_originally	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+originally	originally	O	RB	ROOT-S-VP-PP-ADVP-RB	NONE	in	0.33	in_originally	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-IN	pressure	came	0.33	with_high_blood_pressure.	Blood	In_Blood	Blood_Pressure	Pressure-_physical_agent	High	High	0.5	0.0	NA	NA
+high	high	O	JJ	ROOT-S-VP-PP-NP-JJ	NONE	pressure	0.33	with_high_blood_pressure.	Blood	In_Blood	Blood_Pressure	Pressure-_physical_agent	High	High	0.6	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+blood	blood	O	NN	ROOT-S-VP-PP-NP-NN	NONE	pressure	0.33	with_high_blood_pressure.	Blood	In_Blood	Blood_Pressure	Pressure-_physical_agent	High	High	0.6	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+pressure	pressure	O	NN	ROOT-S-VP-PP-NP-NN	high-blood	with	0.33	with_high_blood_pressure.	Blood	In_Blood	Blood_Pressure	Pressure-_physical_agent	High	High	0.6	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	0.67	with_high_blood_pressure.	Blood	In_Blood	Blood_Pressure	Pressure-_physical_agent	High	High	0.7	0.0	NA	NA
+
+With	with	O	IN	ROOT-FRAG-PP-IN	dementia	ROOT	0.33	With_dementia	Presenile_dementia	Dementia	demented	NONE	NONE	Presenile_dementia	0.7	0.0	NA	NA
+dementia	dementia	O	NN	ROOT-FRAG-PP-NP-NP-NN	and-just	With	0.33	With_dementia	Presenile_dementia	Dementia	demented	NONE	NONE	Presenile_dementia	0.7	0.0	PatientIntroduction_ChronicCondition	NA
+and	and	O	CC	ROOT-FRAG-PP-NP-CC	NONE	dementia	0.33	and	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+just	just	O	RB	ROOT-FRAG-PP-NP-NP-NP-RB	waiting-for	dementia	0.33	just	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+waiting	wait	O	VBG	ROOT-FRAG-PP-NP-NP-NP-VBG	NONE	just	0.33	waiting	wait	NONE	NONE	NONE	NONE	wait	0.8	0.0	NA	Future_Discharge/TransferPlan
+for	for	O	IN	ROOT-FRAG-PP-NP-NP-PP-IN	placement	just	0.33	for_nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	0.9	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+nursing	nursing	O	NN	ROOT-FRAG-PP-NP-NP-PP-NP-NN	NONE	placement	0.33	for_nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	0.9	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+home	home	O	NN	ROOT-FRAG-PP-NP-NP-PP-NP-NN	NONE	placement	0.33	for_nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	0.9	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+placement	placement	O	NN	ROOT-FRAG-PP-NP-NP-PP-NP-NN	nursing-home	for	0.33	for_nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	1.0	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	0.67	for_nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	1.0	0.0	NA	NA
+

@@ -1,0 +1,159 @@
+5	5	NUMBER	CD	ROOT-FRAG-NP-CD	NONE	ROOT	0.07	5.	>5	+5	NONE	NONE	NONE	>5	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+
+in	in	O	IN	ROOT-FRAG-PP-IN	room	ROOT	0.2	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.0	0.0	NA	NA
+room	room	O	NN	ROOT-FRAG-PP-NP-NN	4	in	0.07	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+4	4	NUMBER	CD	ROOT-FRAG-PP-NP-CD	NONE	room	0.07	in_room_4.	Present	Within	Room	NONE	NONE	Present	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+
+Natalie	Natalie	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Karikas	0.07	Natalie_Karikas,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Karikas	Karikas	PERSON	NNP	ROOT-S-NP-NP-NNP	Natalie-old	came	0.07	Natalie_Karikas,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+79	79	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	yrs	0.07	79_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-ADJP-NP-NNS	79	old	0.07	79_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	yrs-under	Karikas	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Ross	old	0.07	under_Dr_Ross,	Ross_-_Pharmaceutical_Company	Ross_Chicken	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Physicians	0.1	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Ross	0.07	under_Dr_Ross,	Ross_-_Pharmaceutical_Company	Ross_Chicken	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Ross	Ross	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	Dr	under	0.07	under_Dr_Ross,	Ross_-_Pharmaceutical_Company	Ross_Chicken	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Karikas-in	ROOT	0.13	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	pain	in	0.07	with_stomach_pain	Pain	Pain_NOS_Adverse_Event	Stomach_ache	Stomach_Pain_Adverse_Event	Painless	Stomach	0.1	0.0	NA	NA
+stomach	stomach	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	pain	0.07	with_stomach_pain	Pain	Pain_NOS_Adverse_Event	Stomach_ache	Stomach_Pain_Adverse_Event	Painless	Stomach	0.1	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+pain	pain	O	NN	ROOT-S-VP-PP-PP-NP-NN	stomach-and-jaundice	with	0.13	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+and	and	O	CC	ROOT-S-VP-PP-PP-NP-CC	NONE	pain	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	PatientIntroduction_AdmissionReason/Diagnosis
+jaundice	jaundice	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	pain	0.07	jaundice.	Icterus	NONE	NONE	NONE	NONE	Icterus	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	got	0.6	She's	SHE_gene	NONE	NONE	NONE	NONE	SHE_gene	0.2	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	got	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+got	get	O	VBD	ROOT-S-VP-VP-VBD	She-'s-history	ROOT	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+a	a	O	DT	ROOT-S-VP-VP-NP-NP-DT	NONE	history	0.07	a_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	History_of_present_illness	0.2	0.0	NA	NA
+history	history	O	NN	ROOT-S-VP-VP-NP-NP-NN	a-of	got	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+of	of	O	IN	ROOT-S-VP-VP-NP-PP-IN	diabetes	history	0.07	of_diabetes	Diabetes	Diabetes_Mellitus	DIABETIC	NONE	NONE	Diabetes	0.2	0.0	NA	NA
+diabetes	diabetes	O	NN	ROOT-S-VP-VP-NP-PP-NP-NN	and-obesity	of	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.5	PatientIntroduction_Disease/ProblemHistory	PatientIntroduction_Disease/ProblemHistory
+and	and	O	CC	ROOT-S-VP-VP-NP-PP-NP-CC	NONE	diabetes	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+obesity	obesity	O	NN	ROOT-S-VP-VP-NP-PP-NP-NN	NONE	diabetes	0.07	obesity.	Obesity	Obesity_Adverse_Event	NONE	NONE	NONE	Obesity_Adverse_Event	0.2	0.5	PatientIntroduction_Disease/ProblemHistory	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-S-NP-PRP	NONE	feeling	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	feeling	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+feeling	feel	O	VBG	ROOT-S-S-VP-VP-VBG	She-is-tired-and-feeling	ROOT	0.13	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	MyShift_Status	MyShift_Status
+tired	tired	O	JJ	ROOT-S-S-VP-VP-ADJP-ADJP-JJ	dizzy	feeling	0.07	tired,	Tired	Tiring	Tire_shape	NONE	NONE	Tired	0.3	0.0	MyShift_Status	MyShift_Status
+,	,	O	,	ROOT-S-S-VP-VP-ADJP-,	NONE	NONE	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+dizzy	dizzy	O	JJ	ROOT-S-S-VP-VP-ADJP-ADJP-JJ	NONE	tired	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	MyShift_Status	NA
+and	and	O	CC	ROOT-S-CC	NONE	feeling	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	feeling	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	feeling	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+feeling	feel	O	VBG	ROOT-S-S-VP-VP-VBG	she-is-depressed	feeling	0.13	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	MyShift_Status	NA
+depressed	depress	O	VBN	ROOT-S-S-VP-VP-S-VP-VBN	NONE	feeling	0.07	depressed.	Depressed_mood	NONE	NONE	NONE	NONE	Depressed_mood	0.3	0.0	MyShift_Status	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+
+Her	she	O	PRP$	ROOT-S-NP-PRP$	NONE	urine	0.07	Her_urine	Urine	In_Urine	Portion_of_urine	Urinary_tract	urinary	In_Urine	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+urine	urine	O	NN	ROOT-S-NP-NN	Her	dark	0.13	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.5	MyShift_OtherObservation	MyShift_OtherObservation
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	dark	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+very	very	O	RB	ROOT-S-VP-ADJP-ADJP-RB	NONE	dark	0.07	very_dark	Dark_color	Very	NONE	NONE	NONE	Very	0.3	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+dark	dark	O	JJ	ROOT-S-VP-ADJP-ADJP-JJ	urine-is-very-and-sent	ROOT	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+and	and	O	CC	ROOT-S-VP-ADJP-CC	NONE	dark	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+been	be	O	VBN	ROOT-S-VP-ADJP-VP-VBN	NONE	sent	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+sent	send	O	VBN	ROOT-S-VP-ADJP-VP-VP-VBN	been-for	dark	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+for	for	O	IN	ROOT-S-VP-ADJP-VP-VP-PP-IN	MCS	sent	0.2	for_urine_MCS.	Urine	In_Urine	Portion_of_urine	Urinary_tract	urinary	In_Urine	0.4	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+urine	urine	O	NN	ROOT-S-NP-NN	NONE	MCS	0.13	for_urine_MCS.	Urine	In_Urine	Portion_of_urine	Urinary_tract	urinary	In_Urine	0.4	0.5	Appointment/Procedure_Status	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+MCS	mc	O	NN	ROOT-S-VP-ADJP-VP-VP-PP-NP-NN	urine	for	0.07	for_urine_MCS.	Urine	In_Urine	Portion_of_urine	Urinary_tract	urinary	In_Urine	0.4	0.0	Appointment/Procedure_Status	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	came	0.6	She_just	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+just	just	O	RB	ROOT-S-ADVP-RB	NONE	came	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	She-just-into-ago	ROOT	0.13	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+into	into	O	IN	ROOT-S-VP-PP-IN	ward	came	0.07	into_our_ward_3_hrs_ago.	Ward_(environment)	Act_Code_-_Ward	Ward_(person)	NONE	NONE	Ward_(environment)	0.4	0.0	NA	NA
+our	we	O	PRP$	ROOT-S-VP-PP-NP-PRP$	NONE	ward	0.07	into_our_ward_3_hrs_ago.	Ward_(environment)	Act_Code_-_Ward	Ward_(person)	NONE	NONE	Ward_(environment)	0.4	0.0	NA	NA
+ward	ward	O	NN	ROOT-S-VP-PP-NP-NN	our	into	0.07	into_our_ward_3_hrs_ago.	Ward_(environment)	Act_Code_-_Ward	Ward_(person)	NONE	NONE	Ward_(environment)	0.4	0.0	NA	NA
+3	3	DATE	CD	ROOT-S-VP-ADVP-NP-CD	NONE	hrs	0.07	into_our_ward_3_hrs_ago.	Ward_(environment)	Act_Code_-_Ward	Ward_(person)	NONE	NONE	Ward_(environment)	0.5	0.0	NA	NA
+hrs	hr	DATE	NNS	ROOT-S-VP-ADVP-NP-NNS	3	ago	0.07	into_our_ward_3_hrs_ago.	Ward_(environment)	Act_Code_-_Ward	Ward_(person)	NONE	NONE	Ward_(environment)	0.5	0.0	NA	NA
+ago	ago	DATE	RB	ROOT-S-VP-ADVP-RB	hrs	came	0.07	into_our_ward_3_hrs_ago.	Ward_(environment)	Act_Code_-_Ward	Ward_(person)	NONE	NONE	Ward_(environment)	0.5	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+Obs	ob	O	NNS	ROOT-S-S-NP-NNS	NONE	done	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	Appointment/Procedure_Status	NA
+have	have	O	VBP	ROOT-S-S-VP-VBP	NONE	done	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	Appointment/Procedure_Status	NA
+been	be	O	VBN	ROOT-S-S-VP-VP-VBN	NONE	done	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	Appointment/Procedure_Status	NA
+done	do	O	VBN	ROOT-S-S-VP-VP-VP-VBN	Obs-have-been-and-stable	ROOT	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	Appointment/Procedure_Status	NA
+and	and	O	CC	ROOT-S-CC	NONE	done	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+they	they	O	PRP	ROOT-S-S-NP-PRP	NONE	stable	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	NA
+are	be	O	VBP	ROOT-S-S-VP-VBP	NONE	stable	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	NA
+all	all	O	DT	ROOT-S-S-VP-ADJP-DT	NONE	stable	0.13	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.5	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-S-VP-ADJP-JJ	they-are-all	done	0.07	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.5	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	needs	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+needs	need	O	VBZ	ROOT-S-VP-VP-VBZ	She-assistance-in-and-referred	ROOT	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+assistance	assistance	O	NN	ROOT-S-VP-VP-NP-NN	NONE	needs	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+in	in	O	IN	ROOT-S-VP-VP-PP-IN	walking	needs	0.2	in_walking	Walking_(activity)	Does_walk	NONE	NONE	NONE	Walking_(activity)	0.6	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+walking	walk	O	VBG	ROOT-S-VP-VP-PP-S-VP-VBG	NONE	in	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+and	and	O	CC	ROOT-S-VP-CC	NONE	needs	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+should	should	O	MD	ROOT-S-VP-VP-MD	NONE	referred	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+be	be	O	VB	ROOT-S-VP-VP-VP-VB	NONE	referred	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+referred	refer	O	VBN	ROOT-S-VP-VP-VP-VP-VBN	should-be-to	needs	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+to	to	O	TO	ROOT-S-VP-VP-VP-VP-PP-TO	physio	referred	0.07	to_physio.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+physio	physio	O	NN	ROOT-S-VP-VP-VP-VP-PP-NP-NN	NONE	to	0.07	to_physio.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	is	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	She-on	ROOT	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-PP-IN	diet-and-on	is	0.27	on_diabetic_diet	Diet	DIABETIC	Diabetic_Diet	DIETING	Dietetics	DIABETIC	0.6	0.0	NA	NA
+diabetic	diabetic	O	JJ	ROOT-S-VP-PP-PP-NP-JJ	NONE	diet	0.07	on_diabetic_diet	Diet	DIABETIC	Diabetic_Diet	DIETING	Dietetics	DIABETIC	0.7	0.0	MyShift_Input/Diet	MyShift_Input/Diet
+diet	diet	O	NN	ROOT-S-VP-PP-PP-NP-NN	diabetic	on	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.5	MyShift_Input/Diet	MyShift_Input/Diet
+and	and	O	CC	ROOT-S-VP-PP-CC	NONE	on	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-PP-IN	BGLS	on	0.27	on_QID_BGLS.	Four_times_daily	NONE	NONE	NONE	NONE	Four_times_daily	0.7	0.0	NA	NA
+QID	QID	O	NNP	ROOT-S-VP-PP-PP-NP-NNP	NONE	BGLS	0.07	on_QID_BGLS.	Four_times_daily	NONE	NONE	NONE	NONE	Four_times_daily	0.7	0.0	MyShift_OtherObservation	NA
+BGLS	BGLS	O	NNP	ROOT-S-VP-PP-PP-NP-NNP	QID	on	0.07	on_QID_BGLS.	Four_times_daily	NONE	NONE	NONE	NONE	Four_times_daily	0.7	0.0	MyShift_OtherObservation	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	is	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	She-on	ROOT	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-IN	hypos	is	0.27	on_oral_hypos.	Oral	NONE	NONE	NONE	NONE	Oral	0.7	0.0	NA	NA
+oral	oral	O	JJ	ROOT-S-VP-PP-NP-JJ	NONE	hypos	0.07	on_oral_hypos.	Oral	NONE	NONE	NONE	NONE	Oral	0.7	0.5	Medication_Medicine	Medication_Medicine
+hypos	hypo	O	NNS	ROOT-S-VP-PP-NP-NNS	oral	on	0.07	on_oral_hypos.	Oral	NONE	NONE	NONE	NONE	Oral	0.7	0.0	Medication_Medicine	Medication_Medicine
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	charted	0.6	She's	SHE_gene	NONE	NONE	NONE	NONE	SHE_gene	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	charted	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+charted	chart	O	VBN	ROOT-S-VP-VP-VBN	She-'s-on-for	ROOT	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-VP-PP-IN	endone	charted	0.27	on_endone	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+endone	endone	O	NN	ROOT-S-VP-VP-PP-NP-NN	and-morphine	on	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Medication_Medicine	Medication_Medicine
+and	and	O	CC	ROOT-S-VP-VP-PP-NP-CC	NONE	endone	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+morphine	morphine	O	NN	ROOT-S-VP-VP-PP-NP-NN	NONE	endone	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	1.0	Medication_Medicine	Medication_Medicine
+for	for	O	IN	ROOT-S-VP-VP-PP-IN	pain	charted	0.2	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain	0.8	0.0	Medication_Medicine	NA
+pain	pain	O	NN	ROOT-S-VP-VP-PP-NP-NN	NONE	for	0.13	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain	0.8	0.0	Medication_Medicine	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	seen	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+has	have	O	VBZ	ROOT-S-VP-VBZ	NONE	seen	0.07	hasn't	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+n't	not	O	RB	ROOT-S-VP-RB	NONE	seen	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+been	be	O	VBN	ROOT-S-VP-VP-VBN	NONE	seen	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+seen	see	O	VBN	ROOT-S-VP-VP-VP-VBN	She-has-n't-been-by-yet	ROOT	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+by	by	O	IN	ROOT-S-VP-VP-VP-PP-IN	team	seen	0.07	by_the_team_yet.	Team	NONE	NONE	NONE	NONE	Team	0.8	0.0	NA	NA
+the	the	O	DT	ROOT-S-VP-VP-VP-PP-NP-DT	NONE	team	0.07	by_the_team_yet.	Team	NONE	NONE	NONE	NONE	Team	0.9	0.0	NA	NA
+team	team	O	NN	ROOT-S-VP-VP-VP-PP-NP-NN	the	by	0.07	by_the_team_yet.	Team	NONE	NONE	NONE	NONE	Team	0.9	0.0	NA	NA
+yet	yet	O	RB	ROOT-S-VP-VP-VP-ADVP-RB	NONE	seen	0.07	by_the_team_yet.	Team	NONE	NONE	NONE	NONE	Team	0.9	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+and	and	O	CC	ROOT-S-CC	NONE	all	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+that	that	O	DT	ROOT-S-NP-DT	NONE	all	0.07	that's	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	all	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+all	all	O	DT	ROOT-S-VP-NP-NP-DT	and-that-'s-tell	ROOT	0.13	all_I	Iodides	Blood_group_antibody_I	NONE	NONE	NONE	Blood_group_antibody_I	0.9	0.0	NA	NA
+I	I	O	PRP	ROOT-S-VP-NP-SBAR-S-NP-PRP	NONE	tell	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+can	can	O	MD	ROOT-S-VP-NP-SBAR-S-VP-MD	NONE	tell	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+tell	tell	O	VB	ROOT-S-VP-NP-SBAR-S-VP-VP-VB	I-can-you-about	all	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+you	you	O	PRP	ROOT-S-VP-NP-SBAR-S-VP-VP-NP-PRP	NONE	tell	0.07	you_about	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+about	about	O	IN	ROOT-S-VP-NP-SBAR-S-VP-VP-PP-IN	her	tell	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+her	she	O	PRP	ROOT-S-VP-NP-SBAR-S-VP-VP-PP-NP-PRP	NONE	about	0.07	her.	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	is	0.6	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	She-here-for	ROOT	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+here	here	O	RB	ROOT-S-VP-ADVP-RB	NONE	is	0.07	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+for	for	O	IN	ROOT-S-VP-PP-IN	investigation	is	0.2	for_further_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	Further	Distal	Further	1.0	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+further	further	O	JJ	ROOT-S-VP-PP-NP-JJ	NONE	investigation	0.07	for_further_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	Further	Distal	Further	1.0	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+investigation	investigation	O	NN	ROOT-S-VP-PP-NP-NN	further	for	0.07	for_further_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	Further	Distal	Further	1.0	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+

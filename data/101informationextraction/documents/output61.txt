@@ -1,0 +1,54 @@
+Room	room	O	NN	ROOT-NP-NP-NN	2-bed	ROOT	0.2	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+2	2	NUMBER	CD	ROOT-NP-NP-CD	NONE	Room	0.2	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+,	,	O	,	ROOT-NP-,	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-NP-NP-NN	8	Room	0.2	bed_8.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+8	8	NUMBER	CD	ROOT-NP-NP-CD	NONE	bed	0.2	bed_8.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-NP-.	NONE	NONE	0.8	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+
+Miranda	Miranda	O	NNP	ROOT-S-S-NP-NP-NNP	NONE	mahe	0.2	Miranda_mahe,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	NA
+mahe	mahe	O	NN	ROOT-S-S-NP-NP-NN	Miranda-old	came	0.2	Miranda_mahe,	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Lastname	NA
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+66	66	DURATION	CD	ROOT-S-S-NP-ADJP-NP-CD	NONE	yrs	0.2	66_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-S-NP-ADJP-NP-NNS	66	old	0.2	66_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-S-NP-ADJP-JJ	yrs-under	mahe	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-S-NP-ADJP-PP-IN	Fleming	old	0.2	under_Dr_Fleming,	Fleming	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.3	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-S-NP-ADJP-PP-NP-NNP	NONE	Fleming	0.2	under_Dr_Fleming,	Fleming	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Fleming	Fleming	PERSON	NNP	ROOT-S-S-NP-ADJP-PP-NP-NNP	Dr	under	0.2	under_Dr_Fleming,	Fleming	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-S-VP-VBD	mahe-in	same	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-S-VP-PP-IN	with	came	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+with	with	O	IN	ROOT-S-S-VP-PP-PP-IN	epilepsy	in	0.2	with_epilepsy,	Epilepsy	NONE	NONE	NONE	NONE	Epilepsy	0.4	0.0	NA	NA
+epilepsy	epilepsy	O	NN	ROOT-S-S-VP-PP-PP-NP-NN	NONE	with	0.4	with_epilepsy,	Epilepsy	NONE	NONE	NONE	NONE	Epilepsy	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	same	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	same	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	same	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	MyShift_Status
+the	the	O	DT	ROOT-S-VP-NP-DT	NONE	same	0.4	the_same.	Same	NONE	NONE	NONE	NONE	Same	0.5	0.0	MyShift_Status	MyShift_Status
+same	same	O	JJ	ROOT-S-VP-NP-JJ	came-she-is-still-the	ROOT	0.2	the_same.	Same	NONE	NONE	NONE	NONE	Same	0.5	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	0.8	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+No	no	O	DT	ROOT-NP-NP-DT	NONE	episode	0.2	No_episode	Episode_of	Episodic	Episodicity	NONE	NONE	Episode_of	0.6	0.0	MyShift_Status	NA
+episode	episode	O	NN	ROOT-NP-NP-NN	No-of	ROOT	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_Status	NA
+of	of	O	IN	ROOT-NP-PP-IN	epilepsy	episode	0.2	of_epilepsy	Epilepsy	NONE	NONE	NONE	NONE	Epilepsy	0.6	0.0	MyShift_Status	NA
+epilepsy	epilepsy	O	NN	ROOT-NP-PP-NP-NP-NN	on	of	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_Status	NA
+on	on	O	IN	ROOT-NP-PP-NP-PP-IN	shift	epilepsy	0.2	on_my_shift	shift_displacement	Physical_Shift	NONE	NONE	NONE	shift_displacement	0.6	0.0	NA	NA
+my	my	O	PRP$	ROOT-NP-PP-NP-PP-NP-NP-PRP$	NONE	shift	0.2	on_my_shift	shift_displacement	Physical_Shift	NONE	NONE	NONE	shift_displacement	0.7	0.0	NA	NA
+shift	shift	O	NN	ROOT-NP-PP-NP-PP-NP-NP-NN	my-and-waiting	on	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+and	and	O	CC	ROOT-NP-PP-NP-PP-NP-CC	NONE	shift	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+just	just	O	RB	ROOT-NP-PP-NP-PP-NP-S-ADVP-RB	NONE	waiting	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+waiting	wait	O	VBG	ROOT-NP-PP-NP-PP-NP-S-VP-VBG	just-for-review	shift	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+for	for	O	IN	ROOT-NP-PP-NP-PP-NP-S-VP-PP-IN	doctors	waiting	0.2	for_the_doctors_to	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.8	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+the	the	O	DT	ROOT-NP-PP-NP-PP-NP-S-VP-PP-NP-DT	NONE	doctors	0.4	for_the_doctors_to	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.8	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+doctors	doctor	O	NNS	ROOT-NP-PP-NP-PP-NP-S-VP-PP-NP-NNS	the	for	0.2	for_the_doctors_to	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.8	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+to	to	O	TO	ROOT-NP-PP-NP-PP-NP-S-VP-S-VP-TO	NONE	review	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+review	review	O	VB	ROOT-NP-PP-NP-PP-NP-S-VP-S-VP-VP-VB	to	waiting	0.2	review.	Review_[Publication_Type]	Act_Class_-_review	Reviewing	Reviewed	NONE	Act_Class_-_review	0.8	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-NP-.	NONE	NONE	0.8	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+Otherswise	Otherswise	O	NNP	ROOT-S-NP-NNP	NONE	's	0.2	Otherswise,	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+,	,	O	,	ROOT-S-,	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+there	there	O	EX	ROOT-S-NP-EX	NONE	's	0.2	there's	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+'s	be	O	VBZ	ROOT-S-VP-VBZ	Otherswise-there-changes	ROOT	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+no	no	O	DT	ROOT-S-VP-NP-DT	NONE	changes	0.2	no_changes.	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changing	1.0	0.0	MyShift_Status	MyShift_Status
+changes	change	O	NNS	ROOT-S-VP-NP-NNS	no	's	0.2	no_changes.	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changing	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	0.8	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+

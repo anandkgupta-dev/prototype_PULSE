@@ -1,0 +1,67 @@
+This	this	O	DT	ROOT-S-NP-DT	NONE	bed	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	bed	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-VP-NP-NN	This-is-three	ROOT	0.14	bed_three.	Beds	Three	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+three	three	NUMBER	CD	ROOT-S-VP-NP-CD	NONE	bed	0.14	bed_three.	Beds	Three	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+
+Alistair	Alistair	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Edwards	0.14	Alistair_Edwards,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Edwards	Edwards	PERSON	NNP	ROOT-S-NP-NP-NNP	Alistair-old	came	0.14	Alistair_Edwards,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+43	43	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	yrs	0.14	43_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-ADJP-NP-NNS	43	old	0.14	43_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	yrs-under	Edwards	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Jaime	old	0.14	under_Dr_Jaime,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Jaime	0.14	under_Dr_Jaime,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_GivenNames/Initials	PatientIntroduction_UnderDr_GivenNames/Initials
+Jaime	Jaime	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	Dr	under	0.14	under_Dr_Jaime,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_GivenNames/Initials	PatientIntroduction_UnderDr_GivenNames/Initials
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Edwards-in	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	allergy	in	0.29	with_allergy.	Allergy_Specialty	Hypersensitivity	Response_to_antigens	Allergic	NONE	Hypersensitivity	0.3	0.0	NA	NA
+allergy	allergy	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	with	0.14	with_allergy.	Allergy_Specialty	Hypersensitivity	Response_to_antigens	Allergic	NONE	Hypersensitivity	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+
+he	he	O	PRP	ROOT-S-NP-PRP	NONE	allergic	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	allergic	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+allergic	allergic	O	JJ	ROOT-S-VP-ADJP-JJ	he-is-to	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.5	PatientIntroduction_Allergy	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+to	to	O	TO	ROOT-S-VP-ADJP-PP-TO	peanuts	allergic	0.14	to_peanuts.	Peanuts_-_dietary	Arachis_hypogaea	PEANUT_preparation	NONE	NONE	Peanuts_-_dietary	0.4	0.0	PatientIntroduction_Allergy	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+peanuts	peanut	O	NNS	ROOT-S-VP-ADJP-PP-NP-NNS	NONE	to	0.14	to_peanuts.	Peanuts_-_dietary	Arachis_hypogaea	PEANUT_preparation	NONE	NONE	Peanuts_-_dietary	0.4	0.0	PatientIntroduction_Allergy	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	improving	0.29	He's	Helium	CYTIP_gene	NONE	NONE	NONE	Helium	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	improving	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+improving	improve	O	VBG	ROOT-S-VP-VP-VBG	He-'s-slowly	ROOT	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	NA
+slowly	slowly	O	RB	ROOT-S-VP-VP-ADVP-RB	NONE	improving	0.14	slowly.	Slow	NONE	NONE	NONE	NONE	Slow	0.5	0.0	MyShift_Status	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	throat	0.29	He's_throat_still	Pharyngeal_structure	Anterior_portion_of_neck	Entire_throat_(surface_region_of_neck)	Helium	CYTIP_gene	Helium	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	throat	0.43	He's_throat_still	Pharyngeal_structure	Anterior_portion_of_neck	Entire_throat_(surface_region_of_neck)	Helium	CYTIP_gene	Helium	0.6	0.0	NA	NA
+throat	throat	O	NN	ROOT-S-VP-NP-NN	He-'s-still-gets	ROOT	0.14	He's_throat_still	Pharyngeal_structure	Anterior_portion_of_neck	Entire_throat_(surface_region_of_neck)	Helium	CYTIP_gene	Helium	0.6	0.5	MyShift_OtherObservation	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	throat	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_OtherObservation	NA
+a	a	O	DT	ROOT-S-VP-SBAR-S-NP-NP-DT	NONE	bit	0.14	a_little_bit_swollen,_still	Little's_Disease	Swelling	Small	bit_-_unit_of_measure	Smallest	Little's_Disease	0.6	0.0	MyShift_OtherObservation	NA
+little	little	O	JJ	ROOT-S-VP-SBAR-S-NP-NP-JJ	NONE	bit	0.14	a_little_bit_swollen,_still	Little's_Disease	Swelling	Small	bit_-_unit_of_measure	Smallest	Little's_Disease	0.6	0.0	MyShift_OtherObservation	MyShift_ActivitiesOfDailyLiving
+bit	bit	O	NN	ROOT-S-VP-SBAR-S-NP-NP-NN	a-little-swollen	gets	0.14	a_little_bit_swollen,_still	Little's_Disease	Swelling	Small	bit_-_unit_of_measure	Smallest	Little's_Disease	0.6	0.0	MyShift_OtherObservation	MyShift_ActivitiesOfDailyLiving
+swollen	swollen	O	JJ	ROOT-S-VP-SBAR-S-NP-NP-NP-JJ	with-and-sometimes	bit	0.14	a_little_bit_swollen,_still	Little's_Disease	Swelling	Small	bit_-_unit_of_measure	Smallest	Little's_Disease	0.7	0.0	MyShift_OtherObservation	MyShift_ActivitiesOfDailyLiving
+,	,	O	,	ROOT-S-VP-SBAR-S-NP-NP-,	NONE	NONE	0.43	a_little_bit_swollen,_still	Little's_Disease	Swelling	Small	bit_-_unit_of_measure	Smallest	Little's_Disease	0.7	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	with	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-SBAR-S-NP-NP-PP-IN	still-mouth	swollen	0.29	with_itchy_mouth	Oral_cavity	Oral_region	Entire_mouth_region	Entire_oral_cavity	Oral	Pruritus	0.7	0.0	NA	NA
+itchy	itchy	O	JJ	ROOT-S-VP-SBAR-S-NP-NP-PP-NP-JJ	NONE	mouth	0.14	with_itchy_mouth	Oral_cavity	Oral_region	Entire_mouth_region	Entire_oral_cavity	Oral	Pruritus	0.7	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+mouth	mouth	O	NN	ROOT-S-VP-SBAR-S-NP-NP-PP-NP-NN	itchy	with	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+and	and	O	CC	ROOT-S-VP-SBAR-S-NP-NP-CC	NONE	swollen	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+sometimes	sometimes	O	RB	ROOT-S-VP-SBAR-S-NP-NP-ADVP-RB	NONE	swollen	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+gets	get	O	VBZ	ROOT-S-VP-SBAR-S-VP-VBZ	bit-difficulty	throat	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+difficulty	difficulty	O	NN	ROOT-S-VP-SBAR-S-VP-NP-NP-NP-NN	of-but-manageable	gets	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+of	of	O	IN	ROOT-S-VP-SBAR-S-VP-NP-NP-PP-IN	breathing	difficulty	0.14	of_breathing	Inspiration_function	Respiration	respiratory_gaseous_exchange_in_organisms	NONE	NONE	Respiration	0.8	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+breathing	breathing	O	NN	ROOT-S-VP-SBAR-S-VP-NP-NP-PP-NP-NN	NONE	of	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+but	but	O	CC	ROOT-S-VP-SBAR-S-VP-NP-CC	NONE	difficulty	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+manageable	manageable	O	JJ	ROOT-S-VP-SBAR-S-VP-NP-ADJP-JJ	NONE	difficulty	0.14	manageable..	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	manageable..	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+otherwise	otherwise	O	RB	ROOT-S-ADVP-RB	NONE	good	0.14	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+he	he	O	PRP	ROOT-S-NP-PRP	NONE	good	0.29	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	good	0.43	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+all	all	O	DT	ROOT-S-VP-ADJP-DT	NONE	good	0.14	all_good.	Good	Manufactured_Supplies	NONE	NONE	NONE	Good	1.0	0.0	MyShift_Status	NA
+good	good	O	JJ	ROOT-S-VP-ADJP-JJ	otherwise-he-'s-all	ROOT	0.14	all_good.	Good	Manufactured_Supplies	NONE	NONE	NONE	Good	1.0	0.0	MyShift_Status	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+

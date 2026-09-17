@@ -1,0 +1,53 @@
+Vera	Vera	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Abbott	0.2	Vera_Abbott,	Abbott	NONE	NONE	NONE	NONE	Abbott	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Abbott	Abbott	PERSON	NNP	ROOT-S-NP-NP-NNP	Vera-93-bed-under	came	0.2	Vera_Abbott,	Abbott	NONE	NONE	NONE	NONE	Abbott	0.0	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	Vera_Abbott,	Abbott	NONE	NONE	NONE	NONE	Abbott	0.1	0.0	NA	NA
+93	93	NUMBER	CD	ROOT-S-NP-NP-CD	NONE	Abbott	0.2	93,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	93,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-NP-NN	four	Abbott	0.2	bed_four,	Beds	Four	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+four	four	NUMBER	CD	ROOT-S-NP-NP-CD	NONE	bed	0.2	bed_four,	Beds	Four	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	bed_four,	Beds	Four	NONE	NONE	NONE	Beds	0.2	0.0	NA	NA
+under	under	O	IN	ROOT-S-NP-PP-IN	Liu	Abbott	0.4	under_Dr_Liu	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-PP-NP-NNP	NONE	Liu	0.2	under_Dr_Liu	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Liu	Liu	PERSON	NNP	ROOT-S-NP-PP-NP-NNP	Dr	under	0.2	under_Dr_Liu	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+came	come	O	VBD	ROOT-S-VP-VBD	Abbott-in-with	ROOT	0.2	came	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.2	in	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	pain	in	0.6	with_chest_pain	Pain	Chest	Anterior_thoracic_region	Pain_NOS_Adverse_Event	Chest_Pain	Chest	0.3	0.0	NA	NA
+chest	chest	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	pain	0.4	with_chest_pain	Pain	Chest	Anterior_thoracic_region	Pain_NOS_Adverse_Event	Chest_Pain	Chest	0.3	0.0	PatientIntroduction_Disease/ProblemHistory	PatientIntroduction_AdmissionReason/Diagnosis
+pain	pain	O	NN	ROOT-S-VP-PP-PP-NP-NN	chest	with	0.2	with_chest_pain	Pain	Chest	Anterior_thoracic_region	Pain_NOS_Adverse_Event	Chest_Pain	Chest	0.3	0.0	PatientIntroduction_Disease/ProblemHistory	PatientIntroduction_AdmissionReason/Diagnosis
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	history	came	0.6	with_a_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Medical_History	0.3	0.0	NA	NA
+a	a	O	DT	ROOT-S-VP-PP-NP-NP-NP-DT	NONE	history	0.2	with_a_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Medical_History	0.4	0.0	NA	NA
+history	history	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	a-of-and-pains	with	0.2	with_a_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Medical_History	0.4	0.0	NA	NA
+of	of	O	IN	ROOT-S-VP-PP-NP-NP-PP-IN	stroke	history	0.2	of_stroke	Cerebrovascular_accident	NONE	NONE	NONE	NONE	Cerebrovascular_accident	0.4	0.0	NA	NA
+stroke	stroke	O	NN	ROOT-S-VP-PP-NP-NP-PP-NP-NN	NONE	of	0.2	of_stroke	Cerebrovascular_accident	NONE	NONE	NONE	NONE	Cerebrovascular_accident	0.4	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_Disease/ProblemHistory
+and	and	O	CC	ROOT-S-VP-PP-NP-CC	NONE	history	0.6	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+previous	previous	O	JJ	ROOT-S-VP-PP-NP-NP-NP-JJ	NONE	pains	0.2	previous_chest_pains,	Chest_Pain	Pain	Chest	Anterior_thoracic_region	Pain_NOS_Adverse_Event	Previous	0.5	0.0	NA	PatientIntroduction_AdmissionReason/Diagnosis
+chest	chest	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	pains	0.4	previous_chest_pains,	Chest_Pain	Pain	Chest	Anterior_thoracic_region	Pain_NOS_Adverse_Event	Previous	0.5	0.0	PatientIntroduction_Disease/ProblemHistory	PatientIntroduction_AdmissionReason/Diagnosis
+pains	pain	O	NNS	ROOT-S-VP-PP-NP-NP-NP-NNS	previous-chest-asthma	history	0.2	previous_chest_pains,	Chest_Pain	Pain	Chest	Anterior_thoracic_region	Pain_NOS_Adverse_Event	Previous	0.5	0.0	PatientIntroduction_Disease/ProblemHistory	PatientIntroduction_AdmissionReason/Diagnosis
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	previous_chest_pains,	Chest_Pain	Pain	Chest	Anterior_thoracic_region	Pain_NOS_Adverse_Event	Previous	0.5	0.0	NA	NA
+asthma	asthma	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	cataract-and-glaucoma	pains	0.2	asthma,	Asthma	NONE	NONE	NONE	NONE	Asthma	0.6	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_Disease/ProblemHistory
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	asthma,	Asthma	NONE	NONE	NONE	NONE	Asthma	0.6	0.0	PatientIntroduction_ChronicCondition	NA
+cataract	cataract	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	NONE	asthma	0.2	cataract	Cataract	Bilateral_cataracts_(disorder)	NONE	NONE	NONE	Cataract	0.6	0.0	PatientIntroduction_ChronicCondition	NA
+and	and	O	CC	ROOT-S-VP-PP-NP-CC	NONE	asthma	0.6	and	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+glaucoma	glaucoma	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	NONE	asthma	0.2	glaucoma.	Glaucoma	Glaucoma_(eukaryote)	Glaucoma_Adverse_Event	NONE	NONE	Glaucoma_Adverse_Event	0.6	0.5	PatientIntroduction_ChronicCondition	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	0.8	glaucoma.	Glaucoma	Glaucoma_(eukaryote)	Glaucoma_Adverse_Event	NONE	NONE	Glaucoma_Adverse_Event	0.7	0.0	NA	NA
+
+almost	almost	O	RB	ROOT-S-VP-VP-ADVP-RB	NONE	blind	0.2	almost_blind	Blinded	Blind_Vision	Visually_Impaired_Persons	NONE	NONE	Blinded	0.7	0.0	NA	NA
+blind	blind	O	JJ	ROOT-S-VP-VP-JJ	almost-and-needs	ROOT	0.2	almost_blind	Blinded	Blind_Vision	Visually_Impaired_Persons	NONE	NONE	Blinded	0.7	0.0	PatientIntroduction_Disease/ProblemHistory	NA
+and	and	O	CC	ROOT-S-VP-CC	NONE	blind	0.6	and	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+needs	need	O	VBZ	ROOT-S-VP-VP-VBZ	assistance	blind	0.2	needs	Needs	Patient_need_for_(contextual_qualifier)	NONE	NONE	NONE	Patient_need_for_(contextual_qualifier)	0.7	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+assistance	assistance	O	NN	ROOT-S-VP-VP-NP-NN	NONE	needs	0.2	assistance.	Helping_Behavior	NONE	NONE	NONE	NONE	Helping_Behavior	0.8	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+.	.	O	.	ROOT-S-.	NONE	NONE	0.8	assistance.	Helping_Behavior	NONE	NONE	NONE	NONE	Helping_Behavior	0.8	0.0	NA	NA
+
+had	have	O	VBD	ROOT-S-VP-VBD	nitros	ROOT	0.2	had	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+3	3	NUMBER	CD	ROOT-S-VP-NP-NP-CD	NONE	nitros	0.2	3_nitros	<3_(qualifier_value)	3+_Score	NONE	NONE	NONE	<3_(qualifier_value)	0.8	0.0	Medication_Medicine	NA
+nitros	nitro	O	NNS	ROOT-S-VP-NP-NP-NNS	3-with	had	0.2	3_nitros	<3_(qualifier_value)	3+_Score	NONE	NONE	NONE	<3_(qualifier_value)	0.8	0.0	Medication_Medicine	NA
+with	with	O	IN	ROOT-S-VP-NP-PP-IN	effect	nitros	0.6	with_no_effect._still	Effect	Effect,_Appearance	NONE	NONE	NONE	Effect	0.9	0.0	NA	NA
+no	no	O	DT	ROOT-S-VP-NP-PP-NP-DT	NONE	effect	0.2	with_no_effect._still	Effect	Effect,_Appearance	NONE	NONE	NONE	Effect	0.9	0.0	Medication_Status	Medication_Status
+effect	effect	O	NN	ROOT-S-VP-NP-PP-NP-NN	no	with	0.2	with_no_effect._still	Effect	Effect,_Appearance	NONE	NONE	NONE	Effect	0.9	0.0	Medication_Status	Medication_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	0.8	with_no_effect._still	Effect	Effect,_Appearance	NONE	NONE	NONE	Effect	0.9	0.0	NA	NA
+
+still	still	O	RB	ROOT-FRAG-PP-ADVP-RB	NONE	under	0.2	with_no_effect._still	Effect	Effect,_Appearance	NONE	NONE	NONE	Effect	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+under	under	O	IN	ROOT-FRAG-PP-IN	still-monitoring	ROOT	0.4	under_monitoring.	Preventive_monitoring	Clinical_Trials,_Monitoring	NONE	NONE	NONE	Clinical_Trials,_Monitoring	1.0	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+monitoring	monitoring	O	NN	ROOT-FRAG-PP-NP-NN	NONE	under	0.2	under_monitoring.	Preventive_monitoring	Clinical_Trials,_Monitoring	NONE	NONE	NONE	Clinical_Trials,_Monitoring	1.0	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	0.8	under_monitoring.	Preventive_monitoring	Clinical_Trials,_Monitoring	NONE	NONE	NONE	Clinical_Trials,_Monitoring	1.0	0.0	NA	NA
+

@@ -1,0 +1,56 @@
+1	1	NUMBER	LS	ROOT-S-VP-LS	NONE	ROOT	0.25	1.	+1	1+_Score	NONE	NONE	NONE	+1	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	1.	+1	1+_Score	NONE	NONE	NONE	+1	0.0	0.0	NA	NA
+
+Chris	Chris	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Mcdonald	0.25	Chris_Mcdonald,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Mcdonald	Mcdonald	PERSON	NNP	ROOT-S-NP-NP-NNP	Chris-old	came	0.25	Chris_Mcdonald,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.75	Chris_Mcdonald,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+21	21	DURATION	CD	ROOT-S-NP-RRC-ADJP-NP-CD	NONE	yrs	0.25	21_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-RRC-ADJP-NP-NNS	21	old	0.25	21_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-RRC-ADJP-JJ	yrs-under	Mcdonald	0.25	21_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-RRC-PP-IN	Kenzie	old	0.25	under_Dr_Kenzie-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-RRC-PP-NP-NNP	NONE	Kenzie	0.25	under_Dr_Kenzie-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Kenzie	Kenzie	PERSON	NNP	ROOT-S-NP-RRC-PP-NP-NNP	Dr	under	0.25	under_Dr_Kenzie-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+-	-	O	:	ROOT-S-NP-RRC-PP-:	NONE	NONE	0.25	under_Dr_Kenzie-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.75	under_Dr_Kenzie-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Mcdonald-with-to	ROOT	0.25	came	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	NONE	with	0.5	in	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-IN	in-infection	came	0.25	with_infection	Infection	Pathogenicity_Aspects	NONE	NONE	NONE	Infection	0.3	0.0	NA	NA
+infection	infection	O	NN	ROOT-S-VP-PP-NP-NP-NN	in	with	0.25	with_infection	Infection	Pathogenicity_Aspects	NONE	NONE	NONE	Infection	0.3	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+in	in	O	IN	ROOT-S-VP-PP-IN	lungs	infection	0.5	in_his_lungs	Lung	Entire_lung	Pulmonary:-:Point_in_time:^Patient:-	Pulmonary_(qualifier_value)	Pneumonia	Lung	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+his	he	O	PRP$	ROOT-S-VP-PP-NP-PP-NP-PRP$	NONE	lungs	0.25	in_his_lungs	Lung	Entire_lung	Pulmonary:-:Point_in_time:^Patient:-	Pulmonary_(qualifier_value)	Pneumonia	Lung	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+lungs	lung	O	NNS	ROOT-S-VP-PP-NP-PP-NP-NNS	his	in	0.25	in_his_lungs	Lung	Entire_lung	Pulmonary:-:Point_in_time:^Patient:-	Pulmonary_(qualifier_value)	Pneumonia	Lung	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+due	due	O	JJ	ROOT-S-VP-PP-JJ	NONE	to	0.25	due_to_swimming_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Swimming	NONE	Swimming	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+to	to	O	TO	ROOT-S-VP-PP-TO	due-accident	came	0.25	due_to_swimming_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Swimming	NONE	Swimming	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+swimming	swim	O	VBG	ROOT-S-VP-PP-NP-VBG	NONE	accident	0.25	due_to_swimming_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Swimming	NONE	Swimming	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+accident	accident	O	NN	ROOT-S-VP-PP-NP-NN	swimming-know	to	0.25	due_to_swimming_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Swimming	NONE	Swimming	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+as	as	O	IN	ROOT-S-VP-PP-NP-SBAR-IN	NONE	know	0.25	as	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+you	you	O	PRP	ROOT-S-VP-PP-NP-SBAR-S-S-NP-PRP	NONE	know	0.25	you_all	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+all	all	O	DT	ROOT-S-VP-PP-NP-SBAR-S-S-ADVP-DT	NONE	know	0.5	you_all	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+know	know	O	VBP	ROOT-S-VP-PP-NP-SBAR-S-S-VP-VBP	as-you-all-and-is	accident	0.25	know	Known	NONE	NONE	NONE	NONE	Known	0.5	0.0	NA	NA
+and	and	O	CC	ROOT-S-VP-PP-NP-SBAR-S-CC	NONE	know	0.25	and	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+he	he	O	PRP	ROOT-S-VP-PP-NP-SBAR-S-S-NP-PRP	NONE	is	0.25	he	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-PP-NP-SBAR-S-S-VP-VBZ	he-on	know	0.5	is	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-NP-SBAR-S-S-VP-PP-IN	4l	is	0.25	on_oxygen_4l/_mask.	Oxygen_mask	Masks	ANKHD1_gene	MST3-_AND_SOK1-RELATED_KINASE_GENE	Blinded	Oxygen	0.6	0.0	NA	NA
+oxygen	oxygen	O	NN	ROOT-S-VP-PP-NP-SBAR-S-S-VP-PP-FRAG-NP-NN	NONE	4l	0.25	on_oxygen_4l/_mask.	Oxygen_mask	Masks	ANKHD1_gene	MST3-_AND_SOK1-RELATED_KINASE_GENE	Blinded	Oxygen	0.6	1.0	MyShift_Contraption	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+4l	4l	O	NN	ROOT-S-VP-PP-NP-SBAR-S-S-VP-PP-FRAG-NP-NN	oxygen-\/-mask	on	0.25	on_oxygen_4l/_mask.	Oxygen_mask	Masks	ANKHD1_gene	MST3-_AND_SOK1-RELATED_KINASE_GENE	Blinded	Oxygen	0.7	0.0	MyShift_Contraption	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+\/	\/	O	:	ROOT-S-VP-PP-NP-SBAR-S-S-VP-PP-FRAG-:	NONE	4l	0.25	on_oxygen_4l/_mask.	Oxygen_mask	Masks	ANKHD1_gene	MST3-_AND_SOK1-RELATED_KINASE_GENE	Blinded	Oxygen	0.7	0.0	MyShift_Contraption	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+mask	mask	O	NN	ROOT-S-VP-PP-NP-SBAR-S-S-VP-PP-FRAG-NP-NN	NONE	4l	0.25	on_oxygen_4l/_mask.	Oxygen_mask	Masks	ANKHD1_gene	MST3-_AND_SOK1-RELATED_KINASE_GENE	Blinded	Oxygen	0.7	0.0	MyShift_Contraption	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-VP-PP-NP-SBAR-S-S-VP-PP-FRAG-.	NONE	NONE	1.0	on_oxygen_4l/_mask.	Oxygen_mask	Masks	ANKHD1_gene	MST3-_AND_SOK1-RELATED_KINASE_GENE	Blinded	Oxygen	0.7	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	same	0.25	He	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	same	0.5	is	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	same	0.25	still	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	MyShift_Status
+the	the	O	DT	ROOT-S-VP-NP-NP-DT	NONE	same	0.25	the_same,	Same	NONE	NONE	NONE	NONE	Same	0.8	0.0	NA	MyShift_Status
+same	same	O	JJ	ROOT-S-VP-NP-NP-JJ	He-is-still-the-changes	ROOT	0.25	the_same,	Same	NONE	NONE	NONE	NONE	Same	0.8	0.0	MyShift_Status	MyShift_Status
+,	,	O	,	ROOT-S-VP-NP-,	NONE	NONE	0.75	the_same,	Same	NONE	NONE	NONE	NONE	Same	0.8	0.0	NA	MyShift_Status
+no	no	O	DT	ROOT-S-VP-NP-NP-DT	NONE	changes	0.25	no_other_changes.	Changing	Changed_status	Delta_(difference)	Other	Others	Other	0.8	0.0	MyShift_Status	MyShift_Status
+other	other	O	JJ	ROOT-S-VP-NP-NP-JJ	NONE	changes	0.25	no_other_changes.	Changing	Changed_status	Delta_(difference)	Other	Others	Other	0.9	0.0	MyShift_Status	MyShift_Status
+changes	change	O	NNS	ROOT-S-VP-NP-NP-NNS	no-other	same	0.25	no_other_changes.	Changing	Changed_status	Delta_(difference)	Other	Others	Other	0.9	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	no_other_changes.	Changing	Changed_status	Delta_(difference)	Other	Others	Other	0.9	0.0	MyShift_Status	NA
+
+Obs	ob	O	NNS	ROOT-S-NP-NNS	NONE	stable	0.25	Obs	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	stable	0.25	are	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-VP-ADJP-DT	NONE	stable	0.5	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-ADJP-JJ	Obs-are-all	ROOT	0.25	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	NA	NA
+

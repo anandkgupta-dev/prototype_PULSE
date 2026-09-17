@@ -1,0 +1,51 @@
+In	in	O	IN	ROOT-S-PP-IN	Bed	have	0.25	In_Bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.0	0.0	NA	NA
+Bed	bed	O	VBN	ROOT-S-PP-S-VP-VBN	3	In	0.25	In_Bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+3	3	NUMBER	CD	ROOT-S-PP-S-VP-NP-CD	NONE	Bed	0.25	In_Bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-,	NONE	NONE	0.5	In_Bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	NA	NA
+we	we	O	PRP	ROOT-S-NP-PRP	NONE	have	0.25	we	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+have	have	O	VBP	ROOT-S-VP-VBP	In-we-Garden-under	ROOT	0.5	have	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+Ross	Ross	PERSON	NNP	ROOT-S-VP-NP-NP-NNP	NONE	Garden	0.25	Ross_Garden,	Gardening	Ross_-_Pharmaceutical_Company	Ross_Chicken	NONE	NONE	Ross_-_Pharmaceutical_Company	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Garden	Garden	PERSON	NNP	ROOT-S-VP-NP-NP-NNP	Ross-old	have	0.25	Ross_Garden,	Gardening	Ross_-_Pharmaceutical_Company	Ross_Chicken	NONE	NONE	Ross_-_Pharmaceutical_Company	0.2	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-,	NONE	NONE	0.5	Ross_Garden,	Gardening	Ross_-_Pharmaceutical_Company	Ross_Chicken	NONE	NONE	Ross_-_Pharmaceutical_Company	0.2	0.0	NA	NA
+24	24	DURATION	CD	ROOT-S-VP-NP-ADJP-NP-CD	NONE	yrs	0.25	24_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-VP-NP-ADJP-NP-NNS	24	old	0.25	24_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-VP-NP-ADJP-JJ	yrs	Garden	0.25	24_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-VP-PP-IN	Fleming	have	0.25	under_Dr_Fleming	Fleming	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.3	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-VP-PP-NP-NP-NNP	NONE	Fleming	0.25	under_Dr_Fleming	Fleming	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Fleming	Fleming	PERSON	NNP	ROOT-S-VP-PP-NP-NP-NNP	Dr-came	under	0.25	under_Dr_Fleming	Fleming	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+came	come	O	VBD	ROOT-S-VP-PP-NP-VP-VBD	with	Fleming	0.25	came	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-PP-IN	NONE	with	0.25	in	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-NP-VP-PP-IN	in-injury	came	0.25	with_minor_head_injury	Minor_injury	Head	Craniocerebral_Trauma	Injury	Entire_head	Minor_(value)	0.4	0.0	NA	NA
+minor	minor	O	JJ	ROOT-S-VP-PP-NP-VP-PP-NP-NP-JJ	NONE	injury	0.25	with_minor_head_injury	Minor_injury	Head	Craniocerebral_Trauma	Injury	Entire_head	Minor_(value)	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+head	head	O	NN	ROOT-S-VP-PP-NP-VP-PP-NP-NP-NN	NONE	injury	0.25	with_minor_head_injury	Minor_injury	Head	Craniocerebral_Trauma	Injury	Entire_head	Minor_(value)	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+injury	injury	O	NN	ROOT-S-VP-PP-NP-VP-PP-NP-NP-NN	minor-head-due	with	0.25	with_minor_head_injury	Minor_injury	Head	Craniocerebral_Trauma	Injury	Entire_head	Minor_(value)	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+due	due	O	JJ	ROOT-S-VP-PP-NP-VP-PP-NP-ADJP-JJ	to	injury	0.25	due_to_car_racing_accident.	Car_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Automobiles	Automobiles	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+to	to	O	TO	ROOT-S-VP-PP-NP-VP-PP-NP-ADJP-PP-TO	accident	due	0.5	due_to_car_racing_accident.	Car_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Automobiles	Automobiles	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+car	car	O	NN	ROOT-S-VP-PP-NP-VP-PP-NP-ADJP-PP-NP-NN	NONE	accident	0.25	due_to_car_racing_accident.	Car_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Automobiles	Automobiles	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+racing	racing	O	NN	ROOT-S-VP-PP-NP-VP-PP-NP-ADJP-PP-NP-NN	NONE	accident	0.25	due_to_car_racing_accident.	Car_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Automobiles	Automobiles	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+accident	accident	O	NN	ROOT-S-VP-PP-NP-VP-PP-NP-ADJP-PP-NP-NN	car-racing	to	0.25	due_to_car_racing_accident.	Car_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Automobiles	Automobiles	0.6	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	due_to_car_racing_accident.	Car_accident	Accidents	Accidental_physical_contact_(event)	Accidental	Automobiles	Automobiles	0.6	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	same	0.25	He	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	same	0.25	is	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	same	0.25	still	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	MyShift_Status
+the	the	O	DT	ROOT-S-VP-NP-DT	NONE	same	0.5	the_same.	Same	NONE	NONE	NONE	NONE	Same	0.7	0.0	NA	MyShift_Status
+same	same	O	JJ	ROOT-S-VP-NP-JJ	He-is-still-the	ROOT	0.25	the_same.	Same	NONE	NONE	NONE	NONE	Same	0.7	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	the_same.	Same	NONE	NONE	NONE	NONE	Same	0.7	0.0	NA	NA
+
+Nothings	nothing	O	NNS	ROOT-S-NP-NNS	NONE	new	0.25	Nothings_new._just	New	Nothing	NONE	NONE	NONE	Nothing	0.7	0.0	NA	MyShift_Status
+new	new	O	JJ	ROOT-S-ADJP-JJ	Nothings	ROOT	0.25	Nothings_new._just	New	Nothing	NONE	NONE	NONE	Nothing	0.7	0.0	NA	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	Nothings_new._just	New	Nothing	NONE	NONE	NONE	Nothing	0.8	0.0	NA	NA
+
+just	just	O	RB	ROOT-S-VP-ADVP-RB	NONE	waiting	0.25	Nothings_new._just	New	Nothing	NONE	NONE	NONE	Nothing	0.8	0.0	NA	NA
+waiting	wait	O	VBG	ROOT-S-VP-VBG	just-have	ROOT	0.25	waiting	wait	NONE	NONE	NONE	NONE	wait	0.8	0.0	Appointment/Procedure_Status	NA
+for	for	O	IN	ROOT-S-VP-SBAR-IN	NONE	have	0.25	for_the_doctors_to	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.8	0.0	Appointment/Procedure_Status	Appointment/Procedure_Description
+the	the	O	DT	ROOT-S-VP-SBAR-S-NP-DT	NONE	doctors	0.5	for_the_doctors_to	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.9	0.0	Appointment/Procedure_Status	Appointment/Procedure_Description
+doctors	doctor	O	NNS	ROOT-S-VP-SBAR-S-NP-NNS	the	have	0.25	for_the_doctors_to	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.9	0.0	Appointment/Procedure_Status	Appointment/Procedure_Description
+to	to	O	TO	ROOT-S-VP-SBAR-S-VP-TO	NONE	have	0.5	for_the_doctors_to	Physicians	Doctor_-_Title	NONE	NONE	NONE	Physicians	0.9	0.0	Appointment/Procedure_Status	Appointment/Procedure_Description
+have	have	O	VB	ROOT-S-VP-SBAR-S-VP-VP-VB	for-doctors-to-rounds-today	waiting	0.5	have	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Appointment/Procedure_Status	Appointment/Procedure_Description
+their	they	O	PRP$	ROOT-S-VP-SBAR-S-VP-VP-NP-PRP$	NONE	rounds	0.25	their_rounds_today.	Today	Today_(temporal_qualifier)	Round_shape	NONE	NONE	Round_shape	0.9	0.0	Appointment/Procedure_Status	Appointment/Procedure_Description
+rounds	round	O	NNS	ROOT-S-VP-SBAR-S-VP-VP-NP-NNS	their	have	0.25	their_rounds_today.	Today	Today_(temporal_qualifier)	Round_shape	NONE	NONE	Round_shape	1.0	0.0	Appointment/Procedure_Status	Appointment/Procedure_Description
+today	today	DATE	NN	ROOT-S-VP-SBAR-S-VP-VP-NP-TMP-NN	NONE	have	0.25	their_rounds_today.	Today	Today_(temporal_qualifier)	Round_shape	NONE	NONE	Round_shape	1.0	0.0	Appointment/Procedure_Status	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	their_rounds_today.	Today	Today_(temporal_qualifier)	Round_shape	NONE	NONE	Round_shape	1.0	0.0	NA	NA
+

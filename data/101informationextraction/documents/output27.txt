@@ -1,0 +1,69 @@
+Kelly	Kelly	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Clarkson	0.17	Kelly_Diana_Clarkson,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Diana	Diana	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Clarkson	0.17	Kelly_Diana_Clarkson,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Clarkson	Clarkson	PERSON	NNP	ROOT-S-NP-NP-NNP	Kelly-Diana-bed	came	0.17	Kelly_Diana_Clarkson,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.67	Kelly_Diana_Clarkson,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-NP-NP-NN	3-old-under	Clarkson	0.17	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+3	3	NUMBER	CD	ROOT-S-NP-NP-NP-CD	NONE	bed	0.17	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.67	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	NA	NA
+36	36	DURATION	CD	ROOT-S-NP-NP-ADJP-NP-CD	NONE	yrs	0.17	36_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-NP-ADJP-NP-NNS	36	old	0.17	36_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-NP-ADJP-JJ	yrs	bed	0.17	36_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	Mills	bed	0.17	under_Dr_Mills,	Mill	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-PP-NP-NNP	NONE	Mills	0.17	under_Dr_Mills,	Mill	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Mills	Mills	PERSON	NNP	ROOT-S-NP-NP-PP-NP-NNP	Dr	under	0.17	under_Dr_Mills,	Mill	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.67	under_Dr_Mills,	Mill	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.2	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Clarkson-in	ROOT	0.17	came	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.17	in	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	asthma	in	0.17	with_query_asthma.	Asthma	Question_(inquiry)	NONE	NONE	NONE	Question_(inquiry)	0.3	0.0	NA	NA
+query	query	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	asthma	0.17	with_query_asthma.	Asthma	Question_(inquiry)	NONE	NONE	NONE	Question_(inquiry)	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+asthma	asthma	O	NN	ROOT-S-VP-PP-PP-NP-NN	query	with	0.17	with_query_asthma.	Asthma	Question_(inquiry)	NONE	NONE	NONE	Question_(inquiry)	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	with_query_asthma.	Asthma	Question_(inquiry)	NONE	NONE	NONE	Question_(inquiry)	0.3	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	had	0.83	She	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-VP-VP-VBD	She-history-and-currently-had	ROOT	0.33	had	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+history	history	O	NN	ROOT-S-VP-VP-NP-NP-NN	of	had	0.17	history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Historical_aspects_qualifier	0.4	0.0	NA	NA
+of	of	O	IN	ROOT-S-VP-VP-NP-PP-IN	bronchitis	history	0.17	of_bronchitis,	Bronchitis	NONE	NONE	NONE	NONE	Bronchitis	0.4	0.0	NA	NA
+bronchitis	bronchitis	O	NN	ROOT-S-VP-VP-NP-PP-NP-NN	NONE	of	0.17	of_bronchitis,	Bronchitis	NONE	NONE	NONE	NONE	Bronchitis	0.4	0.0	PatientIntroduction_Disease/ProblemHistory	PatientIntroduction_Disease/ProblemHistory
+,	,	O	,	ROOT-S-VP-,	NONE	NONE	0.67	of_bronchitis,	Bronchitis	NONE	NONE	NONE	NONE	Bronchitis	0.4	0.0	NA	NA
+and	and	O	CC	ROOT-S-VP-CC	NONE	had	0.5	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+currently	currently	DATE	RB	ROOT-S-VP-ADVP-RB	NONE	had	0.17	currently	Current_(present_time)	NONE	NONE	NONE	NONE	Current_(present_time)	0.4	0.0	NA	NA
+had	have	O	VBD	ROOT-S-VP-VP-VBD	influenza	had	0.33	had	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+influenza	influenza	O	NN	ROOT-S-VP-VP-NP-NN	NONE	had	0.17	influenza.	Influenza	Influenza_virus_vaccine	Influenza_preparation	grasp	Does_grip	Influenza_virus_vaccine	0.5	1.0	PatientIntroduction_Disease/ProblemHistory	Medication_Medicine
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	influenza.	Influenza	Influenza_virus_vaccine	Influenza_preparation	grasp	Does_grip	Influenza_virus_vaccine	0.5	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	allergic	0.83	She	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	allergic	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+allergic	allergic	O	JJ	ROOT-S-VP-ADJP-JJ	She-is-to	ROOT	0.17	allergic	Allergic	NONE	NONE	NONE	NONE	Allergic	0.5	0.5	PatientIntroduction_Allergy	MyShift_OtherObservation
+to	to	O	TO	ROOT-S-VP-ADJP-PP-TO	pollens	allergic	0.17	to_pollens.	Pollen	NONE	NONE	NONE	NONE	Pollen	0.6	0.0	PatientIntroduction_Allergy	MyShift_OtherObservation
+pollens	pollen	O	NNS	ROOT-S-VP-ADJP-PP-NP-NNS	NONE	to	0.17	to_pollens.	Pollen	NONE	NONE	NONE	NONE	Pollen	0.6	0.0	PatientIntroduction_Allergy	MyShift_OtherObservation
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	to_pollens.	Pollen	NONE	NONE	NONE	NONE	Pollen	0.6	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	is	0.83	She	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	She-on	ROOT	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-IN	antibiotics	is	0.33	on_oral_antibiotics.	Antibiotics	Oral	NONE	NONE	NONE	Oral	0.6	0.0	NA	NA
+oral	oral	O	JJ	ROOT-S-VP-PP-NP-JJ	NONE	antibiotics	0.17	on_oral_antibiotics.	Antibiotics	Oral	NONE	NONE	NONE	Oral	0.7	0.5	Medication_Medicine	Medication_Medicine
+antibiotics	antibiotic	O	NNS	ROOT-S-VP-PP-NP-NNS	oral	on	0.17	on_oral_antibiotics.	Antibiotics	Oral	NONE	NONE	NONE	Oral	0.7	1.0	Medication_Medicine	Medication_Medicine
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	on_oral_antibiotics.	Antibiotics	Oral	NONE	NONE	NONE	Oral	0.7	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	is	0.83	She	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	She-here-for	ROOT	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+here	here	O	RB	ROOT-S-VP-ADVP-RB	NONE	is	0.17	here	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+for	for	O	IN	ROOT-S-VP-PP-IN	investigation	is	0.17	for_further_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	Further	Distal	Further	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+further	further	O	JJ	ROOT-S-VP-PP-NP-JJ	NONE	investigation	0.17	for_further_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	Further	Distal	Further	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+investigation	investigation	O	NN	ROOT-S-VP-PP-NP-NN	further	for	0.17	for_further_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	Further	Distal	Further	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_further_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	Further	Distal	Further	0.8	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-S-NP-PRP	NONE	caring	0.83	She	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	caring	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+ambulant	ambulant	O	JJ	ROOT-S-S-VP-NP-ADJP-JJ	and-self	caring	0.17	ambulant	Ambulation	NONE	NONE	NONE	NONE	Ambulation	0.8	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+and	and	O	CC	ROOT-S-S-VP-NP-ADJP-CC	NONE	ambulant	0.5	and	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+self	self	O	NN	ROOT-S-S-VP-NP-ADJP-NN	NONE	ambulant	0.17	self_caring	Caring	care_activity	NONE	NONE	NONE	Caring	0.9	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+caring	caring	O	NN	ROOT-S-S-VP-NP-NN	She-is-ambulant-and-is	ROOT	0.17	self_caring	Caring	care_activity	NONE	NONE	NONE	Caring	0.9	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+and	and	O	CC	ROOT-S-S-VP-NP-ADJP-CC	NONE	caring	0.5	and	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	is	0.17	she	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	she-on	caring	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+on	on	O	IN	ROOT-S-S-VP-PP-IN	diet	is	0.33	on_general_diet.	Diet	General_diet	Dietetics	Generalized	Act_Code_-_General	Generalized	1.0	0.0	NA	NA
+general	general	O	JJ	ROOT-S-S-VP-PP-NP-JJ	NONE	diet	0.17	on_general_diet.	Diet	General_diet	Dietetics	Generalized	Act_Code_-_General	Generalized	1.0	0.5	MyShift_Input/Diet	MyShift_Input/Diet
+diet	diet	O	NN	ROOT-S-S-VP-PP-NP-NN	general	on	0.17	on_general_diet.	Diet	General_diet	Dietetics	Generalized	Act_Code_-_General	Generalized	1.0	0.5	MyShift_Input/Diet	MyShift_Input/Diet
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	on_general_diet.	Diet	General_diet	Dietetics	Generalized	Act_Code_-_General	Generalized	1.0	0.0	NA	NA
+

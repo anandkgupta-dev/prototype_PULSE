@@ -1,0 +1,87 @@
+This	this	O	DT	ROOT-S-NP-DT	NONE	bed	0.14	This	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	bed	0.71	is	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-VP-NP-NN	This-is-1	ROOT	0.14	bed_1.	Beds	NONE	NONE	NONE	NONE	Beds	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+1	1	NUMBER	CD	ROOT-S-VP-NP-CD	NONE	bed	0.14	bed_1.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	bed_1.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	NA	NA
+
+Mari	Mari	PERSON	NNP	ROOT-NP-NP-NNP	NONE	Okkas	0.14	Mari_Okkas,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Okkas	Okkas	PERSON	NNP	ROOT-NP-NP-NNP	Mari-yrs	ROOT	0.14	Mari_Okkas,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-NP-,	NONE	NONE	0.29	Mari_Okkas,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+20	20	DURATION	CD	ROOT-NP-NP-NP-CD	NONE	yrs	0.14	20_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-NP-NP-NP-NNS	20-old	Okkas	0.14	20_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-NP-NP-ADJP-JJ	under	yrs	0.14	20_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-NP-NP-ADJP-PP-IN	Forbes	old	0.14	under_DR_Forbes.	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Doctor_-_Title	0.1	0.0	NA	NA
+DR	dr	O	NN	ROOT-NP-NP-ADJP-PP-NP-NN	NONE	Forbes	0.14	under_DR_Forbes.	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Doctor_-_Title	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Forbes	Forbes	PERSON	NNP	ROOT-NP-NP-ADJP-PP-NP-NNP	DR	under	0.14	under_DR_Forbes.	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Doctor_-_Title	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	under_DR_Forbes.	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Doctor_-_Title	0.2	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-S-NP-PRP	NONE	came	0.43	She	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+came	come	O	VBD	ROOT-S-S-VP-VBD	She-in	charted	0.14	came	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-S-VP-PP-IN	with	came	0.14	in	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+with	with	O	IN	ROOT-S-S-VP-PP-PP-IN	pain	in	0.14	with_severe_abdominal_pain,	Severe_pain	Abdomen	Abdominal_Pain	Pain	Pain_NOS_Adverse_Event	Severe_(severity_modifier)	0.2	0.0	NA	NA
+severe	severe	O	JJ	ROOT-S-S-VP-PP-PP-NP-JJ	NONE	pain	0.14	with_severe_abdominal_pain,	Severe_pain	Abdomen	Abdominal_Pain	Pain	Pain_NOS_Adverse_Event	Severe_(severity_modifier)	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+abdominal	abdominal	O	JJ	ROOT-S-S-VP-PP-PP-NP-JJ	NONE	pain	0.14	with_severe_abdominal_pain,	Severe_pain	Abdomen	Abdominal_Pain	Pain	Pain_NOS_Adverse_Event	Severe_(severity_modifier)	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+pain	pain	O	NN	ROOT-S-S-VP-PP-PP-NP-NN	severe-abdominal	with	0.29	with_severe_abdominal_pain,	Severe_pain	Abdomen	Abdominal_Pain	Pain	Pain_NOS_Adverse_Event	Severe_(severity_modifier)	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+,	,	O	,	ROOT-S-,	NONE	NONE	0.29	with_severe_abdominal_pain,	Severe_pain	Abdomen	Abdominal_Pain	Pain	Pain_NOS_Adverse_Event	Severe_(severity_modifier)	0.3	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	charted	0.57	she	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	charted	0.71	is	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+charted	chart	O	VBN	ROOT-S-VP-VP-VBN	came-she-is-on-for	ROOT	0.14	charted	Charts_(device)	Charts_(publication)	NONE	NONE	NONE	Charts_(device)	0.3	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-VP-PP-IN	panadol	charted	0.14	on_regular_panadol	Panadol	Regular	NONE	NONE	NONE	Regular	0.3	0.0	NA	NA
+regular	regular	O	JJ	ROOT-S-VP-VP-PP-NP-JJ	NONE	panadol	0.14	on_regular_panadol	Panadol	Regular	NONE	NONE	NONE	Regular	0.3	0.0	Medication_Medicine	Medication_Medicine
+panadol	panadol	O	NN	ROOT-S-VP-VP-PP-NP-NN	regular-and-endone	on	0.14	on_regular_panadol	Panadol	Regular	NONE	NONE	NONE	Regular	0.4	0.0	Medication_Medicine	Medication_Medicine
+and	and	O	CC	ROOT-S-VP-VP-PP-NP-CC	NONE	panadol	0.57	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+endone	endone	O	NN	ROOT-S-VP-VP-PP-NP-NN	NONE	panadol	0.14	endone	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Medication_Medicine	Medication_Medicine
+for	for	O	IN	ROOT-S-VP-VP-PP-IN	pain	charted	0.57	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain_NOS_Adverse_Event	0.4	0.0	Medication_Medicine	Medication_Medicine
+pain	pain	O	NN	ROOT-S-S-VP-PP-PP-NP-NN	NONE	for	0.29	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain_NOS_Adverse_Event	0.4	0.0	Medication_Medicine	Medication_Medicine
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain_NOS_Adverse_Event	0.4	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	written	0.43	She	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	written	0.71	is	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+also	also	O	RB	ROOT-S-VP-ADVP-RB	NONE	written	0.14	also	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+written	write	O	VBN	ROOT-S-VP-VP-VBN	She-is-also-up-for-as	ROOT	0.14	written	Writing_(occupation_or_discipline)	Write_-_language_ability	Writing_(function)	NONE	NONE	Write_-_language_ability	0.5	0.0	NA	NA
+up	up	O	RP	ROOT-S-VP-VP-PRT-RP	NONE	written	0.14	up	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+for	for	O	IN	ROOT-S-VP-VP-PP-IN	metoclopramide	written	0.57	for_metoclopramide	Metoclopramide	NONE	NONE	NONE	NONE	Metoclopramide	0.5	0.0	NA	NA
+metoclopramide	metoclopramide	O	NN	ROOT-S-VP-VP-PP-NP-NN	NONE	for	0.14	for_metoclopramide	Metoclopramide	NONE	NONE	NONE	NONE	Metoclopramide	0.5	1.0	Medication_Medicine	Medication_Medicine
+as	as	O	IN	ROOT-S-VP-VP-PP-IN	antiemetic	written	0.14	as_antiemetic.	Antiemetics	NONE	NONE	NONE	NONE	Antiemetics	0.5	0.0	NA	NA
+antiemetic	antiemetic	O	JJ	ROOT-S-VP-VP-PP-ADJP-JJ	NONE	as	0.14	as_antiemetic.	Antiemetics	NONE	NONE	NONE	NONE	Antiemetics	0.5	0.0	Medication_Medicine	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	as_antiemetic.	Antiemetics	NONE	NONE	NONE	NONE	Antiemetics	0.6	0.0	NA	NA
+
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	had	0.57	she	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-VP-VBD	she-bloods	ROOT	0.14	had	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+her	she	O	PRP$	ROOT-S-VP-NP-NP-NP-PRP$	NONE	bloods	0.14	her_bloods	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Bloods_(ethnic_group)	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+bloods	blood	O	NNS	ROOT-S-VP-NP-NP-NP-NNS	her-taken-and-obs	had	0.14	her_bloods	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Bloods_(ethnic_group)	0.6	0.0	Appointment/Procedure_Status	MyShift_OtherObservation
+taken	take	O	VBN	ROOT-S-VP-NP-NP-VP-VBN	NONE	bloods	0.29	taken	Taken	Take	NONE	NONE	NONE	Taken	0.6	0.0	Appointment/Procedure_Status	MyShift_OtherObservation
+and	and	O	CC	ROOT-S-VP-NP-CC	NONE	bloods	0.57	and	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	MyShift_OtherObservation
+obs	ob	O	NNS	ROOT-S-VP-NP-NP-NP-NNS	taken	bloods	0.14	obs	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	Appointment/Procedure_Status	MyShift_OtherObservation
+taken	take	O	VBN	ROOT-S-VP-NP-NP-VP-VBN	NONE	obs	0.29	taken.	Taken	Take	NONE	NONE	NONE	Taken	0.7	0.0	Appointment/Procedure_Status	MyShift_OtherObservation
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	taken.	Taken	Take	NONE	NONE	NONE	Taken	0.7	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-S-NP-PRP	NONE	scheduled	0.43	She	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	scheduled	0.71	is	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+scheduled	schedule	O	VBN	ROOT-S-S-VP-VP-VBN	She-is-for-and-needs	ROOT	0.14	scheduled	Schedule_(document_type)	Scheduled_-_procedure_status	Scheduled_-_priority	Scheduling_(procedure)	HL7_Committee_ID_In_RIM_-_Scheduling	Scheduled_-_procedure_status	0.7	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+for	for	O	IN	ROOT-S-S-VP-VP-PP-IN	tom	scheduled	0.57	for_colonoscopy_tom	PRPF6_gene	colonoscopy	Consent_Type_-_Colonoscopy	NONE	NONE	Consent_Type_-_Colonoscopy	0.7	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+colonoscopy	colonoscopy	O	NN	ROOT-S-S-VP-VP-PP-NP-NN	NONE	tom	0.14	for_colonoscopy_tom	PRPF6_gene	colonoscopy	Consent_Type_-_Colonoscopy	NONE	NONE	Consent_Type_-_Colonoscopy	0.7	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+tom	tom	O	NN	ROOT-S-S-VP-VP-PP-NP-NN	colonoscopy	for	0.14	for_colonoscopy_tom	PRPF6_gene	colonoscopy	Consent_Type_-_Colonoscopy	NONE	NONE	Consent_Type_-_Colonoscopy	0.7	0.0	Appointment/Procedure_Day	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+and	and	O	CC	ROOT-S-CC	NONE	scheduled	0.57	and	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	needs	0.57	she	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+needs	need	O	VBZ	ROOT-S-S-VP-VBZ	she-NBM	scheduled	0.14	needs	Needs	Patient_need_for_(contextual_qualifier)	NONE	NONE	NONE	Needs	0.8	0.0	MyShift_Input/Diet	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+to	to	O	TO	ROOT-S-S-VP-S-VP-TO	NONE	NBM	0.14	to	To	NONE	NONE	NONE	NONE	To	0.8	0.0	MyShift_Input/Diet	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+be	be	O	VB	ROOT-S-S-VP-S-VP-VP-VB	NONE	NBM	0.14	be	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_Input/Diet	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+NBM	NBM	O	NNP	ROOT-S-S-VP-S-VP-VP-NP-NP-NNP	to-be-from	needs	0.14	NBM	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_Input/Diet	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+from	from	O	IN	ROOT-S-S-VP-S-VP-VP-NP-PP-IN	tonight	NBM	0.14	from_midnight_tonight	Midnight	NONE	NONE	NONE	NONE	Midnight	0.8	0.0	MyShift_Input/Diet	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+midnight	midnight	TIME	NN	ROOT-S-S-VP-S-VP-VP-NP-PP-NP-NP-NN	NONE	tonight	0.14	from_midnight_tonight	Midnight	NONE	NONE	NONE	NONE	Midnight	0.8	0.0	MyShift_Input/Diet	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+tonight	tonight	TIME	NN	ROOT-S-S-VP-S-VP-VP-NP-PP-NP-NP-NN	midnight-for	from	0.14	from_midnight_tonight	Midnight	NONE	NONE	NONE	NONE	Midnight	0.8	0.0	MyShift_Input/Diet	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+for	for	O	IN	ROOT-S-S-VP-VP-PP-IN	procedure	tonight	0.57	for_the_procedure._otherwise	Interventional_procedure	Surgical_and_medical_procedures	Procedure_(set_of_actions)	Methodology	NONE	Procedure_(set_of_actions)	0.9	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+the	the	O	DT	ROOT-S-S-VP-S-VP-VP-NP-PP-NP-PP-NP-DT	NONE	procedure	0.14	for_the_procedure._otherwise	Interventional_procedure	Surgical_and_medical_procedures	Procedure_(set_of_actions)	Methodology	NONE	Procedure_(set_of_actions)	0.9	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+procedure	procedure	O	NN	ROOT-S-S-VP-S-VP-VP-NP-PP-NP-PP-NP-NN	the	for	0.14	for_the_procedure._otherwise	Interventional_procedure	Surgical_and_medical_procedures	Procedure_(set_of_actions)	Methodology	NONE	Procedure_(set_of_actions)	0.9	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_the_procedure._otherwise	Interventional_procedure	Surgical_and_medical_procedures	Procedure_(set_of_actions)	Methodology	NONE	Procedure_(set_of_actions)	0.9	0.0	NA	NA
+
+otherwise	otherwise	O	RB	ROOT-S-ADVP-RB	NONE	caring	0.14	for_the_procedure._otherwise	Interventional_procedure	Surgical_and_medical_procedures	Procedure_(set_of_actions)	Methodology	NONE	Procedure_(set_of_actions)	0.9	0.0	NA	NA
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	caring	0.57	she	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	caring	0.71	is	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+self	self	O	NN	ROOT-S-VP-NP-NN	NONE	caring	0.14	self_caring	Caring	care_activity	NONE	NONE	NONE	Caring	0.9	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+caring	caring	O	NN	ROOT-S-VP-NP-NN	otherwise-she-is-self-and-ambulant	ROOT	0.14	self_caring	Caring	care_activity	NONE	NONE	NONE	Caring	1.0	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+and	and	O	CC	ROOT-S-VP-NP-CC	NONE	caring	0.57	and	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+ambulant	ambulant	O	NN	ROOT-S-VP-NP-NN	NONE	caring	0.14	ambulant.	Ambulation	NONE	NONE	NONE	NONE	Ambulation	1.0	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	ambulant.	Ambulation	NONE	NONE	NONE	NONE	Ambulation	1.0	0.0	NA	NA
+

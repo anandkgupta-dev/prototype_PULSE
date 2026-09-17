@@ -1,0 +1,29 @@
+Yunita	Yunita	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Muleta	0.33	Yunita_Muleta,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Muleta	Muleta	PERSON	NNP	ROOT-S-NP-NP-NNP	Yunita-bed	came	0.33	Yunita_Muleta,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	Yunita_Muleta,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-NP-NP-NN	7-old-under	Muleta	0.33	bed_7,	Beds	NONE	NONE	NONE	NONE	Beds	0.2	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+7	7	NUMBER	CD	ROOT-S-NP-NP-NP-CD	NONE	bed	0.33	bed_7,	Beds	NONE	NONE	NONE	NONE	Beds	0.2	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	bed_7,	Beds	NONE	NONE	NONE	NONE	Beds	0.2	0.0	NA	NA
+51	51	DURATION	CD	ROOT-S-NP-NP-ADJP-NP-CD	NONE	years	0.33	51_years_old	Old	year	per_year	NONE	NONE	year	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-NP-ADJP-NP-NNS	51	old	0.33	51_years_old	Old	year	per_year	NONE	NONE	year	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-NP-ADJP-JJ	years	bed	0.33	51_years_old	Old	year	per_year	NONE	NONE	year	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	Garcia	bed	0.67	under_Dr_Garcia,	Garcia_serotype	Garcia_<plant>	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Doctor_-_Title	0.4	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-PP-NP-NNP	NONE	Garcia	0.33	under_Dr_Garcia,	Garcia_serotype	Garcia_<plant>	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Doctor_-_Title	0.4	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Garcia	Garcia	PERSON	NNP	ROOT-S-NP-NP-PP-NP-NNP	Dr	under	0.33	under_Dr_Garcia,	Garcia_serotype	Garcia_<plant>	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Doctor_-_Title	0.5	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	under_Dr_Garcia,	Garcia_serotype	Garcia_<plant>	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	Doctor_-_Title	0.5	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Muleta-in-under	ROOT	0.33	came	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.33	in	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	heartburn	in	0.33	with_heartburn	Heartburn	Heartburn_acidity	NONE	NONE	NONE	Heartburn	0.6	0.0	NA	NA
+heartburn	heartburn	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	with	0.33	with_heartburn	Heartburn	Heartburn_acidity	NONE	NONE	NONE	Heartburn	0.7	0.0	PatientIntroduction_AdmissionReason/Diagnosis	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	investigation	came	0.67	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	0.7	0.0	PatientIntroduction_AdmissionReason/Diagnosis	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+investigation	investigation	O	NN	ROOT-S-VP-PP-NP-NN	NONE	under	0.33	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	0.7	0.0	PatientIntroduction_AdmissionReason/Diagnosis	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	0.67	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	0.8	0.0	NA	NA
+
+obs	ob	O	NNS	ROOT-S-NP-NNS	NONE	stable	0.33	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	0.8	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-ADJP-JJ	obs	ROOT	0.33	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	0.8	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	0.67	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	0.9	0.0	NA	NA
+
+nil	nil	O	NN	ROOT-NP-NP-NN	issues	ROOT	0.33	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	0.9	0.0	MyShift_Status	MyShift_Status
+other	other	O	JJ	ROOT-NP-NP-JJ	NONE	issues	0.33	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	1.0	0.0	MyShift_Status	MyShift_Status
+issues	issue	O	NNS	ROOT-NP-NP-NNS	other	nil	0.33	under_investigation._obs_stable._nil_other_issues	Problem	Issue_(document)	Stable_status	Nil	Evaluation_procedure	Evaluation_procedure	1.0	0.0	MyShift_Status	MyShift_Status
+

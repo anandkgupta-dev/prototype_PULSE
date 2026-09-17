@@ -1,0 +1,69 @@
+7	7	NUMBER	CD	ROOT-FRAG-NP-CD	NONE	ROOT	0.17	7.	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+
+Linda	Linda	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Donald	0.17	Linda_Donald,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Donald	Donald	PERSON	NNP	ROOT-S-NP-NP-NNP	Linda-old	came	0.17	Linda_Donald,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+83	83	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	years	0.17	83_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-ADJP-NP-NNS	83	old	0.17	83_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	NA	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	years	Donald	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	PatientIntroduction_Ageinyears
+came	come	O	VBD	ROOT-S-VP-VBD	Donald-under	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	NONE	under	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+under	under	O	IN	ROOT-S-VP-PP-IN	in-Harrod	came	0.17	under_Dr_Harrod	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-VP-PP-NP-NP-NNP	NONE	Harrod	0.17	under_Dr_Harrod	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Harrod	Harrod	PERSON	NNP	ROOT-S-VP-PP-NP-NP-NNP	Dr-for	under	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+for	for	O	IN	ROOT-S-VP-PP-NP-PP-IN	investigation	Harrod	0.17	for_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Act_Class_-_investigation	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_CarePlan
+investigation	investigation	O	NN	ROOT-S-VP-PP-NP-PP-NP-NN	NONE	for	0.17	for_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Act_Class_-_investigation	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_CarePlan
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	having	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	having	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+having	have	O	VBG	ROOT-S-VP-VP-VBG	She-is-problems	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+some	some	O	DT	ROOT-S-VP-VP-NP-NP-DT	NONE	problems	0.17	some_memory_problems	Problems_-_What_subject_filter	Memory_impairment	Problem	Memory	Memory_observations	Memory	0.3	0.0	NA	NA
+memory	memory	O	NN	ROOT-S-VP-VP-NP-NP-NN	NONE	problems	0.17	some_memory_problems	Problems_-_What_subject_filter	Memory_impairment	Problem	Memory	Memory_observations	Memory	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	NA
+problems	problem	O	NNS	ROOT-S-VP-VP-NP-NP-NNS	some-memory-and-confusion	having	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	NA
+and	and	O	CC	ROOT-S-VP-VP-NP-CC	NONE	problems	0.5	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	NA
+increasing	increase	O	VBG	ROOT-S-VP-VP-NP-NP-VBG	NONE	confusion	0.17	increasing_confusion.	Confusion	Confusion_Adverse_Event	Increasing	NONE	NONE	Increasing	0.4	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+confusion	confusion	O	NN	ROOT-S-VP-VP-NP-NP-NN	increasing	problems	0.17	increasing_confusion.	Confusion	Confusion_Adverse_Event	Increasing	NONE	NONE	Increasing	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+
+Obs	ob	O	NNS	ROOT-S-S-NP-NNS	NONE	done	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	MyShift_Status	Appointment/Procedure_Status
+are	be	O	VBP	ROOT-S-S-VP-VBP	NONE	done	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	Appointment/Procedure_Status
+done	do	O	VBN	ROOT-S-S-VP-VP-VBN	Obs-are-and-stable	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	Appointment/Procedure_Status
+and	and	O	CC	ROOT-S-CC	NONE	done	0.5	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	NA
+all	all	O	DT	ROOT-S-S-NP-DT	NONE	stable	0.33	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.5	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-S-ADJP-JJ	all	done	0.33	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.5	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	seen	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+has	have	O	VBZ	ROOT-S-VP-VBZ	NONE	seen	0.17	hasn't	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+n't	not	O	RB	ROOT-S-VP-RB	NONE	seen	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+been	be	O	VBN	ROOT-S-VP-VP-VBN	NONE	seen	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+seen	see	O	VBN	ROOT-S-VP-VP-VP-VBN	She-has-n't-been-by-yet	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+by	by	O	IN	ROOT-S-VP-VP-VP-PP-IN	team	seen	0.17	by_the_team_yet.	Team	NONE	NONE	NONE	NONE	Team	0.6	0.0	NA	NA
+the	the	O	DT	ROOT-S-VP-VP-VP-PP-NP-DT	NONE	team	0.17	by_the_team_yet.	Team	NONE	NONE	NONE	NONE	Team	0.6	0.0	NA	NA
+team	team	O	NN	ROOT-S-VP-VP-VP-PP-NP-NN	the	by	0.17	by_the_team_yet.	Team	NONE	NONE	NONE	NONE	Team	0.7	0.0	NA	NA
+yet	yet	O	RB	ROOT-S-VP-VP-VP-ADVP-RB	NONE	seen	0.17	by_the_team_yet.	Team	NONE	NONE	NONE	NONE	Team	0.7	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	ambulant	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	ambulant	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+ambulant	ambulant	O	JJ	ROOT-S-VP-ADJP-JJ	She-is-with	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+with	with	O	IN	ROOT-S-VP-ADJP-PP-IN	walker	ambulant	0.17	with_wheely_walker.	Walkers	NONE	NONE	NONE	NONE	Walkers	0.8	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+wheely	wheely	O	JJ	ROOT-S-VP-ADJP-PP-NP-JJ	NONE	walker	0.17	with_wheely_walker.	Walkers	NONE	NONE	NONE	NONE	Walkers	0.8	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+walker	walker	O	NN	ROOT-S-VP-ADJP-PP-NP-NN	wheely	with	0.17	with_wheely_walker.	Walkers	NONE	NONE	NONE	NONE	Walkers	0.8	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+
+She	she	O	PRP	ROOT-NP-S-S-NP-PRP	NONE	is	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-NP-S-S-VP-VBZ	She-on-and-stable	ROOT	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+on	on	O	IN	ROOT-NP-S-S-VP-PP-IN	soft	is	0.17	on_soft_cut	Incised_wound	Cut_in_Medical_Device_Material	Soft	softness	NONE	Soft	0.9	0.0	NA	NA
+soft	soft	O	JJ	ROOT-NP-S-S-VP-PP-NP-NP-JJ	cut	on	0.17	on_soft_cut	Incised_wound	Cut_in_Medical_Device_Material	Soft	softness	NONE	Soft	0.9	0.5	MyShift_Input/Diet	MyShift_Input/Diet
+cut	cut	O	VBN	ROOT-NP-S-S-VP-PP-NP-VP-VBN	up-diet	soft	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Input/Diet	MyShift_Input/Diet
+up	up	O	RP	ROOT-NP-S-S-VP-PP-NP-VP-PRT-RP	NONE	cut	0.17	up_diet	Diet	Dietetics	NONE	NONE	NONE	Diet	0.9	0.0	MyShift_Input/Diet	MyShift_Input/Diet
+diet	diet	O	NN	ROOT-NP-S-S-VP-PP-NP-VP-NP-NN	NONE	cut	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.5	MyShift_Input/Diet	MyShift_Input/Diet
+and	and	O	CC	ROOT-NP-S-CC	NONE	is	0.5	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+she	she	O	PRP	ROOT-NP-S-S-NP-PRP	NONE	stable	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-NP-S-S-VP-VBZ	NONE	stable	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+all	all	O	DT	ROOT-NP-S-S-VP-ADJP-DT	NONE	stable	0.33	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-NP-S-S-VP-ADJP-JJ	she-is-all	is	0.33	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	MyShift_Status	MyShift_Status
+

@@ -1,0 +1,76 @@
+The	the	O	DT	ROOT-S-NP-NP-DT	NONE	bed	0.17	The_bed_four,	Beds	Four	NONE	NONE	NONE	Beds	0.0	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-NP-NN	The-four-Jefferies	came	0.17	The_bed_four,	Beds	Four	NONE	NONE	NONE	Beds	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+four	four	NUMBER	CD	ROOT-S-NP-NP-CD	NONE	bed	0.17	The_bed_four,	Beds	Four	NONE	NONE	NONE	Beds	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.5	The_bed_four,	Beds	Four	NONE	NONE	NONE	Beds	0.1	0.0	NA	NA
+Sarah	Sarah	PERSON	NNP	ROOT-S-NP-NP-NP-NNP	NONE	Jefferies	0.17	Sarah_Jefferies,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Jefferies	Jefferies	PERSON	NNP	ROOT-S-NP-NP-NP-NNP	Sarah-old-under	bed	0.17	Sarah_Jefferies,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.5	Sarah_Jefferies,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+62	62	DURATION	CD	ROOT-S-NP-NP-ADJP-NP-CD	NONE	yrs	0.17	62_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-NP-ADJP-NP-NNS	62	old	0.17	62_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-NP-ADJP-JJ	yrs	Jefferies	0.17	62_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	Laine	Jefferies	0.17	under_Dr_Laine,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-PP-NP-NNP	NONE	Laine	0.17	under_Dr_Laine,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Laine	Laine	PERSON	NNP	ROOT-S-NP-NP-PP-NP-NNP	Dr	under	0.17	under_Dr_Laine,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.5	under_Dr_Laine,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	bed-with	ROOT	0.17	came	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	NONE	with	0.17	in	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-IN	in-injury	came	0.5	with_head_injury	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.2	0.0	NA	NA
+head	head	O	NN	ROOT-S-VP-PP-NP-NP-NN	NONE	injury	0.17	with_head_injury	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+injury	injury	O	NN	ROOT-S-VP-PP-NP-NP-NN	head-due	with	0.17	with_head_injury	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+due	due	O	JJ	ROOT-S-VP-PP-NP-ADJP-JJ	fall	injury	0.17	due_to_fall.	Falls	NONE	NONE	NONE	NONE	Falls	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+to	to	O	TO	ROOT-S-VP-PP-NP-ADJP-S-VP-TO	NONE	fall	0.17	due_to_fall.	Falls	NONE	NONE	NONE	NONE	Falls	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+fall	fall	O	VB	ROOT-S-VP-PP-NP-ADJP-S-VP-VP-VB	to	due	0.17	due_to_fall.	Falls	NONE	NONE	NONE	NONE	Falls	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	due_to_fall.	Falls	NONE	NONE	NONE	NONE	Falls	0.3	0.0	NA	NA
+
+her	she	O	PRP$	ROOT-S-NP-PRP$	NONE	husband	0.17	her_husband	husband	husband_-_RoleCode	NONE	NONE	NONE	husband_-_RoleCode	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+husband	husband	O	NN	ROOT-S-NP-NN	her	is	0.17	her_husband	husband	husband_-_RoleCode	NONE	NONE	NONE	husband_-_RoleCode	0.4	0.0	Future_Alert/Warning/AbnormalResult	NA
+is	be	O	VBZ	ROOT-S-VP-VBZ	husband-also-with-too	ROOT	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Future_Alert/Warning/AbnormalResult	NA
+also	also	O	RB	ROOT-S-VP-ADVP-RB	NONE	is	0.33	also_here	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Future_Alert/Warning/AbnormalResult	NA
+here	here	O	RB	ROOT-S-VP-PP-ADVP-RB	NONE	with	0.17	also_here	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Future_Alert/Warning/AbnormalResult	NA
+with	with	O	IN	ROOT-S-VP-PP-IN	here-us	is	0.5	with_us_too.	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Future_Alert/Warning/AbnormalResult	NA
+us	we	O	PRP	ROOT-S-VP-PP-NP-PRP	NONE	with	0.17	with_us_too.	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Future_Alert/Warning/AbnormalResult	NA
+too	too	O	RB	ROOT-S-VP-ADVP-RB	NONE	is	0.17	with_us_too.	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	Future_Alert/Warning/AbnormalResult	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	with_us_too.	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	same	0.83	she	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	same	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+still	still	O	RB	ROOT-S-S-VP-ADVP-RB	NONE	same	0.33	still	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	MyShift_Status
+the	the	O	DT	ROOT-S-S-VP-NP-DT	NONE	same	0.17	the_same	Same	NONE	NONE	NONE	NONE	Same	0.5	0.0	NA	MyShift_Status
+same	same	O	JJ	ROOT-S-S-VP-NP-JJ	she-is-still-the-and-getting	ROOT	0.17	the_same	Same	NONE	NONE	NONE	NONE	Same	0.5	0.0	NA	MyShift_Status
+and	and	O	CC	ROOT-S-CC	NONE	same	0.33	and	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	getting	0.83	she	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	getting	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+getting	get	O	VBG	ROOT-S-S-VP-VP-VBG	she-is-better	same	0.17	getting	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_Status	NA
+better	better	O	RBR	ROOT-S-S-VP-VP-ADVP-RBR	NONE	getting	0.17	better.	Better	Good	best_(quality)	NONE	NONE	Better	0.6	0.0	MyShift_Status	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	better.	Better	Good	best_(quality)	NONE	NONE	Better	0.6	0.0	NA	NA
+
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	awaiting	0.83	she	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	awaiting	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+just	just	O	RB	ROOT-S-VP-ADVP-RB	NONE	awaiting	0.17	just	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+awaiting	await	O	VBG	ROOT-S-VP-VP-VBG	she-is-just-planning-recovered	ROOT	0.17	awaiting	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	Future_Discharge/TransferPlan	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+discharge	discharge	O	NN	ROOT-S-VP-VP-NP-NN	NONE	planning	0.17	discharge_planning	Body_Fluid_Discharge	Patient_Discharge	Cognitive_function:_planning	Planned	Discharge,_body_substance	Patient_Discharge	0.7	0.0	Future_Discharge/TransferPlan	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+planning	planning	O	NN	ROOT-S-VP-VP-NP-NN	discharge	awaiting	0.17	discharge_planning	Body_Fluid_Discharge	Patient_Discharge	Cognitive_function:_planning	Planned	Discharge,_body_substance	Patient_Discharge	0.7	0.0	Future_Discharge/TransferPlan	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+once	once	DATE	IN	ROOT-S-VP-VP-SBAR-IN	NONE	recovered	0.17	once	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	recovered	0.83	she_fully	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+fully	fully	O	RB	ROOT-S-VP-VP-SBAR-S-ADVP-RB	NONE	recovered	0.17	she_fully	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+recovered	recover	O	VBD	ROOT-S-VP-VP-SBAR-S-VP-VBD	once-she-fully	awaiting	0.17	recovered._still	Recovering_from	NONE	NONE	NONE	NONE	Recovering_from	0.8	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	recovered._still	Recovering_from	NONE	NONE	NONE	NONE	Recovering_from	0.8	0.0	NA	NA
+
+still	still	O	RB	ROOT-FRAG-PP-ADVP-RB	NONE	with	0.33	recovered._still	Recovering_from	NONE	NONE	NONE	NONE	Recovering_from	0.8	0.0	NA	NA
+with	with	O	IN	ROOT-FRAG-PP-IN	still-management	ROOT	0.5	with_ongoing_management	Administration_occupational_activities	Disease_Management	Management_procedure	Continuous	NONE	Continuous	0.8	0.0	NA	NA
+ongoing	ongoing	O	JJ	ROOT-FRAG-PP-NP-NP-JJ	NONE	management	0.33	with_ongoing_management	Administration_occupational_activities	Disease_Management	Management_procedure	Continuous	NONE	Continuous	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	MyShift_OtherObservation
+management	management	O	NN	ROOT-FRAG-PP-NP-NP-NN	ongoing-of	with	0.17	with_ongoing_management	Administration_occupational_activities	Disease_Management	Management_procedure	Continuous	NONE	Continuous	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	MyShift_OtherObservation
+of	of	O	IN	ROOT-FRAG-PP-NP-PP-IN	pain	management	0.17	of_pain	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain_NOS_Adverse_Event	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	MyShift_OtherObservation
+pain	pain	O	NN	ROOT-FRAG-PP-NP-PP-NP-NN	and-antibiotics	of	0.17	of_pain	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain_NOS_Adverse_Event	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	MyShift_OtherObservation
+and	and	O	CC	ROOT-FRAG-PP-NP-PP-NP-CC	NONE	pain	0.33	and	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+antibiotics	antibiotic	O	NNS	ROOT-FRAG-PP-NP-PP-NP-NNS	NONE	pain	0.17	antibiotics.	Antibiotics	NONE	NONE	NONE	NONE	Antibiotics	0.9	1.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Medication_Medicine
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	antibiotics.	Antibiotics	NONE	NONE	NONE	NONE	Antibiotics	0.9	0.0	NA	NA
+
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	is	0.83	she	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	she-also-on	ROOT	0.83	is	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+also	also	O	RB	ROOT-S-VP-ADVP-RB	NONE	is	0.33	also	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+on	on	O	IN	ROOT-S-VP-PP-IN	physic	is	0.17	on_ongoing_physic.	Physics	Physical_Examination	Physical	Physical_assessment_findings	Continuous	Continuous	1.0	0.0	NA	NA
+ongoing	ongoing	O	JJ	ROOT-S-VP-PP-NP-JJ	NONE	physic	0.33	on_ongoing_physic.	Physics	Physical_Examination	Physical	Physical_assessment_findings	Continuous	Continuous	1.0	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+physic	physic	O	NN	ROOT-S-VP-PP-NP-NN	ongoing	on	0.17	on_ongoing_physic.	Physics	Physical_Examination	Physical	Physical_assessment_findings	Continuous	Continuous	1.0	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	on_ongoing_physic.	Physics	Physical_Examination	Physical	Physical_assessment_findings	Continuous	Continuous	1.0	0.0	NA	NA
+

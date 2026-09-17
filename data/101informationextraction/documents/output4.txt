@@ -1,0 +1,53 @@
+Mike	Mike	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	hanley	0.17	Mike_hanley,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+hanley	hanley	PERSON	NNP	ROOT-S-NP-NP-NNP	Mike-old	came	0.17	Mike_hanley,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.5	Mike_hanley,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+48	48	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	years	0.17	48_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-ADJP-NP-NNS	48	old	0.17	48_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	years-under	hanley	0.17	48_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Johnson	old	0.17	under_Dr_Johnson,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NP-NNP	NONE	Johnson	0.17	under_Dr_Johnson,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Johnson	Johnson	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NP-NNP	Dr-bed	under	0.17	under_Dr_Johnson,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.5	under_Dr_Johnson,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-ADJP-PP-NP-NP-NN	3	Johnson	0.17	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.2	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+3	3	NUMBER	CD	ROOT-S-NP-ADJP-PP-NP-NP-CD	NONE	bed	0.17	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.3	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.5	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	hanley-with	ROOT	0.17	came	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	NONE	with	0.17	in	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-IN	in-heartburn	came	0.17	with_query_heartburn	Heartburn	Heartburn_acidity	Question_(inquiry)	NONE	NONE	Question_(inquiry)	0.3	0.0	NA	NA
+query	query	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	NONE	heartburn	0.17	with_query_heartburn	Heartburn	Heartburn_acidity	Question_(inquiry)	NONE	NONE	Question_(inquiry)	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+heartburn	heartburn	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	query-or-attack-for	with	0.17	with_query_heartburn	Heartburn	Heartburn_acidity	Question_(inquiry)	NONE	NONE	Question_(inquiry)	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+or	or	O	CC	ROOT-S-VP-PP-NP-NP-CC	NONE	heartburn	0.17	or	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+heart	heart	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	NONE	attack	0.17	heart_attack	Heart	Onset_of_illness	Attack_behavior	Entire_heart	Observation_of_attack	Heart	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+attack	attack	O	NN	ROOT-S-VP-PP-NP-NP-NP-NN	heart	heartburn	0.17	heart_attack	Heart	Onset_of_illness	Attack_behavior	Entire_heart	Observation_of_attack	Heart	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+for	for	O	IN	ROOT-S-VP-PP-NP-PP-IN	investigation	heartburn	0.5	for_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_CarePlan
+investigation	investigation	O	NN	ROOT-S-VP-PP-NP-PP-NP-NN	NONE	for	0.17	for_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_CarePlan
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	NA	NA
+
+On	on	O	IN	ROOT-FRAG-PP-IN	nitros	ROOT	0.17	On_regular_nitros._obs	Regular	NONE	NONE	NONE	NONE	Regular	0.5	0.0	NA	NA
+regular	regular	O	JJ	ROOT-FRAG-PP-NP-JJ	NONE	nitros	0.17	On_regular_nitros._obs	Regular	NONE	NONE	NONE	NONE	Regular	0.6	0.0	Medication_Medicine	Medication_Medicine
+nitros	nitro	O	NNS	ROOT-FRAG-PP-NP-NNS	regular	On	0.17	On_regular_nitros._obs	Regular	NONE	NONE	NONE	NONE	Regular	0.6	0.0	Medication_Medicine	Medication_Medicine
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	On_regular_nitros._obs	Regular	NONE	NONE	NONE	NONE	Regular	0.6	0.0	NA	NA
+
+obs	ob	O	NNS	ROOT-S-NP-NNS	NONE	stable	0.17	On_regular_nitros._obs	Regular	NONE	NONE	NONE	NONE	Regular	0.6	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	stable	0.17	are	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-VP-ADJP-DT	NONE	stable	0.17	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.7	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-ADJP-JJ	obs-are-all	ROOT	0.17	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.7	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.7	0.0	NA	NA
+
+for	for	O	IN	ROOT-S-VP-PP-IN	bloods	ROOT	0.5	for_repeat	Repeat	Repeat_Pattern	Repeat_Object	NONE	NONE	Repeat	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+repeat	repeat	O	NN	ROOT-S-VP-PP-NP-NP-NN	NONE	bloods	0.17	for_repeat	Repeat	Repeat_Pattern	Repeat_Object	NONE	NONE	Repeat	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+bloods	blood	O	NNS	ROOT-S-VP-PP-NP-NP-NNS	repeat-tomorrow	for	0.17	bloods	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	NONE	Bloods_(ethnic_group)	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+tomorrow	tomorrow	DATE	NN	ROOT-S-VP-PP-NP-NP-TMP-NN	NONE	bloods	0.17	tomorrow.	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	tomorrow.	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+
+for	for	O	IN	ROOT-FRAG-X-IN	NONE	echo	0.5	for_echo_to	ECHO_protocol	Echo_(insect)	NONE	NONE	NONE	ECHO_protocol	0.8	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+echo	echo	O	VBP	ROOT-FRAG-VP-VBP	for-arranged	ROOT	0.17	for_echo_to	ECHO_protocol	Echo_(insect)	NONE	NONE	NONE	ECHO_protocol	0.9	0.0	Appointment/Procedure_Description	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+to	to	O	TO	ROOT-FRAG-VP-S-VP-TO	NONE	arranged	0.17	for_echo_to	ECHO_protocol	Echo_(insect)	NONE	NONE	NONE	ECHO_protocol	0.9	0.0	Appointment/Procedure_Day	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+be	be	O	VB	ROOT-FRAG-VP-S-VP-VP-VB	NONE	arranged	0.17	be	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Appointment/Procedure_Day	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+arranged	arrange	O	VBN	ROOT-FRAG-VP-S-VP-VP-VP-VBN	to-be	echo	0.17	arranged.	Arranged_(transportation)	NONE	NONE	NONE	NONE	Arranged_(transportation)	0.9	0.0	Appointment/Procedure_Day	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	arranged.	Arranged_(transportation)	NONE	NONE	NONE	NONE	Arranged_(transportation)	0.9	0.0	NA	NA
+
+monitored	monitor	O	VBN	ROOT-S-VP-VBN	accordingly	ROOT	0.17	monitored	Preventive_monitoring	Biomedical_Monitors	Monitoring_Device	Clinical_Trials,_Monitoring	Monitor,_occupation	Clinical_Trials,_Monitoring	1.0	0.0	NA	NA
+accordingly	accordingly	O	RB	ROOT-S-VP-ADVP-RB	NONE	monitored	0.17	accordingly.	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	accordingly.	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+

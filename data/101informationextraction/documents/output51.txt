@@ -1,0 +1,44 @@
+6	6	NUMBER	CD	ROOT-FRAG-NP-CD	NONE	ROOT	0.25	6.	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	0.75	6.	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+
+Lucy	Lucy	PERSON	NNP	ROOT-S-S-NP-NP-NNP	NONE	Harold	0.25	Lucy_Harold,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Harold	Harold	PERSON	NNP	ROOT-S-S-NP-NP-NNP	Lucy-27	came	0.25	Lucy_Harold,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	Lucy_Harold,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+27	27	NUMBER	CD	ROOT-S-S-NP-NP-NP-CD	under	Harold	0.25	27	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-S-NP-NP-PP-IN	Harrod	27	0.25	under_Dr_Harrod-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-S-NP-NP-PP-NP-NNP	NONE	Harrod	0.25	under_Dr_Harrod-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Harrod	Harrod	PERSON	NNP	ROOT-S-S-NP-NP-PP-NP-NNP	Dr	under	0.25	under_Dr_Harrod-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+-	-	O	:	ROOT-S-S-NP-NP-PP-:	NONE	NONE	0.25	under_Dr_Harrod-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	under_Dr_Harrod-,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-S-VP-VBD	Harold-in	site	0.25	came	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-S-VP-PP-IN	surgery	came	0.25	in	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+post	post	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	surgery	0.25	post_brain_surgery,	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operation_on_brain	Brain	Brain	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+brain	brain	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	surgery	0.25	post_brain_surgery,	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operation_on_brain	Brain	Brain	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+surgery	surgery	O	NN	ROOT-S-S-VP-PP-NP-NN	post-brain	in	0.5	post_brain_surgery,	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operation_on_brain	Brain	Brain	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	post_brain_surgery,	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operation_on_brain	Brain	Brain	0.4	0.0	NA	NA
+obs	ob	O	NNS	ROOT-S-NP-NNS	NONE	site	0.25	obs	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	site	0.25	are	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-VP-NP-NP-DT	NONE	site	0.25	all_stable,_bone_flap_site	Site	Anatomic_Site	Study_Site	Bone_flap	Flap_with_osseous_tissue_only	Stable_status	0.5	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-NP-NP-JJ	NONE	site	0.25	all_stable,_bone_flap_site	Site	Anatomic_Site	Study_Site	Bone_flap	Flap_with_osseous_tissue_only	Stable_status	0.5	0.0	MyShift_Status	MyShift_Status
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	all_stable,_bone_flap_site	Site	Anatomic_Site	Study_Site	Bone_flap	Flap_with_osseous_tissue_only	Stable_status	0.5	0.0	NA	NA
+bone	bone	O	NN	ROOT-S-VP-NP-NP-NN	NONE	site	0.25	all_stable,_bone_flap_site	Site	Anatomic_Site	Study_Site	Bone_flap	Flap_with_osseous_tissue_only	Stable_status	0.6	0.5	MyShift_Wounds/Skin	Appointment/Procedure_Description
+flap	flap	O	NN	ROOT-S-VP-NP-NP-NN	NONE	site	0.25	all_stable,_bone_flap_site	Site	Anatomic_Site	Study_Site	Bone_flap	Flap_with_osseous_tissue_only	Stable_status	0.6	0.0	MyShift_Wounds/Skin	Appointment/Procedure_Description
+site	site	O	NN	ROOT-S-VP-NP-NP-NN	came-obs-are-all-stable-bone-flap-with	ROOT	0.25	all_stable,_bone_flap_site	Site	Anatomic_Site	Study_Site	Bone_flap	Flap_with_osseous_tissue_only	Stable_status	0.6	0.0	MyShift_Wounds/Skin	Appointment/Procedure_Description
+with	with	O	IN	ROOT-S-VP-NP-PP-IN	dressing	site	0.25	with_dressing_left_intact	Intact	Gender_Status_-_Intact	Sterile_coverings	Left	Dressing_of_skin_or_wound	Sterile_coverings	0.6	0.0	MyShift_Wounds/Skin	NA
+dressing	dress	O	VBG	ROOT-S-VP-NP-PP-S-VP-VBG	left	with	0.25	with_dressing_left_intact	Intact	Gender_Status_-_Intact	Sterile_coverings	Left	Dressing_of_skin_or_wound	Sterile_coverings	0.7	0.0	MyShift_Wounds/Skin	MyShift_OtherObservation
+left	leave	O	VBD	ROOT-S-VP-NP-PP-S-VP-SBAR-S-VP-VBD	intact-review	dressing	0.25	with_dressing_left_intact	Intact	Gender_Status_-_Intact	Sterile_coverings	Left	Dressing_of_skin_or_wound	Sterile_coverings	0.7	0.0	MyShift_Wounds/Skin	MyShift_OtherObservation
+intact	intact	O	JJ	ROOT-S-VP-NP-PP-S-VP-SBAR-S-VP-ADJP-ADJP-JJ	and-still-for	left	0.25	with_dressing_left_intact	Intact	Gender_Status_-_Intact	Sterile_coverings	Left	Dressing_of_skin_or_wound	Sterile_coverings	0.7	0.0	MyShift_Wounds/Skin	MyShift_OtherObservation
+and	and	O	CC	ROOT-S-VP-NP-PP-S-VP-SBAR-S-VP-ADJP-CC	NONE	intact	0.25	and	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-NP-PP-S-VP-SBAR-S-VP-ADJP-ADVP-RB	NONE	intact	0.25	still	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+for	for	O	IN	ROOT-S-VP-NP-PP-S-VP-SBAR-S-VP-ADJP-PP-IN	team	intact	0.25	for_surgery_team_to	Team	surgical_team	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operative_Surgical_Procedures	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+surgery	surgery	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	team	0.5	for_surgery_team_to	Team	surgical_team	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operative_Surgical_Procedures	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+team	team	O	NN	ROOT-S-VP-NP-PP-S-VP-SBAR-S-VP-ADJP-PP-NP-NN	surgery	for	0.25	for_surgery_team_to	Team	surgical_team	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operative_Surgical_Procedures	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+to	to	O	TO	ROOT-S-VP-NP-PP-S-VP-SBAR-S-VP-S-VP-TO	NONE	review	0.25	for_surgery_team_to	Team	surgical_team	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operative_Surgical_Procedures	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+review	review	O	VB	ROOT-S-VP-NP-PP-S-VP-SBAR-S-VP-S-VP-VP-VB	to	left	0.25	review._nil_other_changes.	Changing	Changed_status	Delta_(difference)	Review_[Publication_Type]	Nil	Review_[Publication_Type]	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	0.75	review._nil_other_changes.	Changing	Changed_status	Delta_(difference)	Review_[Publication_Type]	Nil	Review_[Publication_Type]	0.9	0.0	NA	NA
+
+nil	nil	O	NN	ROOT-NP-NP-NN	changes	ROOT	0.25	review._nil_other_changes.	Changing	Changed_status	Delta_(difference)	Review_[Publication_Type]	Nil	Review_[Publication_Type]	0.9	0.0	MyShift_Status	MyShift_Status
+other	other	O	JJ	ROOT-NP-NP-JJ	NONE	changes	0.25	review._nil_other_changes.	Changing	Changed_status	Delta_(difference)	Review_[Publication_Type]	Nil	Review_[Publication_Type]	1.0	0.0	MyShift_Status	MyShift_Status
+changes	change	O	NNS	ROOT-NP-NP-NNS	other	nil	0.25	review._nil_other_changes.	Changing	Changed_status	Delta_(difference)	Review_[Publication_Type]	Nil	Review_[Publication_Type]	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-NP-.	NONE	NONE	0.75	review._nil_other_changes.	Changing	Changed_status	Delta_(difference)	Review_[Publication_Type]	Nil	Review_[Publication_Type]	1.0	0.0	NA	NA
+

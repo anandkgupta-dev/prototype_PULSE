@@ -1,0 +1,104 @@
+8	8	NUMBER	CD	ROOT-FRAG-NP-CD	NONE	ROOT	0.1	8.	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	8.	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+
+Daviid	Daviid	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Adams	0.1	Daviid_Adams,	Adams	NONE	NONE	NONE	NONE	Adams	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Adams	Adams	PERSON	NNP	ROOT-S-NP-NP-NNP	Daviid-34	came	0.1	Daviid_Adams,	Adams	NONE	NONE	NONE	NONE	Adams	0.0	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.1	Daviid_Adams,	Adams	NONE	NONE	NONE	NONE	Adams	0.1	0.0	NA	NA
+34	34	NUMBER	CD	ROOT-S-NP-NP-NP-CD	under	Adams	0.1	34	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	Wu	34	0.1	under_Wu	WUSCHEL_protein,_Arabidopsis	NONE	NONE	NONE	NONE	WUSCHEL_protein,_Arabidopsis	0.1	0.0	NA	NA
+Wu	Wu	PERSON	NNP	ROOT-S-NP-NP-PP-NP-NNP	NONE	under	0.1	under_Wu	WUSCHEL_protein,_Arabidopsis	NONE	NONE	NONE	NONE	WUSCHEL_protein,_Arabidopsis	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+came	come	O	VBD	ROOT-S-VP-VBD	Adams-in	ROOT	0.1	came	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.1	in	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	injury	in	0.1	with_head_injury.	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.1	0.0	NA	NA
+head	head	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	injury	0.1	with_head_injury.	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.1	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+injury	injury	O	NN	ROOT-S-VP-PP-PP-NP-NN	head	with	0.1	with_head_injury.	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.1	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	with_head_injury.	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.1	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	is	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	He-On	ROOT	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+On	on	O	IN	ROOT-S-VP-PP-IN	endone	is	0.1	On_endone	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+endone	endone	O	NN	ROOT-S-VP-PP-NP-NP-NN	and-morphine-for	On	0.1	On_endone	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	Medication_Medicine	NA
+and	and	O	CC	ROOT-S-VP-PP-NP-NP-CC	NONE	endone	0.4	and	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+morphine	morphine	O	NN	ROOT-S-VP-PP-NP-NP-NN	NONE	endone	0.1	morphine	Morphine	Morphine_Measurement	Satyrinae	Morphina	NONE	Morphine	0.2	1.0	Medication_Medicine	Medication_Medicine
+for	for	O	IN	ROOT-S-VP-PP-NP-PP-IN	pain	endone	0.4	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain	0.2	0.0	NA	Medication_Medicine
+pain	pain	O	NN	ROOT-S-VP-PP-NP-PP-NP-NN	NONE	for	0.1	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain	0.2	0.0	NA	Medication_Medicine
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_pain.	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain	0.2	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-S-NP-PRP	NONE	complains	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+complains	complain	O	VBZ	ROOT-S-S-VP-VBZ	He-of-and-photophobic	ROOT	0.1	complains	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+of	of	O	IN	ROOT-S-S-VP-PP-IN	headaches	complains	0.3	of_headaches	Headache	NONE	NONE	NONE	NONE	Headache	0.3	0.0	NA	NA
+headaches	headache	O	NNS	ROOT-S-S-VP-PP-NP-NNS	NONE	of	0.1	of_headaches	Headache	NONE	NONE	NONE	NONE	Headache	0.3	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+and	and	O	CC	ROOT-S-CC	NONE	complains	0.4	and	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+he	he	O	PRP	ROOT-S-S-NP-PRP	NONE	photophobic	0.2	he	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	photophobic	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+photophobic	photophobic	O	JJ	ROOT-S-S-VP-ADJP-JJ	he-is	complains	0.1	photophobic.	Photophobia	NONE	NONE	NONE	NONE	Photophobia	0.3	0.0	MyShift_OtherObservation	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	photophobic.	Photophobia	NONE	NONE	NONE	NONE	Photophobia	0.3	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-S-NP-PRP	NONE	is	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	He-for-and-planned-depending	ROOT	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+for	for	O	IN	ROOT-S-S-VP-PP-IN	tomorrow	is	0.4	for_CT_brain_tomorrow	Brain	CAT_scan_of_brain	Entire_brain	NONE	NONE	Brain	0.4	0.0	NA	Appointment/Procedure_Description
+CT	ct	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	tomorrow	0.2	for_CT_brain_tomorrow	Brain	CAT_scan_of_brain	Entire_brain	NONE	NONE	Brain	0.4	0.0	Appointment/Procedure_Description	Appointment/Procedure_Description
+brain	brain	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	tomorrow	0.2	for_CT_brain_tomorrow	Brain	CAT_scan_of_brain	Entire_brain	NONE	NONE	Brain	0.4	0.0	Appointment/Procedure_Description	Appointment/Procedure_Description
+tomorrow	tomorrow	DATE	NN	ROOT-S-S-VP-PP-NP-NN	CT-brain	for	0.1	for_CT_brain_tomorrow	Brain	CAT_scan_of_brain	Entire_brain	NONE	NONE	Brain	0.4	0.0	Appointment/Procedure_Time	Appointment/Procedure_Day
+and	and	O	CC	ROOT-S-CC	NONE	is	0.4	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+he	he	O	PRP	ROOT-S-S-NP-PRP	NONE	planned	0.2	he	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	planned	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+planned	plan	O	VBN	ROOT-S-S-VP-VP-VBN	he-is-have	is	0.1	planned_to	Planned	Cognitive_function:_planning	Infantile_Neuroaxonal_Dystrophy	NONE	NONE	Planned	0.4	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+to	to	O	TO	ROOT-S-S-VP-VP-S-VP-TO	NONE	have	0.1	planned_to	Planned	Cognitive_function:_planning	Infantile_Neuroaxonal_Dystrophy	NONE	NONE	Planned	0.5	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+have	have	O	VB	ROOT-S-S-VP-VP-S-VP-VP-VB	to-surgery	planned	0.1	have	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+endoscopic	endoscopic	O	JJ	ROOT-S-S-VP-VP-S-VP-VP-NP-NP-JJ	NONE	surgery	0.1	endoscopic_brain_surgery	Surgical_Endoscopy	Surgery_specialty	Surgical_aspects	Operation_on_brain	Operative_Surgical_Procedures	Endoscopic_approach_-_access	0.5	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Appointment/Procedure_Status
+brain	brain	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	surgery	0.2	endoscopic_brain_surgery	Surgical_Endoscopy	Surgery_specialty	Surgical_aspects	Operation_on_brain	Operative_Surgical_Procedures	Endoscopic_approach_-_access	0.5	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Appointment/Procedure_Status
+surgery	surgery	O	NN	ROOT-S-S-VP-VP-S-VP-VP-NP-NP-NN	endoscopic-brain-within	have	0.1	endoscopic_brain_surgery	Surgical_Endoscopy	Surgery_specialty	Surgical_aspects	Operation_on_brain	Operative_Surgical_Procedures	Endoscopic_approach_-_access	0.5	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Appointment/Procedure_Status
+within	within	O	IN	ROOT-S-S-VP-VP-S-VP-VP-NP-PP-IN	week	surgery	0.1	within_this_week	week	/week	NONE	NONE	NONE	week	0.5	0.0	NA	Appointment/Procedure_Status
+this	this	DATE	DT	ROOT-S-S-VP-VP-S-VP-VP-NP-PP-NP-DT	NONE	week	0.1	within_this_week	week	/week	NONE	NONE	NONE	week	0.5	0.0	NA	Appointment/Procedure_Status
+week	week	DATE	NN	ROOT-S-S-VP-VP-S-VP-VP-NP-PP-NP-NN	this	within	0.1	within_this_week	week	/week	NONE	NONE	NONE	week	0.5	0.0	NA	Appointment/Procedure_Status
+depending	depend	O	VBG	ROOT-S-PP-VBG	on	is	0.1	depending	depend	NONE	NONE	NONE	NONE	depend	0.5	0.0	NA	Appointment/Procedure_Status
+on	on	O	IN	ROOT-S-PP-PP-IN	results	depending	0.2	on_the_results	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.6	0.0	NA	Appointment/Procedure_Status
+the	the	O	DT	ROOT-S-PP-PP-NP-NP-DT	NONE	results	0.1	on_the_results	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.6	0.0	NA	Appointment/Procedure_Status
+results	result	O	NNS	ROOT-S-PP-PP-NP-NP-NNS	the-of	on	0.1	on_the_results	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.6	0.0	NA	Appointment/Procedure_Status
+of	of	O	IN	ROOT-S-PP-PP-NP-PP-IN	CT	results	0.3	of_his_CT.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+his	he	O	PRP$	ROOT-S-PP-PP-NP-PP-NP-PRP$	NONE	CT	0.1	of_his_CT.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+CT	ct	O	NN	ROOT-S-S-VP-PP-NP-NN	his	of	0.2	of_his_CT.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	of_his_CT.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	is	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	He-for	ROOT	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+for	for	O	IN	ROOT-S-VP-PP-PP-IN	bloods-daily-and-for-QID	is	0.4	for_bloods_daily	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Bloods_(ethnic_group)	0.6	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+bloods	blood	O	NNS	ROOT-S-VP-PP-PP-NP-NNS	NONE	for	0.1	for_bloods_daily	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Bloods_(ethnic_group)	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+daily	daily	SET	RB	ROOT-S-VP-PP-PP-ADVP-RB	NONE	for	0.1	for_bloods_daily	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Bloods_(ethnic_group)	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+and	and	O	CC	ROOT-S-VP-PP-CC	NONE	for	0.4	and	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+for	for	O	IN	ROOT-S-VP-PP-PP-IN	obs	for	0.4	for_neuro_obs_QID.	Four_times_daily	Neurological_observations	Neurological_observation_regime	NONE	NONE	Neurological_observations	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+neuro	neuro	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	obs	0.1	for_neuro_obs_QID.	Four_times_daily	Neurological_observations	Neurological_observation_regime	NONE	NONE	Neurological_observations	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+obs	ob	O	NNS	ROOT-S-VP-PP-PP-NP-NNS	neuro	for	0.1	for_neuro_obs_QID.	Four_times_daily	Neurological_observations	Neurological_observation_regime	NONE	NONE	Neurological_observations	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+QID	qid	O	NN	ROOT-S-VP-PP-NP-NN	NONE	for	0.1	for_neuro_obs_QID.	Four_times_daily	Neurological_observations	Neurological_observation_regime	NONE	NONE	Neurological_observations	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_neuro_obs_QID.	Four_times_daily	Neurological_observations	Neurological_observation_regime	NONE	NONE	Neurological_observations	0.7	0.0	NA	NA
+
+GCS	gc	O	NNS	ROOT-S-NP-NNS	NONE	score	0.1	GCS_score	Score	NONE	NONE	NONE	NONE	Score	0.7	0.0	MyShift_OtherObservation	NA
+score	score	TIME	VBP	ROOT-S-VP-VBP	GCS-of-on	ROOT	0.1	GCS_score	Score	NONE	NONE	NONE	NONE	Score	0.8	0.0	MyShift_OtherObservation	NA
+of	of	TIME	IN	ROOT-S-VP-PP-IN	15	score	0.3	of_15	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_OtherObservation	NA
+15	15	TIME	CD	ROOT-S-VP-PP-NP-CD	NONE	of	0.1	of_15	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_OtherObservation	NA
+on	on	O	IN	ROOT-S-VP-PP-IN	shift	score	0.2	on_my_shift.	shift_displacement	Physical_Shift	NONE	NONE	NONE	shift_displacement	0.8	0.0	NA	NA
+my	my	O	PRP$	ROOT-S-VP-PP-NP-PRP$	NONE	shift	0.1	on_my_shift.	shift_displacement	Physical_Shift	NONE	NONE	NONE	shift_displacement	0.8	0.0	NA	NA
+shift	shift	O	NN	ROOT-S-VP-PP-NP-NN	my	on	0.1	on_my_shift.	shift_displacement	Physical_Shift	NONE	NONE	NONE	shift_displacement	0.8	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	on_my_shift.	shift_displacement	Physical_Shift	NONE	NONE	NONE	shift_displacement	0.8	0.0	NA	NA
+
+Obs	ob	O	NNS	ROOT-S-NP-NNS	NONE	stable	0.1	Obs	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	stable	0.1	are	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-VP-ADJP-DT	NONE	stable	0.1	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-ADJP-JJ	Obs-are-all	ROOT	0.1	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	caring	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	caring	0.6	is	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+pretty	pretty	O	RB	ROOT-S-VP-NP-ADJP-RB	NONE	much	0.1	pretty	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+much	much	O	JJ	ROOT-S-VP-NP-ADJP-JJ	pretty	caring	0.1	much	More	Most	NONE	NONE	NONE	More	0.9	0.0	NA	NA
+self	self	O	NN	ROOT-S-VP-NP-NN	NONE	caring	0.1	self_caring.	Caring	care_activity	NONE	NONE	NONE	Caring	0.9	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+caring	caring	O	NN	ROOT-S-VP-NP-NN	He-is-much-self	ROOT	0.1	self_caring.	Caring	care_activity	NONE	NONE	NONE	Caring	0.9	0.0	MyShift_ActivitiesOfDailyLiving	MyShift_ActivitiesOfDailyLiving
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	self_caring.	Caring	care_activity	NONE	NONE	NONE	Caring	0.9	0.0	NA	NA
+
+Nil	nil	O	NN	ROOT-S-NP-NN	NONE	problems	0.1	Nil_other_problems	Problems_-_What_subject_filter	Problem	Nil	Others	NONE	Nil	1.0	0.0	MyShift_Status	MyShift_Status
+other	other	O	JJ	ROOT-S-NP-JJ	NONE	problems	0.1	Nil_other_problems	Problems_-_What_subject_filter	Problem	Nil	Others	NONE	Nil	1.0	0.0	MyShift_Status	MyShift_Status
+problems	problem	O	NNS	ROOT-S-NP-NNS	Nil-other	noted	0.1	Nil_other_problems	Problems_-_What_subject_filter	Problem	Nil	Others	NONE	Nil	1.0	0.0	MyShift_Status	MyShift_Status
+noted	note	O	VBD	ROOT-S-VP-VBD	problems	ROOT	0.1	noted.	Note	NONE	NONE	NONE	NONE	Note	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	noted.	Note	NONE	NONE	NONE	NONE	Note	1.0	0.0	NA	NA
+

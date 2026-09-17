@@ -1,0 +1,41 @@
+Room	room	O	NN	ROOT-NP-NP-NN	2-bed	ROOT	0.25	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+2	2	NUMBER	CD	ROOT-NP-NP-CD	NONE	Room	0.25	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.1	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+,	,	O	,	ROOT-NP-,	NONE	NONE	1.0	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-NP-NP-NN	1	Room	0.25	bed_1.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+1	1	NUMBER	CD	ROOT-NP-NP-CD	NONE	bed	0.25	bed_1.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	bed_1.	Beds	NONE	NONE	NONE	NONE	Beds	0.2	0.0	NA	NA
+
+Nick	Nick	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Smith	0.25	Nick_Smith,	Smith_(occupation)	NONE	NONE	NONE	NONE	Smith_(occupation)	0.2	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Smith	Smith	PERSON	NNP	ROOT-S-NP-NP-NNP	Nick-old	came	0.25	Nick_Smith,	Smith_(occupation)	NONE	NONE	NONE	NONE	Smith_(occupation)	0.2	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	Nick_Smith,	Smith_(occupation)	NONE	NONE	NONE	NONE	Smith_(occupation)	0.2	0.0	NA	NA
+45	45	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	yrs	0.25	45_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-ADJP-NP-NNS	45	old	0.25	45_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	yrs-under	Smith	0.25	45_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Wu	old	0.25	under_Dr_Wu,	WUSCHEL_protein,_Arabidopsis	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.4	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Wu	0.25	under_Dr_Wu,	WUSCHEL_protein,_Arabidopsis	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.4	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Wu	Wu	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	Dr	under	0.25	under_Dr_Wu,	WUSCHEL_protein,_Arabidopsis	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.4	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	under_Dr_Wu,	WUSCHEL_protein,_Arabidopsis	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Doctor_-_Title	0.4	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Smith-in	ROOT	0.25	came	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.25	in	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	injury	in	0.25	with_head_injury.	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.5	0.0	NA	NA
+head	head	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	injury	0.25	with_head_injury.	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+injury	injury	O	NN	ROOT-S-VP-PP-PP-NP-NN	head	with	0.25	with_head_injury.	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.6	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	with_head_injury.	Head	Injury	Entire_head	Craniocerebral_Trauma	trauma_qualifier	Head	0.6	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	problems	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	problems	0.5	is	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+all	all	O	RB	ROOT-S-VP-ADVP-RB	NONE	problems	0.25	all_right,	Right	Rights	NONE	NONE	NONE	Right	0.7	0.0	NA	NA
+right	right	O	RB	ROOT-S-VP-ADVP-RB	NONE	problems	0.25	all_right,	Right	Rights	NONE	NONE	NONE	Right	0.7	0.0	NA	NA
+,	,	O	,	ROOT-S-VP-,	NONE	NONE	1.0	all_right,	Right	Rights	NONE	NONE	NONE	Right	0.7	0.0	NA	NA
+no	no	O	DT	ROOT-S-VP-NP-DT	NONE	problems	0.25	no_other_problems.	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.8	0.0	NA	MyShift_Status
+other	other	O	JJ	ROOT-S-VP-NP-JJ	NONE	problems	0.25	no_other_problems.	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.8	0.0	NA	MyShift_Status
+problems	problem	O	NNS	ROOT-S-VP-NP-NNS	He-is-all-right-no-other	ROOT	0.25	no_other_problems.	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.8	0.0	NA	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	no_other_problems.	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.8	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	same	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	same	0.5	is	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	same	0.25	still	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+the	the	O	DT	ROOT-S-VP-NP-DT	NONE	same	0.25	the_same.	Same	NONE	NONE	NONE	NONE	Same	0.9	0.0	MyShift_Status	MyShift_Status
+same	same	O	JJ	ROOT-S-VP-NP-JJ	He-is-still-the	ROOT	0.25	the_same.	Same	NONE	NONE	NONE	NONE	Same	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	the_same.	Same	NONE	NONE	NONE	NONE	Same	1.0	0.0	NA	NA
+

@@ -1,0 +1,73 @@
+Rajeev	Rajeev	PERSON	NNP	ROOT-S-NP-NP-NP-NNP	NONE	mendis	0.17	Rajeev_mendis,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+mendis	mendis	PERSON	NNP	ROOT-S-NP-NP-NP-NNP	Rajeev-bed-old	came	0.17	Rajeev_mendis,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-NP-,	NONE	NONE	0.33	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-NP-NP-NN	8	mendis	0.17	bed_8,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+8	8	NUMBER	CD	ROOT-S-NP-NP-NP-CD	NONE	bed	0.17	bed_8,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-NP-,	NONE	NONE	0.33	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+77	77	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	yrs	0.17	77_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-ADJP-NP-NNS	77	old	0.17	77_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	yrs	mendis	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+came	come	O	VBD	ROOT-S-VP-VBD	mendis-in	ROOT	0.33	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.33	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	arrythmia	in	0.33	with_arrythmia	Cardiac_Arrhythmia	NONE	NONE	NONE	NONE	Cardiac_Arrhythmia	0.2	0.0	NA	NA
+arrythmia	arrythmium	O	NN	ROOT-S-VP-PP-PP-NP-NN	and-chestpain	with	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+and	and	O	CC	ROOT-S-VP-PP-PP-NP-CC	NONE	arrythmia	0.83	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+chestpain	chestpain	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	arrythmia	0.17	chestpain.	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-S-NP-PRP	NONE	admission	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	admission	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+a	a	O	DT	ROOT-S-S-VP-NP-DT	NONE	admission	0.17	a_new_admission	Hospital_admission	Admission_activity	New	NONE	NONE	New	0.3	0.0	NA	NA
+new	new	O	JJ	ROOT-S-S-VP-NP-JJ	NONE	admission	0.17	a_new_admission	Hospital_admission	Admission_activity	New	NONE	NONE	New	0.3	0.0	NA	NA
+admission	admission	O	NN	ROOT-S-S-VP-NP-NN	He-is-a-new-and-came	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+and	and	O	CC	ROOT-S-CC	NONE	admission	0.83	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+he	he	O	PRP	ROOT-S-S-NP-PRP	NONE	came	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+came	come	O	VBD	ROOT-S-S-VP-VBD	he-in	admission	0.33	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+in	in	O	IN	ROOT-S-S-VP-PP-IN	ago	came	0.33	in_an_hour_ago.	Hour	/hour	NONE	NONE	NONE	/hour	0.4	0.0	NA	NA
+an	a	DATE	DT	ROOT-S-S-VP-PP-ADVP-NP-DT	NONE	hour	0.17	in_an_hour_ago.	Hour	/hour	NONE	NONE	NONE	/hour	0.4	0.0	NA	NA
+hour	hour	DATE	NN	ROOT-S-S-VP-PP-ADVP-NP-NN	an	ago	0.17	in_an_hour_ago.	Hour	/hour	NONE	NONE	NONE	/hour	0.4	0.0	NA	NA
+ago	ago	DATE	RB	ROOT-S-S-VP-PP-ADVP-RB	hour	in	0.17	in_an_hour_ago.	Hour	/hour	NONE	NONE	NONE	/hour	0.4	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	complaint	0.67	He_complaint	Chief_complaint_(finding)	NONE	NONE	NONE	NONE	Chief_complaint_(finding)	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+complaint	complaint	O	NN	ROOT-S-VP-NP-NP-NN	He-of	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+of	of	O	IN	ROOT-S-VP-NP-PP-IN	tiredness	complaint	0.17	of_nausea	Nausea	Nausea_Adverse_Event	NONE	NONE	NONE	Nausea_Adverse_Event	0.5	0.0	NA	NA
+nausea	nausea	O	NN	ROOT-S-VP-NP-PP-NP-NP-NN	and-extreme	tiredness	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	MyShift_OtherObservation
+and	and	O	CC	ROOT-S-VP-NP-PP-NP-NP-CC	NONE	nausea	0.83	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	MyShift_OtherObservation
+extreme	extreme	O	JJ	ROOT-S-VP-NP-PP-NP-NP-JJ	NONE	nausea	0.17	extreme_tiredness.	Fatigue	Tired	Extreme	NONE	NONE	Extreme	0.5	0.0	NA	MyShift_OtherObservation
+tiredness	tiredness	O	NN	ROOT-S-VP-NP-PP-NP-NN	nausea	of	0.17	extreme_tiredness.	Fatigue	Tired	Extreme	NONE	NONE	Extreme	0.5	0.0	NA	MyShift_OtherObservation
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	given	0.67	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+was	be	O	VBD	ROOT-S-VP-VBD	NONE	given	0.5	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+given	give	O	VBN	ROOT-S-VP-VP-VBN	He-was-antiemetics-with	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+antiemetics	antiemetic	O	NNS	ROOT-S-VP-VP-NP-NNS	NONE	given	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.5	NA	NA
+with	with	O	IN	ROOT-S-VP-VP-PP-IN	effect	given	0.33	with_good_effect._bloods	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Good	0.6	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+good	good	O	JJ	ROOT-S-VP-VP-PP-NP-JJ	NONE	effect	0.17	with_good_effect._bloods	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Good	0.6	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+effect	effect	O	NN	ROOT-S-VP-VP-PP-NP-NN	good	with	0.17	with_good_effect._bloods	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Good	0.7	0.0	NA	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	with_good_effect._bloods	Bloods_(ethnic_group)	Blood	In_Blood	peripheral_blood	Blood_Vessels	Good	0.7	0.0	NA	NA
+
+bloods	blood	O	NNS	ROOT-S-NP-NNS	NONE	taken	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	NA
+was	be	O	VBD	ROOT-S-VP-VP-VBD	NONE	taken	0.5	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	NA
+taken	take	O	VBN	ROOT-S-VP-VP-VP-VBN	bloods-was-and-echo	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	NA
+and	and	O	CC	ROOT-S-VP-CC	NONE	taken	0.83	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+echo	echo	O	VBP	ROOT-S-VP-VP-VBP	done	taken	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	NA
+was	be	O	VBD	ROOT-S-VP-VP-VBD	NONE	done	0.5	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_OtherObservation	NA
+done	do	O	VBN	ROOT-S-VP-VP-S-S-VP-VP-VBN	was-and-awaiting	echo	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_OtherObservation	NA
+and	and	O	CC	ROOT-S-VP-CC	NONE	done	0.83	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+awaiting	await	O	VBG	ROOT-S-VP-VP-S-S-VP-VBG	results-for-review	done	0.17	awaiting_results	Result	What_subject_filter_-_Result	Experimental_Result	NONE	NONE	Result	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+results	result	O	NNS	ROOT-S-VP-VP-S-S-VP-NP-NNS	NONE	awaiting	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+for	for	O	IN	ROOT-S-VP-VP-S-S-VP-PP-IN	team	awaiting	0.17	for_team_to	Team	NONE	NONE	NONE	NONE	Team	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+team	team	O	NN	ROOT-S-VP-VP-S-S-VP-PP-NP-NN	NONE	for	0.17	for_team_to	Team	NONE	NONE	NONE	NONE	Team	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+to	to	O	TO	ROOT-S-VP-VP-S-S-VP-S-VP-TO	NONE	review	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+review	review	O	VB	ROOT-S-VP-VP-S-S-VP-S-VP-VP-VB	to	awaiting	0.17	review.	Review_[Publication_Type]	Act_Class_-_review	Reviewing	Reviewed	NONE	Review_[Publication_Type]	0.9	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	obs	0.67	He's_obs	Helium	CYTIP_gene	NONE	NONE	NONE	Helium	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	obs	0.17	He's_obs	Helium	CYTIP_gene	NONE	NONE	NONE	Helium	0.9	0.0	NA	NA
+obs	ob	O	NNS	ROOT-S-VP-NP-NP-NNS	He-'s-stable	ROOT	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-NP-SBAR-S-VP-VBP	NONE	stable	0.17	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-VP-NP-SBAR-S-VP-ADJP-DT	NONE	stable	0.17	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-NP-SBAR-S-VP-ADJP-JJ	are-all	obs	0.17	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	MyShift_Status	NA
+

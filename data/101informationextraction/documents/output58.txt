@@ -1,0 +1,43 @@
+Room	room	O	NN	ROOT-NP-NP-NN	2-bed	ROOT	0.25	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+2	2	NUMBER	CD	ROOT-NP-NP-CD	NONE	Room	0.25	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.1	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+,	,	O	,	ROOT-NP-,	NONE	NONE	1.0	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-NP-NP-NN	5	Room	0.25	bed_5.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+5	5	NUMBER	CD	ROOT-NP-NP-CD	NONE	bed	0.25	bed_5.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-NP-.	NONE	NONE	0.5	bed_5.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	NA	NA
+
+Phil	Phil	PERSON	NNP	ROOT-S-S-NP-NP-NNP	NONE	Rivett	0.25	Phil_Albert_Rivett,	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Albert	Albert	PERSON	NNP	ROOT-S-S-NP-NP-NNP	NONE	Rivett	0.25	Phil_Albert_Rivett,	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Rivett	Rivett	PERSON	NNP	ROOT-S-S-NP-NP-NNP	Phil-Albert-old	came	0.25	Phil_Albert_Rivett,	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	Phil_Albert_Rivett,	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+64	64	DURATION	CD	ROOT-S-S-NP-ADJP-ADJP-NP-CD	NONE	yrs	0.25	64_yrs_old,	Old	NONE	NONE	NONE	NONE	Old	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-S-NP-ADJP-ADJP-NP-NNS	64	old	0.25	64_yrs_old,	Old	NONE	NONE	NONE	NONE	Old	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-S-NP-ADJP-ADJP-JJ	yrs-under	Rivett	0.25	64_yrs_old,	Old	NONE	NONE	NONE	NONE	Old	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	64_yrs_old,	Old	NONE	NONE	NONE	NONE	Old	0.3	0.0	NA	NA
+under	under	O	IN	ROOT-S-S-NP-ADJP-PRN-PP-IN	Silva	old	0.25	under_Dr_Jorge	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.4	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-S-NP-ADJP-PRN-PP-NP-NNP	NONE	Silva	0.25	under_Dr_Jorge	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.4	0.0	PatientIntroduction_UnderDr_GivenNames/Initials	PatientIntroduction_UnderDr_Lastname
+Jorge	Jorge	PERSON	NNP	ROOT-S-S-NP-ADJP-PRN-PP-NP-NNP	NONE	Silva	0.25	under_Dr_Jorge	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.4	0.0	PatientIntroduction_UnderDr_GivenNames/Initials	PatientIntroduction_UnderDr_Lastname
+De	De	PERSON	NNP	ROOT-S-S-NP-ADJP-PRN-PP-NP-NNP	NONE	Silva	0.25	De_Silva-,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.5	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Silva	Silva	PERSON	NNP	ROOT-S-S-NP-ADJP-PRN-PP-NP-NNP	Dr-Jorge-De	under	0.25	De_Silva-,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.5	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+-	-	O	:	ROOT-S-S-NP-ADJP-PRN-PP-:	NONE	NONE	0.25	De_Silva-,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.5	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-S-NP-,	NONE	NONE	1.0	De_Silva-,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.5	0.0	NA	NA
+came	come	O	VBD	ROOT-S-S-VP-VBD	Rivett-in-and-doing	ROOT	0.25	came	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+in	in	O	IN	ROOT-S-S-VP-PP-IN	surgery	came	0.25	in	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+post	post	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	surgery	0.25	post_brain_surgery	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operation_on_brain	Brain	Brain	0.6	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+brain	brain	O	NN	ROOT-S-S-VP-PP-NP-NN	NONE	surgery	0.25	post_brain_surgery	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operation_on_brain	Brain	Brain	0.6	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+surgery	surgery	O	NN	ROOT-S-S-VP-PP-NP-NN	post-brain	in	0.25	post_brain_surgery	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	Operation_on_brain	Brain	Brain	0.7	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+and	and	O	CC	ROOT-S-CC	NONE	came	0.5	and	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+he	he	O	PRP	ROOT-S-S-NP-PRP	NONE	doing	0.25	he	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	doing	0.25	is	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+doing	do	O	VBG	ROOT-S-S-VP-VP-VBG	he-is-well	came	0.25	doing	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_Status	NA
+well	well	O	RB	ROOT-S-S-VP-VP-ADVP-RB	NONE	doing	0.25	well.	Good	Better	best_(quality)	NONE	NONE	Good	0.8	0.0	MyShift_Status	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	0.5	well.	Good	Better	best_(quality)	NONE	NONE	Good	0.8	0.0	NA	NA
+
+His	he	O	PRP$	ROOT-S-NP-PRP$	NONE	obs	0.25	His_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+obs	ob	O	NNS	ROOT-S-NP-NNS	His	changes	0.25	His_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	changes	0.25	are	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-VP-NP-DT	NONE	changes	0.25	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-NP-ADJP-JJ	and-no	changes	0.25	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+and	and	O	CC	ROOT-S-VP-NP-ADJP-CC	NONE	stable	0.5	and	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	MyShift_Status
+no	no	O	DT	ROOT-S-VP-NP-ADJP-DT	NONE	stable	0.25	no_changes	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changed_status	1.0	0.0	MyShift_Status	MyShift_Status
+changes	change	O	NNS	ROOT-S-VP-NP-NNS	obs-are-all-stable	ROOT	0.25	no_changes	Changing	Changed_status	Delta_(difference)	NONE	NONE	Changed_status	1.0	0.0	MyShift_Status	MyShift_Status
+

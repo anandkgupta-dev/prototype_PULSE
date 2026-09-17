@@ -1,0 +1,73 @@
+Room	room	O	NN	ROOT-NP-NP-NN	2-bed	ROOT	0.17	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+2	2	NUMBER	CD	ROOT-NP-NP-CD	NONE	Room	0.17	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+,	,	O	,	ROOT-NP-,	NONE	NONE	0.5	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	NA	NA
+bed	bed	O	NN	ROOT-NP-NP-NN	7	Room	0.17	bed_7.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+7	7	NUMBER	CD	ROOT-NP-NP-CD	NONE	bed	0.17	bed_7.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	bed_7.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	NA	NA
+
+Dercy	Dercy	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Patterson	0.17	Dercy_Patterson,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_UnderDr_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Patterson	Patterson	PERSON	NNP	ROOT-S-NP-NP-NNP	Dercy-old	came	0.17	Dercy_Patterson,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.5	Dercy_Patterson,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+70	70	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	yrs	0.17	70_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-ADJP-NP-NNS	70	old	0.17	70_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	yrs-under	Patterson	0.17	70_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Silva	old	0.17	under_Dr	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Doctor_-_Title	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Silva	0.17	under_Dr	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Doctor_-_Title	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_GivenNames/Initials
+De	De	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Silva	0.17	De_Silva,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Silva	Silva	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	Dr-De	under	0.17	De_Silva,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.5	De_Silva,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Patterson-in	ROOT	0.17	came	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.17	in	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	dementia	in	0.17	with_dementia.	Presenile_dementia	Dementia	demented	NONE	NONE	Presenile_dementia	0.3	0.0	NA	NA
+dementia	dementia	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	with	0.17	with_dementia.	Presenile_dementia	Dementia	demented	NONE	NONE	Presenile_dementia	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	with_dementia.	Presenile_dementia	Dementia	demented	NONE	NONE	Presenile_dementia	0.3	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-S-NP-PRP	NONE	confused	0.33	She	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	confused	0.5	is	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+not	not	O	RB	ROOT-S-S-VP-RB	NONE	confused	0.17	not	Negation	NONE	NONE	NONE	NONE	Negation	0.4	0.0	MyShift_Status	MyShift_OtherObservation
+confused	confuse	O	VBN	ROOT-S-S-VP-VP-VBN	She-is-not-today-and-pleasant	ROOT	0.17	confused	Confusion	Precaution_Code_-_Confused	NONE	NONE	NONE	Confusion	0.4	0.0	MyShift_Status	MyShift_OtherObservation
+today	today	DATE	NN	ROOT-S-S-VP-VP-NP-TMP-NN	NONE	confused	0.17	today	Today	Today_(temporal_qualifier)	NONE	NONE	NONE	Today_(temporal_qualifier)	0.4	0.0	NA	MyShift_OtherObservation
+and	and	O	CC	ROOT-S-CC	NONE	confused	0.5	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	pleasant	0.33	she	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	pleasant	0.5	is	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+very	very	O	RB	ROOT-S-S-VP-ADJP-RB	NONE	pleasant	0.17	very_pleasant.	Very	NONE	NONE	NONE	NONE	Very	0.5	0.0	MyShift_Status	MyShift_Status
+pleasant	pleasant	O	JJ	ROOT-S-S-VP-ADJP-JJ	she-is-very	confused	0.17	very_pleasant.	Very	NONE	NONE	NONE	NONE	Very	0.5	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	very_pleasant.	Very	NONE	NONE	NONE	NONE	Very	0.5	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	tolerated	0.33	She	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-VP-VP-VBD	NONE	tolerated	0.17	had	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+tolerated	tolerate	O	VBN	ROOT-S-VP-VP-VP-VBN	She-had-diet-well-and-taken	ROOT	0.17	tolerated	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Input/Diet	NA
+her	she	O	PRP$	ROOT-S-VP-VP-VP-NP-PRP$	NONE	diet	0.5	her_diet_well	Diet	Dietetics	Good	Better	best_(quality)	Diet	0.6	0.0	MyShift_Input/Diet	PatientIntroduction_Gender
+diet	diet	O	NN	ROOT-S-VP-VP-VP-NP-NN	her	tolerated	0.17	her_diet_well	Diet	Dietetics	Good	Better	best_(quality)	Diet	0.6	0.5	MyShift_Input/Diet	MyShift_Input/Diet
+well	well	O	RB	ROOT-S-VP-VP-VP-ADVP-RB	NONE	tolerated	0.17	her_diet_well	Diet	Dietetics	Good	Better	best_(quality)	Diet	0.6	0.0	MyShift_Input/Diet	MyShift_Input/Diet
+and	and	O	CC	ROOT-S-VP-CC	NONE	tolerated	0.5	and	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+have	have	O	VBP	ROOT-S-VP-VP-VBP	NONE	taken	0.17	have	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_OtherObservation	NA
+taken	take	O	VBN	ROOT-S-VP-VP-VP-VBN	have-meds	tolerated	0.17	taken	Taken	Take	NONE	NONE	NONE	Taken	0.6	0.0	MyShift_OtherObservation	NA
+all	all	O	DT	ROOT-S-VP-VP-VP-NP-DT	NONE	meds	0.33	all_her_meds.	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_OtherObservation	NA
+her	she	O	PRP$	ROOT-S-VP-VP-VP-NP-PRP$	NONE	meds	0.5	all_her_meds.	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	PatientIntroduction_Gender
+meds	med	O	NNS	ROOT-S-VP-VP-VP-NP-NNS	all-her	taken	0.17	all_her_meds.	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	all_her_meds.	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+
+Her	she	O	PRP$	ROOT-S-S-NP-PRP$	NONE	obs	0.17	Her_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+obs	ob	O	NNS	ROOT-S-S-NP-NNS	Her	stable	0.17	Her_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-S-VP-VBP	NONE	stable	0.17	are	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-S-VP-ADJP-DT	NONE	stable	0.33	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.7	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-S-VP-ADJP-JJ	obs-are-all-and-noted	ROOT	0.17	all_stable	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.8	0.0	MyShift_Status	MyShift_Status
+and	and	O	CC	ROOT-S-CC	NONE	stable	0.5	and	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+no	no	O	DT	ROOT-S-S-NP-DT	NONE	problems	0.17	no_other_problems	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.8	0.0	NA	MyShift_Status
+other	other	O	JJ	ROOT-S-S-NP-JJ	NONE	problems	0.17	no_other_problems	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.8	0.0	NA	MyShift_Status
+problems	problem	O	NNS	ROOT-S-S-NP-NNS	no-other	noted	0.17	no_other_problems	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.8	0.0	NA	MyShift_Status
+noted	note	O	VBD	ROOT-S-S-VP-VBD	problems-for	stable	0.17	noted	Note	NONE	NONE	NONE	NONE	Note	0.8	0.0	NA	MyShift_Status
+for	for	O	IN	ROOT-S-S-VP-PP-IN	her	noted	0.17	for_her.	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+her	she	O	PRP	ROOT-S-S-NP-PRP$	NONE	for	0.5	for_her.	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	for_her.	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	awaiting	0.33	she	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	awaiting	0.5	is	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	awaiting	0.17	still	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+awaiting	await	O	VBG	ROOT-S-VP-VP-VBG	she-is-still-placement	ROOT	0.17	awaiting	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+nursing	nursing	O	NN	ROOT-S-VP-VP-NP-NN	NONE	placement	0.17	nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	1.0	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+home	home	O	NN	ROOT-S-VP-VP-NP-NN	NONE	placement	0.17	nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	1.0	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+placement	placement	O	NN	ROOT-S-VP-VP-NP-NN	nursing-home	awaiting	0.17	nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	1.0	0.0	Future_Discharge/TransferPlan	Future_Discharge/TransferPlan
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	nursing_home_placement.	Breast_Feeding	Discipline_of_Nursing	nursing_therapy	Nursing_Homes	Clinical_act_of_insertion	Discipline_of_Nursing	1.0	0.0	NA	NA
+

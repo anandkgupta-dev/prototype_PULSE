@@ -1,0 +1,50 @@
+Room	room	O	NN	ROOT-NP-NP-NN	2-bed	ROOT	0.25	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+2	2	NUMBER	CD	ROOT-NP-NP-CD	NONE	Room	0.25	Room_2,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+,	,	O	,	ROOT-NP-,	NONE	NONE	0.75	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+bed	bed	O	NN	ROOT-NP-NP-NN	4	Room	0.25	bed_4.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+4	4	NUMBER	CD	ROOT-NP-NP-CD	NONE	bed	0.25	bed_4.	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+
+Ether	Ether	O	NNP	ROOT-S-NP-NP-NNP	NONE	Buntine	0.25	Ether_Buntine,	Ether,_Ethyl	Ethers	Etherum,_ether,_Homeopathic_preparation	NONE	NONE	Ether,_Ethyl	0.2	0.5	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Buntine	Buntine	O	NNP	ROOT-S-NP-NP-NNP	Ether-old	came	0.25	Ether_Buntine,	Ether,_Ethyl	Ethers	Etherum,_ether,_Homeopathic_preparation	NONE	NONE	Ether,_Ethyl	0.2	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.75	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+88	88	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	yrs	0.25	88_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-ADJP-NP-NNS	88	old	0.25	88_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	yrs-under	Buntine	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Silva	old	0.25	under_Dr_Jorge	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Doctor_-_Title	0.3	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Silva	0.25	under_Dr_Jorge	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Doctor_-_Title	0.3	0.0	NA	NA
+Jorge	Jorge	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Silva	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_UnderDr_GivenNames/Initials	PatientIntroduction_UnderDr_GivenNames/Initials
+De	De	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Silva	0.25	De_Silva,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Silva	Silva	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	Dr-Jorge-De	under	0.25	De_Silva,	Silvan	Wood_material	Woods	NONE	NONE	Silvan	0.4	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.75	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Buntine-in	ROOT	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	epilepsy	in	0.25	with_epilepsy.	Epilepsy	NONE	NONE	NONE	NONE	Epilepsy	0.5	0.0	NA	NA
+epilepsy	epilepsy	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	with	0.5	with_epilepsy.	Epilepsy	NONE	NONE	NONE	NONE	Epilepsy	0.5	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-S-NP-PRP	NONE	have	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+does	do	O	VBZ	ROOT-S-S-VP-VBZ	NONE	have	0.25	doesn't	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+n't	not	O	RB	ROOT-S-S-VP-RB	NONE	have	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+have	have	O	VB	ROOT-S-S-VP-VP-VB	She-does-n't-episode-on-and-stable	ROOT	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+any	any	O	DT	ROOT-S-S-VP-VP-NP-NP-DT	NONE	episode	0.25	any_episode	Episode_of	Episodic	Episodicity	NONE	NONE	Episode_of	0.6	0.0	NA	NA
+episode	episode	O	NN	ROOT-S-S-VP-VP-NP-NP-NN	any-of	have	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+of	of	O	IN	ROOT-S-S-VP-VP-NP-PP-IN	epilepsy	episode	0.25	of_epilepsy	Epilepsy	NONE	NONE	NONE	NONE	Epilepsy	0.7	0.0	NA	NA
+epilepsy	epilepsy	O	NN	ROOT-S-S-VP-VP-NP-PP-NP-NN	NONE	of	0.5	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+on	on	O	IN	ROOT-S-S-VP-VP-PP-IN	shift	have	0.25	on_my_shift	shift_displacement	Physical_Shift	NONE	NONE	NONE	shift_displacement	0.7	0.0	NA	NA
+my	my	O	PRP$	ROOT-S-S-VP-VP-PP-NP-PRP$	NONE	shift	0.25	on_my_shift	shift_displacement	Physical_Shift	NONE	NONE	NONE	shift_displacement	0.7	0.0	NA	NA
+shift	shift	O	NN	ROOT-S-S-VP-VP-PP-NP-NN	my	on	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+and	and	O	CC	ROOT-S-CC	NONE	have	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+she	she	O	PRP	ROOT-S-S-NP-PRP	NONE	stable	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	NONE	stable	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+all	all	O	DT	ROOT-S-S-VP-ADJP-DT	NONE	stable	0.25	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.8	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-S-VP-ADJP-JJ	she-is-all	have	0.25	all_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.8	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+No	no	O	DT	ROOT-NP-NP-DT	NONE	changes	0.25	No_other_changes	Changing	Changed_status	Delta_(difference)	Other	Others	Other	0.9	0.0	MyShift_Status	MyShift_Status
+other	other	O	JJ	ROOT-NP-NP-JJ	NONE	changes	0.25	No_other_changes	Changing	Changed_status	Delta_(difference)	Other	Others	Other	0.9	0.0	MyShift_Status	MyShift_Status
+changes	change	O	NNS	ROOT-NP-NP-NNS	No-other-to	ROOT	0.25	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+to	to	O	TO	ROOT-NP-PP-TO	her	changes	0.25	to_her.	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+her	she	O	PRP	ROOT-NP-PP-NP-PRP	NONE	to	0.25	to_her.	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+

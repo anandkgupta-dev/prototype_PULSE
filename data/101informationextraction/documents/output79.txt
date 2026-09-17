@@ -1,0 +1,104 @@
+room	room	O	NN	ROOT-S-NP-NP-NN	1-bed-Ramzi-40	came	0.11	room_1,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+1	1	NUMBER	CD	ROOT-S-NP-NP-CD	NONE	room	0.11	room_1,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	PatientIntroduction_CurrentRoom	PatientIntroduction_CurrentRoom
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.56	room_1,	Room	NONE	NONE	NONE	NONE	Room	0.0	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-NP-NP-NN	3	room	0.11	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+3	3	NUMBER	CD	ROOT-S-NP-NP-CD	NONE	bed	0.11	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.56	bed_3,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	NA	NA
+Ibrahim	Ibrahim	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Ramzi	0.11	Ibrahim_Ramzi,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Ramzi	Ramzi	PERSON	NNP	ROOT-S-NP-NP-NNP	Ibrahim	room	0.11	Ibrahim_Ramzi,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.56	Ibrahim_Ramzi,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+40	40	NUMBER	CD	ROOT-S-NP-NP-NP-CD	under	room	0.11	40	/40	NONE	NONE	NONE	NONE	/40	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-PP-IN	Morris	40	0.22	under_Dr_Morris,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-PP-NP-NNP	NONE	Morris	0.11	under_Dr_Morris,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Morris	Morris	PERSON	NNP	ROOT-S-NP-NP-PP-NP-NNP	Dr	under	0.11	under_Dr_Morris,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.56	under_Dr_Morris,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	room-in-with	ROOT	0.11	came	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	yesterday	came	0.11	in_yesterday	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+yesterday	yesterday	DATE	NN	ROOT-S-VP-PP-NP-NN	NONE	in	0.11	in_yesterday	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-IN	pain	came	0.11	with_severe_lower_back_pain	Severe_pain	BACK_PAIN,_SEVERE	Back_Pain	Back_Pain_Adverse_Event	Low_Back_Pain	Severe_(severity_modifier)	0.2	0.0	NA	NA
+severe	severe	O	JJ	ROOT-S-VP-PP-NP-NP-JJ	NONE	pain	0.11	with_severe_lower_back_pain	Severe_pain	BACK_PAIN,_SEVERE	Back_Pain	Back_Pain_Adverse_Event	Low_Back_Pain	Severe_(severity_modifier)	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+lower	lower	O	JJR	ROOT-S-VP-PP-NP-NP-ADJP-ADJP-JJR	back	pain	0.11	with_severe_lower_back_pain	Severe_pain	BACK_PAIN,_SEVERE	Back_Pain	Back_Pain_Adverse_Event	Low_Back_Pain	Severe_(severity_modifier)	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+back	back	O	RB	ROOT-S-VP-PP-NP-NP-ADJP-ADVP-RB	NONE	lower	0.11	with_severe_lower_back_pain	Severe_pain	BACK_PAIN,_SEVERE	Back_Pain	Back_Pain_Adverse_Event	Low_Back_Pain	Severe_(severity_modifier)	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+pain	pain	O	NN	ROOT-S-VP-PP-NP-NP-NN	severe-lower-secondary	with	0.22	with_severe_lower_back_pain	Severe_pain	BACK_PAIN,_SEVERE	Back_Pain	Back_Pain_Adverse_Event	Low_Back_Pain	Severe_(severity_modifier)	0.2	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+secondary	secondary	O	JJ	ROOT-S-VP-PP-NP-ADJP-JJ	to	pain	0.11	secondary	Neoplasm_Metastasis	Secondary_to	second_(number)	metastatic_qualifier	Secondary_Neoplasm	Secondary_to	0.2	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+to	to	O	TO	ROOT-S-VP-PP-NP-ADJP-PP-TO	obstruction	secondary	0.22	to_urinary_obstruction.	Obstruction	Obstruction_within_Medical_Device	Urinary_tract_obstruction	Urinary_tract	urinary	urinary	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+urinary	urinary	O	JJ	ROOT-S-VP-PP-NP-ADJP-PP-NP-JJ	NONE	obstruction	0.11	to_urinary_obstruction.	Obstruction	Obstruction_within_Medical_Device	Urinary_tract_obstruction	Urinary_tract	urinary	urinary	0.3	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+obstruction	obstruction	O	NN	ROOT-S-VP-PP-NP-ADJP-PP-NP-NN	urinary	to	0.22	to_urinary_obstruction.	Obstruction	Obstruction_within_Medical_Device	Urinary_tract_obstruction	Urinary_tract	urinary	urinary	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	to_urinary_obstruction.	Obstruction	Obstruction_within_Medical_Device	Urinary_tract_obstruction	Urinary_tract	urinary	urinary	0.3	0.0	NA	NA
+
+With	with	O	IN	ROOT-FRAG-PP-IN	history	ROOT	0.11	With_the_long_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Long	0.3	0.0	NA	NA
+the	the	O	DT	ROOT-FRAG-PP-NP-NP-DT	NONE	history	0.33	With_the_long_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Long	0.3	0.0	NA	NA
+long	long	O	JJ	ROOT-FRAG-PP-NP-NP-JJ	NONE	history	0.11	With_the_long_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Long	0.3	0.0	PatientIntroduction_ChronicCondition	NA
+history	history	O	NN	ROOT-FRAG-PP-NP-NP-NN	the-long-of	With	0.11	With_the_long_history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	Long	0.3	0.0	PatientIntroduction_ChronicCondition	NA
+of	of	O	IN	ROOT-FRAG-PP-NP-PP-IN	problems	history	0.11	of_kidney_problems.	Problems_-_What_subject_filter	Kidney_problem	Problem	Kidney	Both_kidneys	Kidney	0.3	0.0	PatientIntroduction_ChronicCondition	NA
+kidney	kidney	O	NN	ROOT-FRAG-PP-NP-PP-NP-NN	NONE	problems	0.11	of_kidney_problems.	Problems_-_What_subject_filter	Kidney_problem	Problem	Kidney	Both_kidneys	Kidney	0.3	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_AdmissionReason/Diagnosis
+problems	problem	O	NNS	ROOT-FRAG-PP-NP-PP-NP-NNS	kidney	of	0.11	of_kidney_problems.	Problems_-_What_subject_filter	Kidney_problem	Problem	Kidney	Both_kidneys	Kidney	0.4	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	of_kidney_problems.	Problems_-_What_subject_filter	Kidney_problem	Problem	Kidney	Both_kidneys	Kidney	0.4	0.0	NA	NA
+
+Bet	bet	O	NN	ROOT-S-NP-TMP-NP-NN	know	is	0.11	Bet	Gambling	DNER_gene	NONE	NONE	NONE	DNER_gene	0.4	0.0	NA	NA
+you	you	O	PRP	ROOT-S-NP-TMP-SBAR-S-NP-PRP	NONE	know	0.11	you	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+know	know	O	VBP	ROOT-S-NP-TMP-SBAR-S-VP-VBP	you-more	Bet	0.11	know	Known	NONE	NONE	NONE	NONE	Known	0.4	0.0	NA	NA
+him	he	O	PRP	ROOT-S-NP-TMP-SBAR-S-VP-S-NP-PRP	NONE	more	0.22	him_more	More	Most	NONE	NONE	NONE	More	0.4	0.0	PatientIntroduction_Gender	NA
+more	more	O	JJR	ROOT-S-NP-TMP-SBAR-S-VP-S-ADJP-JJR	him-am	know	0.11	him_more	More	Most	NONE	NONE	NONE	More	0.4	0.0	NA	NA
+than	than	O	IN	ROOT-S-NP-TMP-SBAR-S-VP-S-ADJP-SBAR-IN	NONE	am	0.11	than_I	Iodides	Blood_group_antibody_I	NONE	NONE	NONE	Blood_group_antibody_I	0.4	0.0	NA	NA
+I	I	O	PRP	ROOT-S-NP-TMP-SBAR-S-VP-S-ADJP-SBAR-S-NP-PRP	NONE	am	0.11	than_I	Iodides	Blood_group_antibody_I	NONE	NONE	NONE	Blood_group_antibody_I	0.4	0.0	NA	NA
+am	be	O	VBP	ROOT-S-NP-TMP-SBAR-S-VP-S-ADJP-SBAR-S-VP-VBP	than-I	more	0.11	am	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+,	,	O	,	ROOT-S-,	NONE	NONE	0.56	,	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	is	0.11	He	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	Bet-He-still-under	ROOT	0.11	is	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	is	0.22	still	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+under	under	O	IN	ROOT-S-VP-PP-IN	investigation	is	0.22	under_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	PatientIntroduction_CarePlan
+investigation	investigation	O	NN	ROOT-S-VP-PP-NP-NN	NONE	under	0.11	under_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	PatientIntroduction_CarePlan
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	under_investigation.	Evaluation_procedure	Act_Class_-_investigation	Investigational	NONE	NONE	Evaluation_procedure	0.5	0.0	NA	NA
+
+For	for	O	IN	ROOT-FRAG-PP-IN	US	ROOT	0.11	For_renal	Kidney	NONE	NONE	NONE	NONE	Kidney	0.5	0.0	NA	NA
+renal	renal	O	JJ	ROOT-FRAG-PP-NP-NP-JJ	NONE	US	0.11	For_renal	Kidney	NONE	NONE	NONE	NONE	Kidney	0.5	0.5	Appointment/Procedure_Description	Appointment/Procedure_Description
+US	US	LOCATION	NNP	ROOT-FRAG-PP-NP-NP-NNP	renal-on	For	0.11	US	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	Appointment/Procedure_Description	Appointment/Procedure_Description
+on	on	O	IN	ROOT-FRAG-PP-NP-PP-IN	Friday	US	0.22	on_Friday	Friday	NONE	NONE	NONE	NONE	Friday	0.6	0.0	NA	NA
+Friday	Friday	DATE	NNP	ROOT-FRAG-PP-NP-PP-NP-NP-NNP	at	on	0.11	on_Friday	Friday	NONE	NONE	NONE	NONE	Friday	0.6	0.0	Appointment/Procedure_Day	NA
+at	at	TIME	IN	ROOT-FRAG-PP-NP-PP-NP-PP-IN	2pm	Friday	0.22	at_2pm.	Maxillary_right_second_molar_mesial_prosthesis	NONE	NONE	NONE	NONE	Maxillary_right_second_molar_mesial_prosthesis	0.6	0.0	NA	NA
+2pm	2pm	TIME	CD	ROOT-FRAG-PP-NP-PP-NP-PP-NP-CD	NONE	at	0.11	at_2pm.	Maxillary_right_second_molar_mesial_prosthesis	NONE	NONE	NONE	NONE	Maxillary_right_second_molar_mesial_prosthesis	0.6	0.0	Appointment/Procedure_Time	Appointment/Procedure_Time
+.	.	TIME	.	ROOT-FRAG-.	NONE	NONE	1.0	at_2pm.	Maxillary_right_second_molar_mesial_prosthesis	NONE	NONE	NONE	NONE	Maxillary_right_second_molar_mesial_prosthesis	0.6	0.0	NA	NA
+
+Ct	ct	O	NN	ROOT-S-NP-NN	scan	showed	0.11	Ct_scan	Radionuclide_Imaging	Scanning	Related_to_Cancer	X-Ray_Computed_Tomography	CAT_Scan_Section_ID	Radionuclide_Imaging	0.6	0.0	Appointment/Procedure_Status	NA
+scan	scan	O	VB	ROOT-S-NP-S-VP-VB	NONE	Ct	0.11	Ct_scan	Radionuclide_Imaging	Scanning	Related_to_Cancer	X-Ray_Computed_Tomography	CAT_Scan_Section_ID	Radionuclide_Imaging	0.6	0.0	Appointment/Procedure_Status	NA
+showed	show	O	VBD	ROOT-S-VP-VBD	Ct-obstruction-at	ROOT	0.11	showed	Show	NONE	NONE	NONE	NONE	Show	0.6	0.0	Appointment/Procedure_Status	NA
+obstruction	obstruction	O	NN	ROOT-S-VP-NP-NN	NONE	showed	0.22	obstruction	Obstruction	Obstruction_within_Medical_Device	NONE	NONE	NONE	Obstruction	0.7	0.0	Appointment/Procedure_Status	NA
+at	at	O	IN	ROOT-S-VP-PP-IN	ureters	showed	0.22	at_the_ureters.	Ureter	Entire_ureter	Ureteral_Route_of_Drug_Administration	NONE	NONE	Ureter	0.7	0.0	Appointment/Procedure_Status	NA
+the	the	O	DT	ROOT-S-VP-PP-NP-DT	NONE	ureters	0.33	at_the_ureters.	Ureter	Entire_ureter	Ureteral_Route_of_Drug_Administration	NONE	NONE	Ureter	0.7	0.0	Appointment/Procedure_Status	NA
+ureters	ureter	O	NNS	ROOT-S-VP-PP-NP-NNS	the	at	0.11	at_the_ureters.	Ureter	Entire_ureter	Ureteral_Route_of_Drug_Administration	NONE	NONE	Ureter	0.7	0.0	Appointment/Procedure_Status	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	at_the_ureters.	Ureter	Entire_ureter	Ureteral_Route_of_Drug_Administration	NONE	NONE	Ureter	0.7	0.0	NA	NA
+
+The	the	O	DT	ROOT-S-NP-DT	NONE	team	0.11	The_team	Team	NONE	NONE	NONE	NONE	Team	0.7	0.0	NA	NA
+team	team	O	NN	ROOT-S-NP-NN	The	planning	0.11	The_team	Team	NONE	NONE	NONE	NONE	Team	0.7	0.0	NA	NA
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	planning	0.22	are	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+planning	plan	O	VBG	ROOT-S-VP-VP-VBG	team-are-put	ROOT	0.11	planning	Cognitive_function:_planning	Planned	Infantile_Neuroaxonal_Dystrophy	NONE	NONE	Planned	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+to	to	O	TO	ROOT-S-VP-VP-S-VP-TO	NONE	put	0.22	to	To	NONE	NONE	NONE	NONE	To	0.7	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+put	put	O	VB	ROOT-S-VP-VP-S-VP-VP-VB	to-stent-on	planning	0.11	put	put_-_instruction_imperative	NONE	NONE	NONE	NONE	put_-_instruction_imperative	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+stent	stent	O	NN	ROOT-S-VP-VP-S-VP-VP-NP-NN	NONE	put	0.11	stent	Stent,_device	Stent_Device_Component	NONE	NONE	NONE	Stent,_device	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+on	on	O	IN	ROOT-S-VP-VP-S-VP-VP-PP-IN	him	put	0.22	on_him.	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	NA
+him	he	O	PRP	ROOT-S-VP-VP-S-VP-VP-PP-NP-PRP	NONE	on	0.22	on_him.	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	PatientIntroduction_Gender
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	on_him.	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+
+he	he	O	PRP	ROOT-S-NP-PRP	NONE	endone	0.11	he	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-VP-VBD	NONE	endone	0.11	had	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+endone	endone	O	VBN	ROOT-S-VP-VP-VBN	he-had-for	ROOT	0.11	endone	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Medication_Medicine	Medication_Medicine
+for	for	O	IN	ROOT-S-VP-VP-PP-IN	pain	endone	0.11	for_pain	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain_NOS_Adverse_Event	0.8	0.0	Medication_Medicine	Medication_Medicine
+pain	pain	O	NN	ROOT-S-VP-VP-PP-NP-NP-NN	and-panadol	for	0.22	for_pain	Pain	Pain_NOS_Adverse_Event	Painless	NONE	NONE	Pain_NOS_Adverse_Event	0.9	0.0	Medication_Medicine	Medication_Medicine
+and	and	O	CC	ROOT-S-VP-VP-PP-NP-CC	NONE	pain	0.11	and	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+regular	regular	O	JJ	ROOT-S-VP-VP-PP-NP-NP-JJ	NONE	panadol	0.11	regular_panadol.	Panadol	Regular	NONE	NONE	NONE	Regular	0.9	0.0	Medication_Medicine	Medication_Medicine
+panadol	panadol	O	NN	ROOT-S-VP-VP-PP-NP-NP-NN	regular	pain	0.11	regular_panadol.	Panadol	Regular	NONE	NONE	NONE	Regular	0.9	0.0	Medication_Medicine	Medication_Medicine
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	regular_panadol.	Panadol	Regular	NONE	NONE	NONE	Regular	0.9	0.0	NA	NA
+
+His	he	O	PRP$	ROOT-S-NP-PRP$	NONE	obs	0.11	His_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+obs	ob	O	NNS	ROOT-S-NP-NNS	His	stable	0.11	His_obs	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-VBP	NONE	stable	0.22	are	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_Status	MyShift_Status
+all	all	O	DT	ROOT-S-VP-ADJP-DT	NONE	stable	0.11	all_stable._still	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-ADJP-JJ	obs-are-all	ROOT	0.11	all_stable._still	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.9	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	all_stable._still	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	NA	NA
+
+still	still	O	RB	ROOT-FRAG-ADVP-ADVP-RB	same	ROOT	0.22	all_stable._still	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	1.0	0.0	MyShift_Status	MyShift_Status
+the	the	O	DT	ROOT-FRAG-ADVP-NP-DT	NONE	same	0.33	the_same.	Same	NONE	NONE	NONE	NONE	Same	1.0	0.0	MyShift_Status	MyShift_Status
+same	same	O	JJ	ROOT-FRAG-ADVP-NP-JJ	the	still	0.11	the_same.	Same	NONE	NONE	NONE	NONE	Same	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	the_same.	Same	NONE	NONE	NONE	NONE	Same	1.0	0.0	NA	NA
+

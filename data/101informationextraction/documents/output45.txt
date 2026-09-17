@@ -1,0 +1,49 @@
+George	George	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Belgin	0.2	George_Belgin,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Belgin	Belgin	PERSON	NNP	ROOT-S-NP-NP-NNP	George-years	came	0.2	George_Belgin,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	0.4	George_Belgin,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+43	43	DURATION	CD	ROOT-S-NP-NP-NP-CD	NONE	years	0.2	43_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-NP-NP-NNS	43-old	Belgin	0.2	43_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-NP-ADJP-JJ	under	years	0.2	43_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-NP-ADJP-PP-IN	McDonald	old	0.2	under_Dr_McDonald	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	NA
+Dr	Dr	O	NNP	ROOT-S-NP-NP-ADJP-PP-NP-NNP	NONE	McDonald	0.2	under_Dr_McDonald	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+McDonald	McDonald	PERSON	NNP	ROOT-S-NP-NP-ADJP-PP-NP-NNP	Dr	under	0.2	under_Dr_McDonald	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+came	come	O	VBD	ROOT-S-VP-VBD	Belgin-had	ROOT	0.2	came	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-SBAR-IN	NONE	had	0.2	in	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+had	have	O	VBD	ROOT-S-VP-SBAR-S-VP-VP-VBD	in-transplant-and-now-suspected	came	0.4	had	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+a	a	O	DT	ROOT-S-VP-SBAR-S-VP-VP-NP-DT	NONE	transplant	0.2	a_lung_transplant	Transplantation	Transplanted_tissue	Lung_Transplantation	Lung	Entire_lung	Lung	0.3	0.0	NA	NA
+lung	lung	O	NN	ROOT-S-VP-SBAR-S-VP-VP-NP-NN	NONE	transplant	0.2	a_lung_transplant	Transplantation	Transplanted_tissue	Lung_Transplantation	Lung	Entire_lung	Lung	0.3	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+transplant	transplant	O	NN	ROOT-S-VP-SBAR-S-VP-VP-NP-NN	a-lung	had	0.2	a_lung_transplant	Transplantation	Transplanted_tissue	Lung_Transplantation	Lung	Entire_lung	Lung	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+and	and	O	CC	ROOT-S-VP-SBAR-S-VP-CC	NONE	had	0.2	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+now	now	DATE	RB	ROOT-S-VP-SBAR-S-VP-ADVP-RB	NONE	had	0.2	now	Now_(temporal_qualifier)	NONE	NONE	NONE	NONE	Now_(temporal_qualifier)	0.4	0.0	NA	NA
+is	be	O	VBZ	ROOT-S-VP-SBAR-S-VP-VP-VBZ	NONE	suspected	0.4	is	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+suspected	suspect	O	VBN	ROOT-S-VP-SBAR-S-VP-VP-VP-VBN	is-have	had	0.2	suspected_to	Suspected_diagnosis	Suspected_qualifier	Allergy_Clinical_Status_-_Suspect	NONE	NONE	Suspected_diagnosis	0.4	0.0	PatientIntroduction_CarePlan	NA
+to	to	O	TO	ROOT-S-VP-SBAR-S-VP-VP-VP-S-VP-TO	NONE	have	0.2	suspected_to	Suspected_diagnosis	Suspected_qualifier	Allergy_Clinical_Status_-_Suspect	NONE	NONE	Suspected_diagnosis	0.5	0.0	PatientIntroduction_CarePlan	NA
+have	have	O	VB	ROOT-S-VP-SBAR-S-VP-VP-VP-S-VP-VP-VB	to-aspergillosis	suspected	0.2	have	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_CarePlan	NA
+aspergillosis	aspergillosis	O	NNS	ROOT-S-VP-SBAR-S-VP-VP-VP-S-VP-VP-NP-NNS	NONE	have	0.2	aspergillosis.	Aspergillosis	NONE	NONE	NONE	NONE	Aspergillosis	0.5	0.0	PatientIntroduction_CarePlan	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	aspergillosis.	Aspergillosis	NONE	NONE	NONE	NONE	Aspergillosis	0.5	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	had	0.4	He	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-VP-VBD	He-today	ROOT	0.4	had	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+his	he	O	PRP$	ROOT-S-VP-NP-PRP$	NONE	today	0.2	his_chest_xray_today.	Today	Today_(temporal_qualifier)	roentgenographic	Chest_X-ray	Diagnostic_radiologic_examination	Chest	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+chest	chest	O	NN	ROOT-S-VP-NP-NN	NONE	today	0.2	his_chest_xray_today.	Today	Today_(temporal_qualifier)	roentgenographic	Chest_X-ray	Diagnostic_radiologic_examination	Chest	0.6	0.0	Appointment/Procedure_Description	NA
+xray	xray	O	NN	ROOT-S-VP-NP-NN	NONE	today	0.2	his_chest_xray_today.	Today	Today_(temporal_qualifier)	roentgenographic	Chest_X-ray	Diagnostic_radiologic_examination	Chest	0.6	0.0	Appointment/Procedure_Description	NA
+today	today	DATE	NN	ROOT-S-VP-NP-NN	his-chest-xray	had	0.2	his_chest_xray_today.	Today	Today_(temporal_qualifier)	roentgenographic	Chest_X-ray	Diagnostic_radiologic_examination	Chest	0.7	0.0	Appointment/Procedure_Time	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	his_chest_xray_today.	Today	Today_(temporal_qualifier)	roentgenographic	Chest_X-ray	Diagnostic_radiologic_examination	Chest	0.7	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	stable	0.4	He	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	stable	0.4	is	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+stable	stable	O	JJ	ROOT-S-VP-ADJP-JJ	He-is	ROOT	0.2	stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Patient_Condition_Code_-_Stable	0.8	0.0	MyShift_Status	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Patient_Condition_Code_-_Stable	0.8	0.0	NA	NA
+
+Nil	nil	O	NN	ROOT-NP-NN	NONE	changes	0.2	Nil_changes.	Changing	Changed_status	Delta_(difference)	Nil	NONE	Nil	0.8	0.0	MyShift_Status	MyShift_Status
+changes	change	O	NNS	ROOT-NP-NNS	Nil	ROOT	0.2	Nil_changes.	Changing	Changed_status	Delta_(difference)	Nil	NONE	Nil	0.8	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-NP-.	NONE	NONE	1.0	Nil_changes.	Changing	Changed_status	Delta_(difference)	Nil	NONE	Nil	0.8	0.0	NA	NA
+
+Allright	Allright	PERSON	NNP	ROOT-FRAG-NP-NNP	bed	ROOT	0.2	Allright,	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+,	,	O	,	ROOT-FRAG-,	NONE	NONE	0.4	Allright,	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+that	that	O	WDT	ROOT-FRAG-SBAR-WHNP-WDT	NONE	bed	0.2	that	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+was	be	O	VBD	ROOT-FRAG-SBAR-S-VP-VBD	NONE	bed	0.2	was	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+bed	bed	O	NN	ROOT-FRAG-SBAR-S-VP-NP-NN	that-was-6	Allright	0.2	bed_6.	Beds	NONE	NONE	NONE	NONE	Beds	1.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+6	6	NUMBER	CD	ROOT-FRAG-SBAR-S-VP-NP-CD	NONE	bed	0.2	bed_6.	Beds	NONE	NONE	NONE	NONE	Beds	1.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	bed_6.	Beds	NONE	NONE	NONE	NONE	Beds	1.0	0.0	NA	NA
+

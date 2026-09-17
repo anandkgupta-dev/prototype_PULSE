@@ -1,0 +1,62 @@
+In	in	O	IN	ROOT-S-PP-IN	Bed	have	0.2	In_Bed_8,	Beds	NONE	NONE	NONE	NONE	Beds	0.0	0.0	NA	NA
+Bed	bed	O	VBN	ROOT-S-PP-S-VP-VBN	8	In	0.2	In_Bed_8,	Beds	NONE	NONE	NONE	NONE	Beds	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+8	8	NUMBER	CD	ROOT-S-PP-S-VP-NP-CD	NONE	Bed	0.2	In_Bed_8,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-,	NONE	NONE	0.8	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+we	we	O	PRP	ROOT-S-NP-PRP	NONE	have	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+have	have	O	VBP	ROOT-S-VP-VBP	In-we-Wong	ROOT	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+Lawrence	Lawrence	PERSON	NNP	ROOT-S-VP-NP-NP-NNP	NONE	Wong	0.2	Lawrence_Wong,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Wong	Wong	PERSON	NNP	ROOT-S-VP-NP-NP-NNP	Lawrence-old-came	have	0.2	Lawrence_Wong,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-,	NONE	NONE	0.8	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+56	56	DURATION	CD	ROOT-S-VP-NP-ADJP-NP-CD	NONE	yrs	0.2	56_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-VP-NP-ADJP-NP-NNS	56	old	0.2	56_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-VP-NP-ADJP-JJ	yrs-under	Wong	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-VP-NP-ADJP-PP-IN	Li	old	0.2	under_Dr_Li,	Lithium	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.2	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-VP-NP-ADJP-PP-NP-NNP	NONE	Li	0.2	under_Dr_Li,	Lithium	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Li	Li	PERSON	NNP	ROOT-S-VP-NP-ADJP-PP-NP-NNP	Dr	under	0.2	under_Dr_Li,	Lithium	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	Physicians	0.3	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-,	NONE	NONE	0.8	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-NP-SBAR-S-VP-VBD	in	Wong	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-PP-IN	with	came	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-NP-SBAR-S-VP-PP-PP-IN	headache	in	0.4	with_severe_headache.	Headache	Headache_Severe	Severe_(severity_modifier)	NONE	NONE	Severe_(severity_modifier)	0.3	0.0	NA	NA
+severe	severe	O	JJ	ROOT-S-VP-NP-SBAR-S-VP-PP-PP-NP-JJ	NONE	headache	0.2	with_severe_headache.	Headache	Headache_Severe	Severe_(severity_modifier)	NONE	NONE	Severe_(severity_modifier)	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+headache	headache	O	NN	ROOT-S-VP-NP-SBAR-S-VP-PP-PP-NP-NN	severe	with	0.4	with_severe_headache.	Headache	Headache_Severe	Severe_(severity_modifier)	NONE	NONE	Severe_(severity_modifier)	0.4	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+
+Still	still	O	RB	ROOT-FRAG-PP-ADVP-RB	NONE	on	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+on	on	O	IN	ROOT-FRAG-PP-IN	Still-analgesia	ROOT	0.2	on_regular_analgesia.	Pain_management	Absence_of_pain_sensation	Analgesia_[PE]	Analgesics	Regular	Regular	0.4	0.0	NA	NA
+regular	regular	O	JJ	ROOT-FRAG-PP-NP-JJ	NONE	analgesia	0.2	on_regular_analgesia.	Pain_management	Absence_of_pain_sensation	Analgesia_[PE]	Analgesics	Regular	Regular	0.4	0.0	Medication_Medicine	Medication_Medicine
+analgesia	analgesia	O	NN	ROOT-FRAG-PP-NP-NN	regular	on	0.2	on_regular_analgesia.	Pain_management	Absence_of_pain_sensation	Analgesia_[PE]	Analgesics	Regular	Regular	0.5	0.0	Medication_Medicine	Medication_Medicine
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	obs	0.2	He's_obs	Helium	CYTIP_gene	NONE	NONE	NONE	Helium	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	obs	0.2	He's_obs	Helium	CYTIP_gene	NONE	NONE	NONE	Helium	0.5	0.0	NA	NA
+obs	ob	O	NNS	ROOT-S-VP-NP-NP-NNS	He-'s-stable	ROOT	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	MyShift_Status
+are	be	O	VBP	ROOT-S-VP-NP-SBAR-S-VP-VBP	NONE	stable	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	MyShift_Status
+al	al	O	NNP	ROOT-S-VP-NP-SBAR-S-VP-ADJP-NNP	NONE	stable	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	MyShift_Status
+stable	stable	O	JJ	ROOT-S-VP-NP-SBAR-S-VP-ADJP-JJ	are-al	obs	0.2	stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Stable_status	0.6	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+
+he	he	O	PRP	ROOT-S-NP-PRP	NONE	given	0.2	he_just_complaint	Chief_complaint_(finding)	NONE	NONE	NONE	NONE	Chief_complaint_(finding)	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+just	just	O	RB	ROOT-S-VP-ADVP-RB	complaint	given	0.2	he_just_complaint	Chief_complaint_(finding)	NONE	NONE	NONE	NONE	Chief_complaint_(finding)	0.6	0.0	NA	NA
+complaint	complaint	O	NN	ROOT-S-VP-ADVP-NP-NP-NN	of	just	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	MyShift_OtherObservation	NA
+of	of	O	IN	ROOT-S-VP-ADVP-NP-PP-IN	headache	complaint	0.2	of_headache	Headache	NONE	NONE	NONE	NONE	Headache	0.7	0.0	MyShift_OtherObservation	NA
+headache	headache	O	NN	ROOT-S-VP-ADVP-NP-PP-NP-NP-NN	once	of	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	MyShift_OtherObservation
+once	once	DATE	RB	ROOT-S-VP-ADVP-NP-PP-NP-UCP-ADVP-RB	during-and-endone	headache	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_OtherObservation	NA
+during	during	O	IN	ROOT-S-VP-ADVP-NP-PP-NP-UCP-ADVP-PP-IN	shift	once	0.2	during_my_shift	shift_displacement	Physical_Shift	NONE	NONE	NONE	Physical_Shift	0.7	0.0	NA	NA
+my	my	O	PRP$	ROOT-S-VP-ADVP-NP-PP-NP-UCP-ADVP-PP-NP-PRP$	NONE	shift	0.2	during_my_shift	shift_displacement	Physical_Shift	NONE	NONE	NONE	Physical_Shift	0.7	0.0	NA	NA
+shift	shift	O	NN	ROOT-S-VP-ADVP-NP-PP-NP-UCP-ADVP-PP-NP-NN	my	during	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+and	and	O	CC	ROOT-S-VP-ADVP-NP-PP-NP-UCP-CC	NONE	once	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+same	same	O	JJ	ROOT-S-VP-ADVP-NP-PP-NP-UCP-ADJP-JJ	NONE	endone	0.2	same,_endone	Same	NONE	NONE	NONE	NONE	Same	0.8	0.0	NA	NA
+,	,	O	,	ROOT-S-VP-ADVP-NP-PP-NP-UCP-ADJP-,	NONE	NONE	0.8	same,_endone	Same	NONE	NONE	NONE	NONE	Same	0.8	0.0	NA	NA
+endone	endone	O	JJ	ROOT-S-VP-ADVP-NP-PP-NP-UCP-ADJP-JJ	same	once	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Medication_Medicine	Medication_Medicine
+given	give	O	VBN	ROOT-S-VP-VBN	he-just-with	ROOT	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-IN	effect	given	0.4	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.9	0.0	Medication_Status	Medication_Status
+good	good	O	JJ	ROOT-S-VP-PP-NP-JJ	NONE	effect	0.2	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.9	0.0	Medication_Status	Medication_Status
+effect	effect	O	NN	ROOT-S-VP-PP-NP-NN	good	with	0.2	with_good_effect.	Effect	Effect,_Appearance	GOOD_EFFECT	Good	Manufactured_Supplies	Good	0.9	0.0	Medication_Status	Medication_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+No	no	O	DT	ROOT-S-NP-DT	NONE	problems	0.2	No_other_problems	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.9	0.0	MyShift_Status	MyShift_Status
+other	other	O	JJ	ROOT-S-NP-JJ	NONE	problems	0.2	No_other_problems	Problems_-_What_subject_filter	Problem	Other	Others	NONE	Other	0.9	0.0	MyShift_Status	MyShift_Status
+problems	problem	O	NNS	ROOT-S-NP-NNS	No-other	noted	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	MyShift_Status	MyShift_Status
+noted	note	O	VBD	ROOT-S-VP-VBD	problems	ROOT	0.2	noted.	Note	NONE	NONE	NONE	NONE	Note	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+

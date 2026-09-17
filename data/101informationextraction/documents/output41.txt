@@ -1,0 +1,61 @@
+Helder	Helder	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Mendez	0.17	Helder_Mendez,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Mendez	Mendez	PERSON	NNP	ROOT-S-NP-NP-NNP	Helder-old	came	0.17	Helder_Mendez,	NONE	NONE	NONE	NONE	NONE	NONE	0.0	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	Helder_Mendez,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+7	7	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	years	0.17	7_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+years	year	NUMBER	NNS	ROOT-S-NP-ADJP-NP-NNS	7	old	0.17	7_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	years-under	Mendez	0.17	7_years_old	Old	year	per_year	NONE	NONE	year	0.1	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+under	under	O	IN	ROOT-S-NP-ADJP-PP-IN	Hodgings	old	0.17	under_Dr_Hodgings,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	NA	NA
+Dr	Dr	O	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	NONE	Hodgings	0.17	under_Dr_Hodgings,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.1	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+Hodgings	Hodgings	PERSON	NNP	ROOT-S-NP-ADJP-PP-NP-NNP	Dr	under	0.17	under_Dr_Hodgings,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	PatientIntroduction_UnderDr_Lastname	PatientIntroduction_UnderDr_Lastname
+,	,	O	,	ROOT-S-NP-,	NONE	NONE	1.0	under_Dr_Hodgings,	Physicians	Delayed_Release_Dosage_Form	Doctor_-_Title	NONE	NONE	Physicians	0.2	0.0	NA	NA
+came	come	O	VBD	ROOT-S-VP-VBD	Mendez-in	ROOT	0.17	came	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+in	in	O	IN	ROOT-S-VP-PP-IN	with	came	0.17	in	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	cancer	in	0.17	with_recurrent_lung_cancer.	Recurrent_Carcinoma	Recurrent_Malignant_Neoplasm	Malignant_Neoplasms	Lung	Malignant_neoplasm_of_lung	Recurrent	0.2	0.0	NA	NA
+recurrent	recurrent	O	JJ	ROOT-S-VP-PP-PP-NP-JJ	NONE	cancer	0.17	with_recurrent_lung_cancer.	Recurrent_Carcinoma	Recurrent_Malignant_Neoplasm	Malignant_Neoplasms	Lung	Malignant_neoplasm_of_lung	Recurrent	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+lung	lung	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	cancer	0.17	with_recurrent_lung_cancer.	Recurrent_Carcinoma	Recurrent_Malignant_Neoplasm	Malignant_Neoplasms	Lung	Malignant_neoplasm_of_lung	Recurrent	0.3	0.5	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+cancer	cancer	O	NN	ROOT-S-VP-PP-PP-NP-NN	recurrent-lung	with	0.17	with_recurrent_lung_cancer.	Recurrent_Carcinoma	Recurrent_Malignant_Neoplasm	Malignant_Neoplasms	Lung	Malignant_neoplasm_of_lung	Recurrent	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	0.83	with_recurrent_lung_cancer.	Recurrent_Carcinoma	Recurrent_Malignant_Neoplasm	Malignant_Neoplasms	Lung	Malignant_neoplasm_of_lung	Recurrent	0.3	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-NP-PRP	NONE	smoker	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VP-VBZ	NONE	smoker	0.33	is	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+a	a	O	DT	ROOT-S-VP-VP-NP-DT	NONE	smoker	0.17	a_smoker	Smoker	NONE	NONE	NONE	NONE	Smoker	0.4	0.0	NA	NA
+smoker	smoker	O	NN	ROOT-S-VP-VP-NP-NN	He-is-a-and-have	ROOT	0.17	a_smoker	Smoker	NONE	NONE	NONE	NONE	Smoker	0.4	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_ChronicCondition
+and	and	O	CC	ROOT-S-VP-CC	NONE	smoker	0.33	and	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+have	have	O	VBP	ROOT-S-VP-VP-VBP	history	smoker	0.17	have	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+history	history	O	NN	ROOT-S-VP-VP-NP-NP-NN	of	have	0.17	history	Recording_of_previous_events_(discipline)	Historical_aspects_qualifier	History_of_present_illness	Medical_History	Concept_History	History_of_present_illness	0.4	0.0	NA	NA
+of	of	O	IN	ROOT-S-VP-VP-NP-PP-IN	COPD	history	0.17	of_COPD.	Chronic_Obstructive_Airway_Disease	NONE	NONE	NONE	NONE	Chronic_Obstructive_Airway_Disease	0.4	0.0	NA	NA
+COPD	COPD	O	NNP	ROOT-S-VP-VP-NP-PP-NP-NNP	NONE	of	0.17	of_COPD.	Chronic_Obstructive_Airway_Disease	NONE	NONE	NONE	NONE	Chronic_Obstructive_Airway_Disease	0.5	0.0	PatientIntroduction_Disease/ProblemHistory	PatientIntroduction_Disease/ProblemHistory
+.	.	O	.	ROOT-S-.	NONE	NONE	0.83	of_COPD.	Chronic_Obstructive_Airway_Disease	NONE	NONE	NONE	NONE	Chronic_Obstructive_Airway_Disease	0.5	0.0	NA	NA
+
+He	he	O	PRP	ROOT-S-S-NP-PRP	NONE	had	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+had	have	O	VBD	ROOT-S-S-VP-VBD	He-surgery-and-is	ROOT	0.17	had	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+surgery	surgery	O	NN	ROOT-S-S-VP-NP-NP-NN	chemo	had	0.17	surgery,	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	NONE	NONE	Operative_Surgical_Procedures	0.5	0.0	PatientIntroduction_Disease/ProblemHistory	NA
+,	,	O	,	ROOT-S-S-VP-NP-,	NONE	NONE	1.0	surgery,	Surgery_specialty	Surgical_aspects	Operative_Surgical_Procedures	NONE	NONE	Operative_Surgical_Procedures	0.6	0.0	PatientIntroduction_Disease/ProblemHistory	NA
+chemo	chemo	O	NN	ROOT-S-S-VP-NP-NP-NP-NN	radiotherapy	surgery	0.17	chemo,	Chemotherapy_Regimen	NONE	NONE	NONE	NONE	Chemotherapy_Regimen	0.6	0.0	PatientIntroduction_Disease/ProblemHistory	NA
+,	,	O	,	ROOT-S-S-VP-NP-,	NONE	NONE	1.0	chemo,	Chemotherapy_Regimen	NONE	NONE	NONE	NONE	Chemotherapy_Regimen	0.6	0.0	PatientIntroduction_Disease/ProblemHistory	NA
+radiotherapy	radiotherapy	O	NN	ROOT-S-S-VP-NP-NP-NP-NN	NONE	chemo	0.17	radiotherapy	radiotherapeutic	Radiation_Oncology_specialty	Therapeutic_radiology_procedure	NONE	NONE	Therapeutic_radiology_procedure	0.6	0.0	PatientIntroduction_Disease/ProblemHistory	NA
+and	and	O	CC	ROOT-S-CC	NONE	had	0.33	and	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+He	he	O	PRP	ROOT-S-S-NP-PRP	NONE	is	0.5	He	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-S-VP-VBZ	He-now-on	had	0.33	is	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	NA	NA
+now	now	DATE	RB	ROOT-S-S-VP-ADVP-RB	NONE	is	0.17	now	Now_(temporal_qualifier)	NONE	NONE	NONE	NONE	Now_(temporal_qualifier)	0.7	0.0	NA	NA
+on	on	O	IN	ROOT-S-S-VP-PP-IN	care	is	0.17	on_palliative_care.	care_activity	Palliative_Care	Palliative	Act_Code_-_Palliative	NONE	Palliative	0.7	0.0	PatientIntroduction_CarePlan	NA
+palliative	palliative	O	JJ	ROOT-S-S-VP-PP-NP-JJ	NONE	care	0.17	on_palliative_care.	care_activity	Palliative_Care	Palliative	Act_Code_-_Palliative	NONE	Palliative	0.7	0.0	PatientIntroduction_CarePlan	NA
+care	care	O	NN	ROOT-S-S-VP-PP-NP-NN	palliative	on	0.17	on_palliative_care.	care_activity	Palliative_Care	Palliative	Act_Code_-_Palliative	NONE	Palliative	0.7	0.0	PatientIntroduction_CarePlan	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	0.83	on_palliative_care.	care_activity	Palliative_Care	Palliative	Act_Code_-_Palliative	NONE	Palliative	0.8	0.0	NA	NA
+
+for	for	O	IN	ROOT-FRAG-PP-IN	measures	obs	0.17	for_comfort_measures,	Measures	Measures_(attribute)	Comfort_measures	Measurement	Measured	Comfort	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+comfort	comfort	O	NN	ROOT-FRAG-PP-NP-NN	NONE	measures	0.17	for_comfort_measures,	Measures	Measures_(attribute)	Comfort_measures	Measurement	Measured	Comfort	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+measures	measure	O	NNS	ROOT-FRAG-PP-NP-NNS	comfort	for	0.17	for_comfort_measures,	Measures	Measures_(attribute)	Comfort_measures	Measurement	Measured	Comfort	0.8	0.0	Future_Goal/TaskToBeCompleted/ExpectedOutcome	Future_Goal/TaskToBeCompleted/ExpectedOutcome
+,	,	O	,	ROOT-FRAG-,	NONE	NONE	1.0	for_comfort_measures,	Measures	Measures_(attribute)	Comfort_measures	Measurement	Measured	Comfort	0.8	0.0	NA	NA
+no	no	O	DT	ROOT-FRAG-NP-DT	NONE	obs	0.17	no_obs.	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	MyShift_OtherObservation	NA
+obs	ob	O	NNS	ROOT-FRAG-NP-NNS	for-no	ROOT	0.17	no_obs.	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	MyShift_OtherObservation	NA
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	0.83	no_obs.	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+
+Allright	Allright	PERSON	NNP	ROOT-FRAG-NP-NNP	bed	ROOT	0.17	Allright,	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+,	,	O	,	ROOT-FRAG-,	NONE	NONE	1.0	Allright,	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+that	that	O	WDT	ROOT-FRAG-SBAR-WHNP-WDT	NONE	bed	0.17	that	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+was	be	O	VBD	ROOT-FRAG-SBAR-S-VP-VBD	NONE	bed	0.17	was	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+bed	bed	O	NN	ROOT-FRAG-SBAR-S-VP-NP-NN	that-was-2	Allright	0.17	bed_2.	Beds	NONE	NONE	NONE	NONE	Beds	1.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+2	2	NUMBER	CD	ROOT-FRAG-SBAR-S-VP-NP-CD	NONE	bed	0.17	bed_2.	Beds	NONE	NONE	NONE	NONE	Beds	1.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	0.83	bed_2.	Beds	NONE	NONE	NONE	NONE	Beds	1.0	0.0	NA	NA
+

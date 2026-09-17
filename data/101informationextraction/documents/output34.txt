@@ -1,0 +1,53 @@
+In	in	O	IN	ROOT-S-PP-IN	bed	came	0.2	In_bed_6,	Beds	NONE	NONE	NONE	NONE	Beds	0.0	0.0	NA	NA
+bed	bed	O	NN	ROOT-S-PP-NP-NN	6	In	0.2	In_bed_6,	Beds	NONE	NONE	NONE	NONE	Beds	0.0	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+6	6	NUMBER	CD	ROOT-S-PP-NP-CD	NONE	bed	0.2	In_bed_6,	Beds	NONE	NONE	NONE	NONE	Beds	0.1	0.0	PatientIntroduction_CurrentBed	PatientIntroduction_CurrentBed
+,	,	O	,	ROOT-S-,	NONE	NONE	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	NA	NA
+Pamela	Pamela	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Lee	0.2	Pamela_harris_Lee,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+harris	harris	PERSON	NNP	ROOT-S-NP-NP-NNP	NONE	Lee	0.2	Pamela_harris_Lee,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_GivenNames/Initials	PatientIntroduction_GivenNames/Initials
+Lee	Lee	PERSON	NNP	ROOT-S-NP-NP-NNP	Pamela-harris-old	came	0.2	Pamela_harris_Lee,	NONE	NONE	NONE	NONE	NONE	NONE	0.1	0.0	PatientIntroduction_Lastname	PatientIntroduction_Lastname
+,	,	O	,	ROOT-S-,	NONE	NONE	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	NA	NA
+51	51	DURATION	CD	ROOT-S-NP-ADJP-NP-CD	NONE	yrs	0.2	51_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+yrs	yr	DURATION	NNS	ROOT-S-NP-ADJP-NP-NNS	51	old	0.2	51_yrs_old	Old	NONE	NONE	NONE	NONE	Old	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+old	old	DURATION	JJ	ROOT-S-NP-ADJP-JJ	yrs	Lee	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.2	0.0	PatientIntroduction_Ageinyears	PatientIntroduction_Ageinyears
+came	come	O	VBD	ROOT-S-VP-VBD	In-Lee-in	ROOT	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+in	in	O	IN	ROOT-S-PP-IN	with	came	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+with	with	O	IN	ROOT-S-VP-PP-PP-IN	COPD	in	0.2	with_COPD.	Chronic_Obstructive_Airway_Disease	NONE	NONE	NONE	NONE	Chronic_Obstructive_Airway_Disease	0.3	0.0	NA	NA
+COPD	copd	O	NN	ROOT-S-VP-PP-PP-NP-NN	NONE	with	0.2	with_COPD.	Chronic_Obstructive_Airway_Disease	NONE	NONE	NONE	NONE	Chronic_Obstructive_Airway_Disease	0.3	0.0	PatientIntroduction_AdmissionReason/Diagnosis	PatientIntroduction_AdmissionReason/Diagnosis
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.3	0.0	NA	NA
+
+And	and	O	CC	ROOT-S-CC	NONE	smoker	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+she	she	O	PRP	ROOT-S-NP-PRP	NONE	smoker	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-S-VP-VBZ	NONE	smoker	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.4	0.0	NA	NA
+a	a	O	DT	ROOT-S-VP-NP-DT	NONE	smoker	0.2	a_smoker.	Smoker	NONE	NONE	NONE	NONE	Smoker	0.4	0.0	NA	NA
+smoker	smoker	O	NN	ROOT-S-VP-NP-NN	And-she-is-a	ROOT	0.2	a_smoker.	Smoker	NONE	NONE	NONE	NONE	Smoker	0.4	0.0	PatientIntroduction_ChronicCondition	PatientIntroduction_ChronicCondition
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	got	0.4	She's_got_difficulty	Difficulty	SHE_gene	NONE	NONE	NONE	SHE_gene	0.5	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	got	0.4	She's_got_difficulty	Difficulty	SHE_gene	NONE	NONE	NONE	SHE_gene	0.5	0.0	NA	NA
+got	get	O	VBN	ROOT-S-VP-VP-VBN	She-'s-difficulty	ROOT	0.2	She's_got_difficulty	Difficulty	SHE_gene	NONE	NONE	NONE	SHE_gene	0.5	0.0	NA	NA
+difficulty	difficulty	O	NN	ROOT-S-VP-VP-NP-NP-NN	of	got	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.5	0.0	MyShift_Status	NA
+of	of	O	IN	ROOT-S-VP-VP-NP-PP-IN	today	difficulty	0.2	of_breathing_today.	Today	Today_(temporal_qualifier)	Inspiration_function	Respiration	respiratory_gaseous_exchange_in_organisms	Respiration	0.6	0.0	MyShift_Status	NA
+breathing	breathing	O	NN	ROOT-S-VP-VP-NP-PP-NP-NN	NONE	today	0.2	of_breathing_today.	Today	Today_(temporal_qualifier)	Inspiration_function	Respiration	respiratory_gaseous_exchange_in_organisms	Respiration	0.6	0.0	MyShift_Status	NA
+today	today	DATE	NN	ROOT-S-VP-VP-NP-PP-NP-NN	breathing	of	0.2	of_breathing_today.	Today	Today_(temporal_qualifier)	Inspiration_function	Respiration	respiratory_gaseous_exchange_in_organisms	Respiration	0.6	0.0	NA	NA
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.6	0.0	NA	NA
+
+She	she	O	PRP	ROOT-S-NP-PRP	NONE	same	0.4	She's_still	SHE_gene	NONE	NONE	NONE	NONE	SHE_gene	0.6	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+'s	be	O	VBZ	ROOT-S-VP-VBZ	NONE	same	0.4	She's_still	SHE_gene	NONE	NONE	NONE	NONE	SHE_gene	0.7	0.0	NA	NA
+still	still	O	RB	ROOT-S-VP-ADVP-RB	NONE	same	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.7	0.0	MyShift_Status	MyShift_Status
+the	the	O	DT	ROOT-S-VP-NP-DT	NONE	same	0.2	the_same.	Same	NONE	NONE	NONE	NONE	Same	0.7	0.0	MyShift_Status	MyShift_Status
+same	same	O	JJ	ROOT-S-VP-NP-JJ	She-'s-still-the	ROOT	0.2	the_same.	Same	NONE	NONE	NONE	NONE	Same	0.7	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-S-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+
+Still	still	O	RB	ROOT-FRAG-PP-ADVP-RB	NONE	on	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	NA	NA
+on	on	O	IN	ROOT-FRAG-PP-IN	Still-puffers	ROOT	0.2	on_regular_puffers	Pufferfish	Nicotine_inhaler	Regular	NONE	NONE	Regular	0.8	0.0	NA	NA
+regular	regular	O	JJ	ROOT-FRAG-PP-NP-NP-JJ	NONE	puffers	0.2	on_regular_puffers	Pufferfish	Nicotine_inhaler	Regular	NONE	NONE	Regular	0.8	0.0	Medication_Medicine	Medication_Medicine
+puffers	puffer	O	NNS	ROOT-FRAG-PP-NP-NP-NNS	regular-and-nebs-and-stable	on	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.8	0.0	Medication_Medicine	Medication_Medicine
+and	and	O	CC	ROOT-FRAG-PP-NP-NP-CC	NONE	puffers	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+nebs	neb	O	NNS	ROOT-FRAG-PP-NP-NP-NNS	NONE	puffers	0.2	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	Medication_Medicine	Medication_Medicine
+and	and	O	CC	ROOT-FRAG-PP-NP-NP-CC	NONE	puffers	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+she	she	O	PRP	ROOT-FRAG-PP-NP-S-NP-PRP	NONE	stable	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	PatientIntroduction_Gender	PatientIntroduction_Gender
+is	be	O	VBZ	ROOT-FRAG-PP-NP-S-VP-VBZ	NONE	stable	0.4	NONE	NONE	NONE	NONE	NONE	NONE	NONE	0.9	0.0	NA	NA
+pretty	pretty	O	RB	ROOT-FRAG-PP-NP-S-VP-ADJP-RB	NONE	stable	0.2	pretty_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Patient_Condition_Code_-_Stable	1.0	0.0	MyShift_Status	MyShift_Status
+stable	stable	O	JJ	ROOT-FRAG-PP-NP-S-VP-ADJP-JJ	she-is-pretty	puffers	0.2	pretty_stable.	Stable_status	Patient_Condition_Code_-_Stable	NONE	NONE	NONE	Patient_Condition_Code_-_Stable	1.0	0.0	MyShift_Status	MyShift_Status
+.	.	O	.	ROOT-FRAG-.	NONE	NONE	1.0	NONE	NONE	NONE	NONE	NONE	NONE	NONE	1.0	0.0	NA	NA
+
