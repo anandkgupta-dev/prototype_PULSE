@@ -7,7 +7,8 @@ import {
   ArrowRight, 
   X, 
   CheckCircle2, 
-  Layers 
+  Layers,
+  Activity
 } from 'lucide-react';
 import { fetchReports, fetchReport } from '../services/api';
 
