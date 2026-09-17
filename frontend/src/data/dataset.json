@@ -1,0 +1,825 @@
+{
+  "stats": {
+    "total_reports": 101,
+    "average_word_count": 71.65,
+    "min_word_count": 19,
+    "max_word_count": 209,
+    "total_tokens": 7214,
+    "unique_vocabulary_tokens": 1441,
+    "loaded_successfully": 101,
+    "dataset_name": "Synthetic Nursing Handover Training and Development Data Set",
+    "folder_name": "101writtenfreetextreports",
+    "format": "TXT",
+    "corpus_description": "101 written free-text nursing handover reports capturing clinical patient handover interactions across acute and subacute wards."
+  },
+  "reports": [
+    {
+      "report_id": "0",
+      "filename": "0.txt",
+      "raw_text": "Bed eight, Michael I Wu. Forty-eight years under Dr Hanlen. He came in with headache and vertigo. He's got a history of headache, tinnitus, Bell's Palsy to the left side of his face. That's where his headache has been for the last three years. He's also got photophobia. His GCS is 15 pupils equal and reactive. He's just came back from a brain MRI in Woden. He's ambulant and self-caring but he's a little bit unsteady at times. OBS are stable. He is for carotid doppler, he was supposed to have this morning at 950 but that pushed it back to 1050. Hmmm. 1030, sorry. Because they were late. Then the team were here and they said it's cutting it too close to his MRI so he needs another carotid doppler appointment. Other than that Mike is fine.",
+      "word_count": 138,
+      "char_count": 746,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "1",
+      "filename": "1.txt",
+      "raw_text": "Vera Abbott,93, bed four, under Dr Liu came in with chest pain with a history of stroke and previous chest pains,asthma,cataract and glaucoma.almost blind and needs assistance.had 3 nitros with no effect.still under monitoring.",
+      "word_count": 34,
+      "char_count": 227,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "2",
+      "filename": "2.txt",
+      "raw_text": "Yunita Muleta, bed 7,  51 years old under Dr Garcia, came in with heartburn under investigation.obs stable.nil other issues",
+      "word_count": 19,
+      "char_count": 123,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "3",
+      "filename": "3.txt",
+      "raw_text": "Robert lewis who wants to be called Bob, 62 under Dr Johnson, bed four, came  in Ed with heart attack and had a CABG. with the history of IHD. he is for MRSA and VRE surveillance swab.he is with ongoing surgical wound care.which looks nice and clean and healing well.he is complaining of constipation and hasn't opened his bowels for the last 3 days now.regular apperients given with good effect.all his obs stable.",
+      "word_count": 73,
+      "char_count": 415,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "4",
+      "filename": "4.txt",
+      "raw_text": "Mike hanley, 48 years old under Dr Johnson, bed 3,  came in with query heartburn or heart attack for investigation. On regular nitros.obs are all stable.for repeat bloods tomorrow.for echo to be arranged.monitored accordingly.",
+      "word_count": 34,
+      "char_count": 226,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "5",
+      "filename": "5.txt",
+      "raw_text": "Lumin kwong, bed five, 75  years  old under Dr Liu, he is for heart surgery to be arranged, he\u2019s been going in and out of the hospital for the last 3 months.otherwise nil other changes.",
+      "word_count": 35,
+      "char_count": 185,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "6",
+      "filename": "6.txt",
+      "raw_text": "Stephen Jonathan Spencer,72 years old under Dr Liu, bed 6, came in  from Melbourne with fevers  and tiredness. He had CABG 3 months ago and only here to visit his daughter and grandchildren.obs are all stable and he is still for investigation.",
+      "word_count": 42,
+      "char_count": 243,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "7",
+      "filename": "7.txt",
+      "raw_text": "Maria Sanner,88 years old under Dr Garcia, bed 5, came in originally with high blood pressure. With dementia and just waiting for nursing home placement.",
+      "word_count": 25,
+      "char_count": 153,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "8",
+      "filename": "8.txt",
+      "raw_text": "Phil albert rivett, 64 years old under Dr Garcia, bed 2, came for thrombolytic therapy with long history of cardiac problems for 14 yrs now.brought in BIBA 4 days ago.on regular nitros and he is still the same, obs stable and Gradually improving.nil other problems noted",
+      "word_count": 46,
+      "char_count": 270,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "9",
+      "filename": "9.txt",
+      "raw_text": "Jorge Antonio sanchez, bed 1,  43 years old under Dr Smith, came in with high BP for investigation. he already had all test done and awaiting results.he is query for discharge if all is good.",
+      "word_count": 35,
+      "char_count": 191,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "10",
+      "filename": "10.txt",
+      "raw_text": "Cindy Benedictos, bed 1,  under Dr Smtih, came in   for management of Diabetes and high cholesterol. She was seen by the team today and had adjusted her dose again.she has flunctuating BGLS and is monitored QID plus PRN. She\u2019s on daily bloods and for diabetes educator tomorrow at 2:30 pm.she is self caring with her own insulin but she just needs a little bit of supervision. The team is planning for her discharge early next week.otherwise all are stable.",
+      "word_count": 79,
+      "char_count": 457,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "11",
+      "filename": "11.txt",
+      "raw_text": "Ramanathan  Nisha Pillai, bed 1, 46 years old under DR Smith, came in with arrythmia for 2 weeks now. With the history of the same problem before and she is here for management. Same regimen and nothing\u2019s new for her.no plan for discharge as of yet.",
+      "word_count": 46,
+      "char_count": 249,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "12",
+      "filename": "12.txt",
+      "raw_text": "Leila sonya Da silva, bed 5, 34 under Dr Liu, came in for management of her diabetes. With history of type 1 DM since childhood and HPN. She is still for referral to the diabetic educator and she is self caring with her own BGLS and insulin. Her insulin is on a sliding scale insulin and on variable dose so just ask the doctor for the next dose depending on her blood sugar. Her BGL trend used to be high during the AM.so still need the team to review for that.Her BP is not so bad and of a high normal range and still for review.otherwise she is pretty much self caring and ambulant and there are no other problems noted.",
+      "word_count": 121,
+      "char_count": 623,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "13",
+      "filename": "13.txt",
+      "raw_text": "Wendell Mario fleming , bed 3,  41 years old under Dr smith, came in with liver failure for investigation on the background of DM type 2. He is still for bloods and for liver biopsy as per plan, for CT and MRI to be arranged. He is a bit jaundiced  and he\u2019s been vomiting during my shift, and antiemetics given with good effect.  He was seen by the team today and they have started him on IV fluids running @ 100 mls per hr. He is very difficult to cannulate.His obs are all stable and he is self caring and ambulant.",
+      "word_count": 101,
+      "char_count": 517,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "14",
+      "filename": "14.txt",
+      "raw_text": "Ken harris, bed three, 71 yrs old under Dr Gregor, came in with arrhythmia. He complained of chest pain this am and ECG was done and was reviewed by the team. He was given some anginine and morphine for the pain. Still tachycardic and new meds have been ordered in the medchart. still for pulse checks for one full minute. Still awaiting echo this afternoon. His BP is just normal though he is sc0ring MEWS of 3  for the tachycardia. He is still for monitoring.",
+      "word_count": 85,
+      "char_count": 461,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "15",
+      "filename": "15.txt",
+      "raw_text": "Pierre cox, 77 years old under Dr Gregor, bed 2,  came in with pain and swelling of the right leg query embolism. With a history of coronary artery disease and he\u2019s a heavy smoker. He is for leg US today at 2pm and on therapeutic clexane. He still complains of pain scoring 9/10 and endone given with good effect. he\u2019s  charted for regular oxycontin and panadol for pain and can still have endone prn for pain.he needs assistance in transfers  and transfers using commode chair to toilet and unable to walk due to pain in the leg. He is in a low salt , low fat diet. He is still for review by the team and the consultant hasn\u2019t seen him yet. His obs are normal but with slightly raised bp maybe due to pain but the doctors are aware. He is started on nicotine patch but he really doesn\u2019t like it. He still wants to smoke outside but advised not too.",
+      "word_count": 162,
+      "char_count": 849,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "16",
+      "filename": "16.txt",
+      "raw_text": "Thuy liu, 29 years old under Dr Gregor, bed eight, came in with chest pain and found to have blood clot in her lungs. She is self caring and ambulant. Still awaiting  for doctors to review. And awaiting plan for her and they said they will see her later. otherwise, her obs are all normal and she had regular paracetamol and endone for pain.",
+      "word_count": 64,
+      "char_count": 341,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "17",
+      "filename": "17.txt",
+      "raw_text": "Eric wong, bed 8,  69  years old under Dr Johnsson, came in with high cholesterol. For daily bloods and carotid Doppler US tomorrow. He is also for study for his arteries so they can start his medicaion and he is very anxious about it we can ask the doctors to explain to him the procedure and talk to him. He is on general diet and he is ambulant and self caring. He\u2019s got high blood pressure but all other obs are all stable.team are all aware.",
+      "word_count": 86,
+      "char_count": 446,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "18",
+      "filename": "18.txt",
+      "raw_text": "Rebecca birks, bed seven,54 yrs old under Dalianis came in with  dizziness, weakness, tachycardia and nausea and diagnosed to have IHD with the history of atherosclerosis, and breast cancer. So regular obs  can be seen in the station thru the screens but still needs to be written in the obs chart and 1 ecg  print out at start of the shift and every time there\u2019s abnormality . Print outs to be placed in her chart. Doctors are always around so we can always ask them about any problem. The patient is self-caring and ambulant but just needs a little bit of supervision when walking. She is pretty weak so just times one assist. shes\u2019s got regular antiemetics before meals for her nausea and regular pain relief.she is not to be taken BP at right arm due to her mastectomy at the right.otherwise she is pretty much stbale today.",
+      "word_count": 148,
+      "char_count": 828,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "19",
+      "filename": "19.txt",
+      "raw_text": "Scott rogers, 66 under DR Dalianis, bed 2,  came in with chest pain with narrowing of arteries and for surgery later. pre op checklist has been done and it is in front of the chart. ECG has been done aswell. He is in a gown and he is all ready to go. He was fasted from midnight for this surgery. They might put a stent or they will do ballooning depending on the blockage aside from CABG. The patient have consented for it and its in the chart. Otherwise obs are all stable",
+      "word_count": 93,
+      "char_count": 474,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "20",
+      "filename": "20.txt",
+      "raw_text": "A new admission on room 5, bed 3, steve Richard myer, 71 years old under dr Dalianis, came in with multiple heart problems but he is to loose weight first before he can be operated . He\u2019s depressed because his wife died just 2 months ago. He is for dietician review and referral has been made. he is on food chart . he is obs are all stable on my shift. He needs prompting with his ADLs and would benefit to be referred to pastoral care for his grievances.",
+      "word_count": 89,
+      "char_count": 456,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "21",
+      "filename": "21.txt",
+      "raw_text": "Martin Cavedon 73, bed 4, under Dr Sanchez, came in with chest pain with long history of heart problems, asthma and GORD. His blood results just arrived and still for the doctor\u2019s review. Please call the doctor for the results. He is for carotid US to be arranged and for ECHO at some stage. all obs are charted, ECG done and he complaint of chest pain not too long ago and 2 anginine given with good effect. He was also given morphine afterwards.he is stable now. And was monitored accordingly.",
+      "word_count": 90,
+      "char_count": 495,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "22",
+      "filename": "22.txt",
+      "raw_text": "Frank morgan Montgomery, bed 5,  78 years old under Dr Sanchez, came in with shortness of breath and tiredness post op.He\u2019s got history of CABG 8 yrs ago. He\u2019s got decreasing LOC ( level of consciousness) and on neuro obs QID, He is tachy this morning post op. He is on oxygen at 3l/ nasal prongs and sats are all good now.  He is here for further monitoring.",
+      "word_count": 68,
+      "char_count": 359,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "23",
+      "filename": "23.txt",
+      "raw_text": "Lucila Marlor, bed 6,  88 yrs old under Dr Sanchez, came in  with query overdose, she lives in the retirement .  And came in here 5 days ago and she is improving. She is minimal assist with adls and she is still the same.",
+      "word_count": 44,
+      "char_count": 221,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "24",
+      "filename": "24.txt",
+      "raw_text": "Rajeev mendis, bed 8,  77 yrs old came in with arrythmia and chestpain. He is a new admission and he came in an hour ago. He complaint of nausea and extreme tiredness. He  was given antiemetics  with good effect. bloods was taken and echo was done and awaiting results for team to review. He\u2019s obs are all stable .",
+      "word_count": 59,
+      "char_count": 314,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "25",
+      "filename": "25.txt",
+      "raw_text": "Raquel Soares caetano, 62 under Dr Mills, came in with chest pain, tiredness, dizziness and depression. She\u2019s got a  history diabetes and she is obese. She\u2019s a new admission and just came in  3 hours ago. She complains of pain everytime she eats but it doesn\u2019t seem to be related to her digestion. She is here for further investigations. She has bed one.",
+      "word_count": 63,
+      "char_count": 354,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "26",
+      "filename": "26.txt",
+      "raw_text": "maria Clemens, 79 yrs old, under Dr chanson,came in with shortness of breath on exertion, NFR level 2, not for resus,not for mets. with multiple allergies,on regular puffers on high dose of prednisolone on daily BGLs, walks with wheely walker independently.awaiting team to review and for OT review.on ongoing physic .obs stable.nil the changes. She has bed two.",
+      "word_count": 58,
+      "char_count": 362,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "27",
+      "filename": "27.txt",
+      "raw_text": "Kelly Diana Clarkson, bed 3, 36 yrs old under Dr Mills, came in with query asthma. She had history of bronchitis, and currently had influenza. She is allergic to pollens. She is on oral antibiotics. She is here for further investigation. She is ambulant and self caring and she is on general diet.",
+      "word_count": 53,
+      "char_count": 297,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "28",
+      "filename": "28.txt",
+      "raw_text": "Rhonda mckenzie, bed 4,  24 yrs old came in for investigation of breathing disorders and for sleep studies. she had started snoring as per her bf and feelling tired eventhough she had 9 hrs of sleep.she will need preparation for sleep study tonight.\n\n",
+      "word_count": 43,
+      "char_count": 251,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "29",
+      "filename": "29.txt",
+      "raw_text": "Christina Davies, bed 5,  29 years old under Dr Mills, came in originally with vomiting and was diagnosed with pneumonia. She is pregnant as we know and she\u2019s got a 3 yr old daughter. She\u2019s been coughing especially after talking. She is still on oral abs and her obs are all stable during my shift. ",
+      "word_count": 55,
+      "char_count": 299,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "30",
+      "filename": "30.txt",
+      "raw_text": "In bed 1, Natalia Torres, 45 under Dr Cox with diagnosis and history there (written usually in handover sheet), still febrile, 39.3 for almost two weeks now on antipyretics with little effect, coughing out blood,small amounts,with difficulty of breathing.self caring and ambulant.otherwise still the same.",
+      "word_count": 45,
+      "char_count": 305,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "31",
+      "filename": "31.txt",
+      "raw_text": "In bed 2, Mindy Jasmine parks, 34 yrs old under Dr Cox, came in with recurrent lung cancer, chestpain, cough with the background of lung cancer 5 yrs ago. She is also a heavy smoker for 10 yrs. I haven\u2019t checked her blood results yet but they seem to be not so good as I understand from the doctors \u2018 rounds today. She\u2019s got her family in attendance and I think you know more than me. Anyways, her obs are all stable during my shift and she she complaint of being uncomfortable when lying down. She is selfcaring and ambulant and she is for further monitoring.",
+      "word_count": 106,
+      "char_count": 560,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "32",
+      "filename": "32.txt",
+      "raw_text": "In bed 3,Amanda Agatha Philips, 76 yrs old with history of sleep apnoea,on home oxygen at night only. came in for further investigations. She needs to be referred to a social worker for her family is pretty worried about her living alone. With her condition, I think she will need to be placed in a nursing home. she is confused and cant remember her relatives when they visited yesterday .query for ACAT assessment and minimental assessment for team to review. and she is still the same. Still confused.",
+      "word_count": 88,
+      "char_count": 504,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "33",
+      "filename": "33.txt",
+      "raw_text": "In bed 5, Sandra Murdoch, 48 yrs old under Dr Cox, came in with lung cysts. She had an xray yesterday and US (ultrasound) of the lungs and lung biopsy today. They are planning to have her on surgery but she still needs to be reviewed by the surgeons today. She needs to be nil by mouth tonight if they plan to continue on with the surgery. Otherwise she is ok. She is comfortably resting in bed.",
+      "word_count": 77,
+      "char_count": 395,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "34",
+      "filename": "34.txt",
+      "raw_text": "In bed 6, Pamela harris Lee, 51 yrs old came in with COPD.  And she is a smoker. She\u2019s got difficulty of breathing today. She\u2019s still the same. Still on regular puffers and nebs and she is pretty stable.",
+      "word_count": 39,
+      "char_count": 203,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "35",
+      "filename": "35.txt",
+      "raw_text": "This is bed one. Nina Maria Carey, 67 under Dr Jaime, came in with bronchitis, fever and cough. She is just newly diagnosed to have cancer. So aggressive that it had spread to her lungs. Her husband needs to be informed as well as her 4 children. We can ask her if she wants some counselling and also if she and her family needs to talk with the doctors about her her treatment plan and all information about her cancer.her obs are all stable.afebrile.she is self caring and on general diet.nil other complaints raised.",
+      "word_count": 94,
+      "char_count": 519,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "36",
+      "filename": "36.txt",
+      "raw_text": "This is bed two. Rob Mahe, 62 years old under Dr Jaime, came in for allergy tests and asthma experiments  and for physio. He has multiple allergies and he\u2019s got history of asthma. He had rash from the allergy test , he wasn\u2019t happy about it and his physiotherapist said his meds needs adjustment. He is to be discharged today though. He is all ready to go. His discharge papers is already been done and He is just waiting for his tablets.",
+      "word_count": 82,
+      "char_count": 438,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "37",
+      "filename": "37.txt",
+      "raw_text": "This is bed three. Alistair Edwards, 43 yrs old under Dr Jaime, came in with allergy.he is allergic to peanuts. He\u2019s improving slowly.He\u2019s throat still a little bit swollen, still with itchy mouth and sometimes gets difficulty of breathing but manageable.. otherwise he\u2019s all good.",
+      "word_count": 45,
+      "char_count": 281,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "38",
+      "filename": "38.txt",
+      "raw_text": "This is bed four. Abraham hunt,83 under Dr Jaime, came in with chestpain ,more likely not cardiac related. with history of heart attack 5 yrs ago. He is on general diet, self caring and ambulant, on regular puffers and  nebs. He is on clexane, He is awaiting doctor\u2019s review. he is stable.\n\n",
+      "word_count": 52,
+      "char_count": 291,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "39",
+      "filename": "39.txt",
+      "raw_text": "This is bed six. Geoffrey Castro, 73 years old under Dr Hodgins, came in with COPD. He is still the same no changes.obs are all stable",
+      "word_count": 26,
+      "char_count": 134,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "40",
+      "filename": "40.txt",
+      "raw_text": "Jeffrey Morgan Rossiter , he wants to be called jeff, 76 yrs old under Dr Hodgings, came in with pain for investigation to rule out if source is cardiac, respiratory or gastrointestinal.  He is for CT chest and abdo to be arranged, for echo, stress test, and for lung function test to be arranged. He is still for bloods and for further monitoring. Obs are all stable. Nil other pain noted. Allright, that was bed 1.",
+      "word_count": 76,
+      "char_count": 416,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "41",
+      "filename": "41.txt",
+      "raw_text": "Helder Mendez, 7 years old under Dr Hodgings, came in with recurrent lung cancer. He is a smoker and have history of COPD. He had surgery, chemo, radiotherapy and He is now on palliative care. for comfort measures, no obs. Allright, that was bed 2.",
+      "word_count": 45,
+      "char_count": 248,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "42",
+      "filename": "42.txt",
+      "raw_text": "Coco constantino, 61 yrs old under Dr Hodgings, came in pneumonia and allergic reactions to penicillin when he was accidentally prescribed of penicillin for his pneumonia. He had rashes, fever and difficulty of breathing. He is on regular puffers and prn nebs, prednisolone on random bgls, on oral antibiotics and on antihistamine. He is afebrile today,with oxygen at 2l/ nasal prongs.sats are all normal. His obs are all stable, he is ambulant and self caring. Allright, that was bed 3.",
+      "word_count": 80,
+      "char_count": 487,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "43",
+      "filename": "43.txt",
+      "raw_text": "Matthew David Dang, 63 yrs old under Dr McDonald, came in with headache and nausea and pain when inhaling due to gas leakage at home.he had regular paracetamol for pain, on antiemetics prn and he is the same. All obs stable  nil other changes. Allright, that was bed 4.",
+      "word_count": 49,
+      "char_count": 269,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "44",
+      "filename": "44.txt",
+      "raw_text": "Oliver Green, 41 years old under Dr McDonald, came in with asthma for investigation, he is a smoker and he\u2019s obs are all stable. I don\u2019t really know what\u2019s the plan for him yet because he just arrived in the ward and the doctors haven\u2019t seen him. He is ambulant and self caring and nil other complaints noted. Allright, that was bed 5.",
+      "word_count": 63,
+      "char_count": 335,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "45",
+      "filename": "45.txt",
+      "raw_text": "George Belgin, 43 years old under Dr McDonald came in had a lung transplant and now is suspected to have aspergillosis. He had his chest xray today. He is stable. Nil changes. Allright, that was bed 6.",
+      "word_count": 37,
+      "char_count": 201,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "46",
+      "filename": "46.txt",
+      "raw_text": "1. Chris Mcdonald, 21 yrs old under Dr Kenzie-, came in with infection in his lungs due to swimming accident as you all know and he is on oxygen 4l/ mask. He is still the same, no other changes. Obs are all stable.",
+      "word_count": 43,
+      "char_count": 214,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "47",
+      "filename": "47.txt",
+      "raw_text": "2. Hercules kokkinakis, 76 yrs old under Dr Kenzie came in found by wife on the floor unconscious and not breathing. He\u2019s got history on diabetes type 2, sleep apnoea, and he is overweight. He is stable but he is still on ventilator. He is to start physio next shift. . He will be discharged to intensive care as soon as there will be room or if he gets worse.\n\n",
+      "word_count": 70,
+      "char_count": 362,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "48",
+      "filename": "48.txt",
+      "raw_text": "3. Matt Owen, 43 years old under Dr Kenzie came in  had a lung transplant a week ago. He is MRSA + on contact precautions. He is having problems with his recovery due to infection. He is on IVabs before and now on oral abs. He is self caring and ambulant. He is on anti rejection drugs. He had showered independently this am. His wounds healing slowly. He is for wound nurse review for his surgical wound dressing this afternoon. He is on regular endone and  PRN morphine for pain. All obs are all stable.nil othe complaints raised.",
+      "word_count": 98,
+      "char_count": 532,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "49",
+      "filename": "49.txt",
+      "raw_text": "4. Neil Paganus, 39 under Dr Kenzie, came in with severe allergies with the history of Asthma.he had difficulty of breathing and very chesty.febrile @temp 38.8 . He had blood cultures taken and paracetamol given with good effect. Team was informed and they have changed his antibiotics.on general diet, self caring and ambulant.",
+      "word_count": 53,
+      "char_count": 328,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "50",
+      "filename": "50.txt",
+      "raw_text": "5. Candice Kosgei, 28 yrs old under Dr Harrod, came in with cyctic fibrosis. She\u2019s still the same. No other changes. All obs are all normal.",
+      "word_count": 26,
+      "char_count": 140,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "51",
+      "filename": "51.txt",
+      "raw_text": "6. Lucy Harold , 27 under Dr Harrod-, came in post brain surgery, obs are all stable, bone flap site with dressing left intact and still for surgery team to review.nil other changes.",
+      "word_count": 33,
+      "char_count": 182,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "52",
+      "filename": "52.txt",
+      "raw_text": "7. Linda Donald, 83 years old came in under Dr Harrod for investigation. She is having some memory problems and increasing confusion. Obs are done and all stable. She hasn\u2019t been seen by the team yet. She is ambulant with wheely walker. She is on soft cut up diet and she is all stable",
+      "word_count": 54,
+      "char_count": 285,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "53",
+      "filename": "53.txt",
+      "raw_text": "8. Daviid Adams, 34 under Wu came in with head injury. He is On endone and morphine for pain. He complains of headaches and he is photophobic. He is for CT brain tomorrow and he is planned to have endoscopic brain surgery within this week depending on the results of his CT. He is for bloods daily and for neuro obs QID. GCS score of 15 on my shift. Obs are all stable.  He is pretty much self caring. Nil other problems noted.",
+      "word_count": 83,
+      "char_count": 427,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "54",
+      "filename": "54.txt",
+      "raw_text": "Room 2, bed 1. Nick Smith, 45 yrs old under Dr Wu, came in with head injury. He is all right, no other problems. He is still the same.",
+      "word_count": 29,
+      "char_count": 134,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "55",
+      "filename": "55.txt",
+      "raw_text": "Room 2, bed 2. Shane Barnes, 48 yrs old under Dr Wu, came in with severe headaches and nausea. He\u2019s got regular paracetamol and endone for pain, and metoclopramide for nausea. He complaint of pain once in my shift so I have given endone with good effect. He is self caring and .his obs are all stable.",
+      "word_count": 57,
+      "char_count": 301,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "56",
+      "filename": "56.txt",
+      "raw_text": "Room 2, bed 3. Dave McKenzie, 72 yrs old, came in under Dr Jorge De Silva with Dementia. He is a new admission and just arrived few hrs ago. He\u2019s got a long medical history but the latest one are CCF, HPN, DM  type 2 on oral hypoglycemics and chronic back pains. He came in due to increasing confusion. He is still for bloods and I haven\u2019t done them yet and He is for urine MCS. They are querying UTI for him and they started him on oral abs. He\u2019s from a nursing home and his wife was already informed about him coming to us. He is resting in bed now and I haven\u2019t seen him walk yet. I think it will be best to refer him to physio and for dietician aswell. He was refusing the meals that was offered to him. otherwise all his obs are stable.",
+      "word_count": 149,
+      "char_count": 741,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "57",
+      "filename": "57.txt",
+      "raw_text": "Room 2, bed 4. Ether Buntine, 88 yrs old under Dr Jorge De Silva, came in with epilepsy. She doesn\u2019t have any episode of epilepsy on my shift and she is all stable. No other changes to her.",
+      "word_count": 38,
+      "char_count": 189,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "58",
+      "filename": "58.txt",
+      "raw_text": "Room 2, bed 5. Phil Albert Rivett, 64 yrs old,under Dr Jorge De Silva-, came in post brain surgery and he is doing well. His obs are all stable and no changes",
+      "word_count": 32,
+      "char_count": 158,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "59",
+      "filename": "59.txt",
+      "raw_text": "Room 2, bed 6. Allan Clarks, 73 yrs old under Dr Jorge De Silva, came in with epilepsy a day ago. He already had CT brain and just awaiting results. They said if it is negative then they will let him go home today.otherwise, all his obs are all stable and he doesn\u2019t have any episode of epilepsy today.",
+      "word_count": 59,
+      "char_count": 302,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "60",
+      "filename": "60.txt",
+      "raw_text": "Room 2, bed 7. Dercy Patterson, 70 yrs old under Dr De Silva, came in with dementia. She is not confused today and she is very pleasant. She had tolerated her diet well and have taken all her meds. Her obs are all stable and no other problems noted for her.she is still awaiting nursing home placement.",
+      "word_count": 57,
+      "char_count": 302,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "61",
+      "filename": "61.txt",
+      "raw_text": "Room 2, bed 8. Miranda mahe, 66 yrs old under Dr Fleming, came in with epilepsy, she is still the same. No episode of epilepsy on my shift and just waiting for the doctors to review. Otherswise, there\u2019s no changes.",
+      "word_count": 40,
+      "char_count": 214,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "62",
+      "filename": "62.txt",
+      "raw_text": "In Bed 1, we have Michelle Morgan, 58 yrs old under Fleming, came in with headache and dizziness. She is still under investigation and she \u2018s on regular panadol for pain, oxycodone and morphine prn. she is ambulant and self caring but needs a little bit of supervision just in case she felt dizzy when she walks. She complaint of headache a while ago and endone given with good effect. She is on general diet and tolerating it well. Her obs are all stable .",
+      "word_count": 85,
+      "char_count": 457,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "63",
+      "filename": "63.txt",
+      "raw_text": "In Bed 2, we have Dylan Young, 41 yrs old under Dr Fleming, came in with headaches, vision  and speech problems. He is a new admission today. He needs assistance when walking to the toilet because he cant see properly and we cannot seem to understand what he is saying so he really need a lot of time before you can understand what he wants. Sometimes he does some sign languages or sometimes he just write down what he wants. He is on general diet and He\u2019s obs are all normal.He is for daily bloods, and he is on regular analgesia for pain.",
+      "word_count": 103,
+      "char_count": 541,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "64",
+      "filename": "64.txt",
+      "raw_text": "In Bed 3, we have Ross Garden, 24 yrs old under Dr Fleming came in with minor head injury due to car racing accident. He is still the same. Nothings new.just waiting for the doctors to have their rounds today.",
+      "word_count": 40,
+      "char_count": 209,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "65",
+      "filename": "65.txt",
+      "raw_text": "In Bed 4, we have Andreas Milotov, 67 yrs under Dr Gordon, came in with head injury. I haven\u2019t read his history but I have just heard from the doctors who are having their rounds a while ago and they said just to continue with the antibiotics and the management. His ob sare all good and no other problems noted.",
+      "word_count": 60,
+      "char_count": 312,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "66",
+      "filename": "66.txt",
+      "raw_text": "In Bed 5, we have Yvonne Matthews, 26 yrs old, under Dr Gordon came in with  head injury. She sustained the injury while she was playing basketball. The team are planning to have a surgery for her but is still waiting for the surgeons to review her CT results. Obs are all good. She complain of headache today and endone given with good effect. She is self caring and ambulant. She \u2018s got her mother in attendance. She is very anxious and very demanding.otherwise she is stable",
+      "word_count": 87,
+      "char_count": 477,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "67",
+      "filename": "67.txt",
+      "raw_text": "In Bed 6, we have Roger Thompson, 49 yrs old under Dr Gordon, came in with nausea and dizziness. He just came in the ward not too long ago and  I have just done his admission papers. His obs are all good and he complained of nausea and I have him some ondansetron 4 mg with good effect. he is on general diet but he didn't eat much due to nausea.He is self caring and ambulant and he is resting in bed at the moment.",
+      "word_count": 85,
+      "char_count": 416,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "68",
+      "filename": "68.txt",
+      "raw_text": "In Bed 7, we have kAte orange, 41 yrs old under Dr Li, came in with fracture of the skull due to car accident and came into the ward post brain surgery a week ago and she is much better. Her head is not swollen nor there\u2019s any sign of bleeding and it is healing normally. she is on antibiotics still and it was on IVabs yesterday and now they have started her on orals. She is self caring with very minimal assistance. she is tolerating her diet and fluids well. She\u2019s just on general diet. She is ambulant and walks around the ward in short distances only.her obs are all stable. No other problems.",
+      "word_count": 115,
+      "char_count": 599,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "69",
+      "filename": "69.txt",
+      "raw_text": "In Bed 8, we have Lawrence Wong,56 yrs old under Dr Li, came in with severe headache. Still on regular analgesia. He\u2019s obs are al stable .he just complaint of headache once during my shift and same, endone given with good effect. No other problems noted.",
+      "word_count": 46,
+      "char_count": 254,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "70",
+      "filename": "70.txt",
+      "raw_text": "The bed 1, Luke Geller, 74 yrs old under Dr Li, came in with Alzheimer\u2019s dse. His obs are all stable, he is very confused and can be very aggressive and he needs 2 -3 persons for transfer using a sling lifter. He is  doubly incontinent of urine and faeces and He\u2019s got a pad insitu. He needs to be fed and to sit upright when eating. He needs to have his tablets crushed and needs to have referral to speech pathology. He is high falls risk. He needs PAC ( pressure area care) and pressure relieving mattress because he stays in bed most of the times. Otherwise his stable",
+      "word_count": 110,
+      "char_count": 572,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "71",
+      "filename": "71.txt",
+      "raw_text": "The bed two, Guido Milano, 73 yrs old under Dr Li, came in with depression on the background of cancer. He just came in today. He is still waiting for psyche review , pastoral care and he is still waiting for the team to review. Otherwise his obs are all stable and he is tolerating his diet and fluids.",
+      "word_count": 59,
+      "char_count": 303,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "72",
+      "filename": "72.txt",
+      "raw_text": "The bed three, Bill jefferies, 63 yrs old under Dr  Laine  came in with cancer and had a brain surgery. he just came in today and all that I have done was his obs. he is still on hourly obs for another 4 hrs and then 4 hourly obs afterwards. he is now allowed to eat and drink. she is now wide awake and she is not drowsy as before. he is just complaining of pain and id due for hi pain relief now.he is with ongoing IV fluids at 125mls/hr. he is started on oral abs and she can have them after her lunch. So he is still under monitoring. No bleeding noted on the head and dressing is still intact.",
+      "word_count": 122,
+      "char_count": 598,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "73",
+      "filename": "73.txt",
+      "raw_text": "The bed four, Sarah Jefferies, 62 yrs old under Dr Laine, came in with head injury due to fall. her husband is also here with us too. she is still the same and she is getting better. she is just awaiting discharge planning once she fully recovered. still with ongoing management of pain and antibiotics.she is also on ongoing physic.",
+      "word_count": 60,
+      "char_count": 333,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "74",
+      "filename": "74.txt",
+      "raw_text": "The bed five, Aaron cuypers, 37 years old under Dr Laine, came in with depression. He just came in just a while ago and he\u2019s got multiple admissions withiin this year for the same reason. So he is just for referral for psyche  review which I haven\u2019t been done and for the doctor\u2019s to review his meds but his obs are all stable. ",
+      "word_count": 63,
+      "char_count": 328,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "75",
+      "filename": "75.txt",
+      "raw_text": "The bed six, Lisa Kerr, 62 yrs old under Dr Laine, came in with apoplexy(cerebral haemorrhage), she just came in 3 hrs ago and have taken her obs and it is all normal. She is on neuro obs aswell and scoring a score of 15 on GCS .no weakness on both arms and legs. She had CT of the brain which showed cerebral haemorrhage and on emergency list for brain surgery today. She was kept fasting from ED. We are still waiting for the husband to arrive to give consent because he\u2019s got the power of attorney. She is confused and wont be able to sign the consent. She is on a gown and her preop check list have been done.",
+      "word_count": 121,
+      "char_count": 613,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "76",
+      "filename": "76.txt",
+      "raw_text": "room 1, bed1,Mary Smith 56 under Dr Smith came in with shortness of breath,with acute on chronic renal failure secondary to DM type 1 on sliding scale insulin.with history of Hypertension, osteoporosis, anemia, CVA,with left AVF with good bruit and thrill, on Haemodialysis( HDX).for HDx this pm.on diabetic diet,self caring.self administers her own insulin, need dialysis prescription, for IVabs after dialysis.for social worker referral",
+      "word_count": 64,
+      "char_count": 438,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "77",
+      "filename": "77.txt",
+      "raw_text": "room 2,bed2 Jerry Reed,45 under Dr Harry  with the history of CCF, IHD, HPN, DM type 2  diet controlled and depression.came in with bilateral leg oedema, with right AV graft for HDX tomorrow pm list.on lying and standing BP,on 1.2L fluid restriction on daily weights,on IV frusemide.for referral to diabetic educator tom at 1pm and for family meeting on thurs at 2;30 pm.patient is very demanding and have aggressive behaviour.",
+      "word_count": 70,
+      "char_count": 427,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "78",
+      "filename": "78.txt",
+      "raw_text": "room 1, bed2,Amir hamid, 81 yrs old under Dr Morris, came in with sepsis on the background of  chronic renal failure secondary to HPN. on haemodialysis via right AVF on his arm, with good bruit and thrill. Still on IVabs and IV therapy of normal saline running @ 83 mls/hr, on vancomycin and for vanc level tom am ,on lying and standing blood pressures, daily weights, on strict FBC (fluid balance chart). he\u2019s next dialysis is tomorrow in the AM list. His blood pressures are still low and sitting around 80s to 90s systolic so he is still on IVFs. (IV fluids). The team is planning to give albumin if his blood pressures didn\u2019t improve tom after dialysis.He spiked a temperature last night @ 38.4 degrees, blood cultures taken and paracetamol given with good effect. He is afebrile today in my shift.otherwise, all obs stable",
+      "word_count": 145,
+      "char_count": 827,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "79",
+      "filename": "79.txt",
+      "raw_text": "room 1, bed 3,Ibrahim Ramzi,  40 under Dr Morris, came in yesterday with severe lower back pain secondary to urinary obstruction. With the long history of kidney problems. Bet you know him more than I am, He is still under investigation. For renal US on Friday at 2pm. Ct scan showed obstruction at the ureters. The team are planning to put stent on him. he had endone for pain and regular panadol. His obs are all stable. still the same. ",
+      "word_count": 80,
+      "char_count": 439,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "80",
+      "filename": "80.txt",
+      "raw_text": "room 1, bed 4, Alex Nasser,53 under DrMorris.  He came in with back pain and fever and query urinary stones. He is afebrile on my shift, on same regimen, no  other changes and the doctors hasn\u2019t come in to see him today. He is all stable.",
+      "word_count": 46,
+      "char_count": 238,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "81",
+      "filename": "81.txt",
+      "raw_text": "room 3, bed 1, Nicolas Ferer,64 under Dr Morris, admitted with complaints of pain when urinating, haematuria and fevers with a history of HPN, DM diet controlled ,depression, GORD and Gout., obs  are all stable, afebrile, still for urine MCS and for bloods tomorrow, still for team to review. On diabetic diet, BGL BD,  and He is self caring and ambulant.",
+      "word_count": 61,
+      "char_count": 355,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "82",
+      "filename": "82.txt",
+      "raw_text": "Bed 1 in room 1, Cecilia Ramon, 38 yrs old under Dr Willough, came in with renal obstruction, with all her history there (pertaining to the hand over paper list) had CT scan last week, still on ongoing pain management, plan for discharge at the end of this week. With appointment to Dr ___  a week after discharge and to renal outpatients  2 weeks after discharge. discharge summary at the front of her notes. just waiting for her discharge meds. She is a very anxious lady and she\u2019s got her family in attendance.",
+      "word_count": 93,
+      "char_count": 513,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "83",
+      "filename": "83.txt",
+      "raw_text": "Bed 2 in room 1, Paulos Gomez Castillo, 74 yrs old under Dr Willough, came in with kidney stones. With a very long cardiac history just see the notes. He just came in not too long ago. He\u2019s got multiple allergies.on soft cut up diet. Obs are all stable, He\u2019s got VRE on contact precautions, he is awaiting chest xray. On prophylactic clexane BD. He is NFR but still for mets. He is a bit confused at times and can be very agitated. He is of a non English background. He is 2 staff assist when walking using FASF (forearm support frame) He\u2019s got IDC insitu on FBC.(fluid balance chart).",
+      "word_count": 110,
+      "char_count": 585,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "84",
+      "filename": "84.txt",
+      "raw_text": "Bed 3 in room 1, Edwin Palma, 54 under Dr Willough, came in with prostate cancer, He had, CT abdo and xray done with pending results. He is query for discharge if all results become negative or will be treated as outpatient. Still awaiting review / go signal from the team. Otherwise, all is stable.",
+      "word_count": 55,
+      "char_count": 299,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "85",
+      "filename": "85.txt",
+      "raw_text": "Bed 4 in room 1, Elli Aline, 23 under Dr Willough, she came in with infection of unknown origin, still under investigation and severe pain on a background of chronic kidney disease. She is ambulant and self caring. On ongoing pain management. She hasn\u2019t been seen by the team today. She wants to have a leave pass during the weekend if the team agrees. She is afebrile on my shift.otherwise, stable",
+      "word_count": 71,
+      "char_count": 398,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "86",
+      "filename": "86.txt",
+      "raw_text": "Bed 5 in room 1, Renata Colla, 33 yrs old under Dr Willough, she came in with acute kidney injury of unknown cause still under investigation and she is for Renal US and Renal biopsy tomorrow. She needs to fast from midnight. All Meds can be given with sips of water. Still need consent to be signed but the doctors have already spoken to her about the procedure. she is tolerating her diet and fluids well and she is for strict FBC ( fluid balance chart).s She also needs to have a new IV cannula. She is self caring and walks independently around the ward.nil other issues.",
+      "word_count": 107,
+      "char_count": 574,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "87",
+      "filename": "87.txt",
+      "raw_text": "Bed 6 in room 1, Marco Calasso, 40 under Dr San, came in with kidney stones. (nephrolithiasis) With history of depression and asthma. He is on oral and IV abs, for ESWL (extracorporeal shock wave lithotripsy next week by Dr ___. He complains of pain with score of 10/10 on regular  panadol, prn morphine and endone and still with haematuria.he also complain of nausea and vomiting and metoclopramide given per IV with good effect. He\u2019s got an IVC on the right hand and due for resite tomorrow. He \u2018s got elevated BP and team are aware. He is on FBC and general diet.",
+      "word_count": 103,
+      "char_count": 566,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "88",
+      "filename": "88.txt",
+      "raw_text": "b1, Agatha Homes, 50 yrs old under Dr San, came in with acute kidney injury for investigation.  So as a kidney patient, She is on the usuals. daily bloods, lying and standing blood BPs, daily weights, weekly urinalysis. There are specific times on how to give some of the tablets and ill give you more detailed discussion later on. obs qid, random bgl for pred. and she is definitely on strict FBC (fluid balance chart).",
+      "word_count": 75,
+      "char_count": 420,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "89",
+      "filename": "89.txt",
+      "raw_text": "b2, Harry Lewis, 36 under Dr Gayler came in pyeonephritis, he is still the same, his blood was taken this morning and results are still pending and nil other changes noted",
+      "word_count": 31,
+      "char_count": 171,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "90",
+      "filename": "90.txt",
+      "raw_text": "b3, Evan Stephenson, 22 yrs old came in post fall and  diagnosed  to have rhabdomyolysis. On acute face of kidney failure. He\u2019s got IDC insitu , on strict fluid balance chart and IV Fluids running at 83 mls per hour. his blood pressure is very low and albumin was given stat in ED. He is now more stable that\u2019s why he is transferred here in the ward. He is on lying and standing BPs , on daily weights and on daily bloods. He appears to be swollen and bruised on the left side of his body.  He\u2019s for physio review regarding his mobility. At the moment he is resting in bed.",
+      "word_count": 111,
+      "char_count": 573,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "91",
+      "filename": "91.txt",
+      "raw_text": "1. in room 4. At medical ward: He was admitted during your shift.\nAlexander Mareks,66 yrs old under Dr Gayler, came in with acute on chronic renal failure on home heamodialysis. with history of ESRF (end stage renal failure, DM, HPN and depression. He \u2018s got AF on warfarin. and needs to have the levels done today for his warfarin dose.. Bloods was taken in ED but they forgot to take the warfarin levels. So please take them and get the doctors to review the results.  His K is 6.2 and is very high, doctors are aware and waiting for their orders. I have taken out our hyperkalemia protocol and have placed them outside his notes if you need them. He is for renal US and biopsy to be arranged. So he is for daily weights and he is 82 kgs, today. lying and standing BPs which are all stable with no postural drop, AVF obs with good bruit and thrill. And BGL qid, his latest BGL is 5.6. He needs a  schedule for haemodialysis  but he said he always have in MWF in the am so his last dialysis was yesterday so ill ring them and let them know that he\u2019s here with us. Otherwise He is stable.\n",
+      "word_count": 209,
+      "char_count": 1089,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "92",
+      "filename": "92.txt",
+      "raw_text": "2. in room 4. Lars Waller, 42 under Dr Gayler, came in with query sepsis with decreasing level of consciousness on the background of chronic renal failure stage 4, on PD ( peritoneal dialysis).  He had septic work up done and with pending results. He is also febrile at 38.6 degrees and is started on IV abs,  and IVF on @ 83mls/hr.. blood cultures was taken and awaiting results. He is written for IV paracetamol. He is NBM ( nil by mouth) due to decreased LOC (level of consciousness ). He is for full resus. His PD regimen needs to be reviewed.  Dr __ will come and review patient later.",
+      "word_count": 110,
+      "char_count": 590,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "93",
+      "filename": "93.txt",
+      "raw_text": "3. in room 4. Samuel Edman, 19 came in with acute renal failure, he\u2019s been here for a long time now as we all know and he is just awaiting result of his renal biopsy. He can have leave pass as per Dr Ross and he\u2019s obs are all stable. He is self caring and ambulant.",
+      "word_count": 56,
+      "char_count": 265,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "94",
+      "filename": "94.txt",
+      "raw_text": "4. in room 4. Mindy Thompson, 16 years old came in with liver cyst. She came in just an hr ago and she had xray and ct done and with pending results. Her obs are all stable and she just complain of right upper quadrant pain which was relieved by morphine with good effect. She is for surgery but still to be organized. He\u2019s got her mom in attendance.",
+      "word_count": 69,
+      "char_count": 350,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "95",
+      "filename": "95.txt",
+      "raw_text": "5. in room 4. Natalie Karikas, 79 yrs old under Dr Ross, came in with stomach pain and jaundice. She \u2018s got a history of diabetes and obesity. She is feeling tired , dizzy and she is feeling depressed. Her urine is very dark and been sent for urine MCS. She just came into our ward 3 hrs ago. Obs have been done and they are all stable. She needs assistance in walking and should be referred to physio. She is on diabetic diet and on QID BGLS. She is on oral hypos. She\u2019s charted on endone and morphine for pain. She hasn\u2019t been seen by the team yet.and  that\u2019s all I can tell you about her. She is here for further investigation.",
+      "word_count": 123,
+      "char_count": 630,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "96",
+      "filename": "96.txt",
+      "raw_text": "6. in room 4. Hildi Hutter, a lovely 91 year old lady under Dr Forbes, came in with UTI, she is on IVabs and the doctors just charted her on oral abs to start tom. She is very confused today. Her obs are all stable and she is afebrile.",
+      "word_count": 49,
+      "char_count": 235,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "97",
+      "filename": "97.txt",
+      "raw_text": "This is bed 1. Mari Okkas, 20 yrs old under DR Forbes. She came in with severe abdominal pain, she is charted on regular panadol and endone for pain. She is also written up for metoclopramide as antiemetic. she had her bloods taken and obs taken. She is scheduled for colonoscopy tom and she needs to be NBM from midnight tonight for the procedure.otherwise she is self caring and ambulant.",
+      "word_count": 70,
+      "char_count": 390,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "98",
+      "filename": "98.txt",
+      "raw_text": "This is bed 2. Lyndon Basilakis,50 years old under Dr Forbes, came in with severe abdominal pain and fever, afebrile on my shift, and he still complains of abdo pain, endone given with good effect.for referral to team for MRSA and VRE surveillance.",
+      "word_count": 43,
+      "char_count": 248,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "99",
+      "filename": "99.txt",
+      "raw_text": "This is bed 3. Benjamin Lincoln, 51 years old under Dr Tileney, came in with query acute kidney injury. He\u2019s got a history of diabetes and heartburn. He is for Renal US later this afternoon and Renal biopsy on Thursday. He is febrile last night but afebrile on my shift. He is self caring and ambulant and obs are all stable on my shift. ",
+      "word_count": 64,
+      "char_count": 338,
+      "status": "Loaded"
+    },
+    {
+      "report_id": "100",
+      "filename": "100.txt",
+      "raw_text": "This is bed 4. Jane morgan, 24, under Dr Tilney with acute renal failure, nil changes.all her obs are stable. she is on the last course of her IVabs and they've got a plan for her discharge tom  and change antibiotics to oral. and she will have appointment to Dr Diani as outpatient.",
+      "word_count": 53,
+      "char_count": 283,
+      "status": "Loaded"
+    }
+  ]
+}
