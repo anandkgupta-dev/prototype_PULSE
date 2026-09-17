@@ -113,7 +113,11 @@ async def get_report(report_id: str):
         "char_count": report["char_count"],
         "raw_text": report["raw_text"],
         "preprocessed_text": preprocessed_res["preprocessed_text"],
-        "changes_made": preprocessed_res["changes_made"]
+        "changes_made": preprocessed_res["changes_made"],
+        "preserved_clinical_elements": preprocessed_res.get("preserved_clinical_elements", []),
+        "sentences": preprocessed_res.get("sentences", []),
+        "token_count": preprocessed_res.get("token_count", 0),
+        "philosophy_note": preprocessed_res.get("philosophy_note", "")
     }
 
 

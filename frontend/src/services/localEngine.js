@@ -39,15 +39,30 @@ const ABBREVIATIONS_MAP = {
 // Preprocessor
 export function preprocessTextLocal(rawText) {
   if (!rawText) {
-    return { raw_text: "", preprocessed_text: "", changes_made: ["Empty input"] };
+    return { 
+      raw_text: "", 
+      preprocessed_text: "", 
+      changes_made: ["Received empty input string"],
+      preserved_clinical_elements: [],
+      sentences: [],
+      token_count: 0,
+      char_count: 0,
+      philosophy_note: "Non-destructive clinical normalization."
+    };
   }
 
   let text = rawText;
   const changes = [];
 
-  // Unicode replacements
+  // 1. Strip UTF-8 BOM if present
+  if (text.includes('\ufeff')) {
+    text = text.replaceAll('\ufeff', '');
+    changes.push("Stripped hidden UTF-8 Byte Order Mark (BOM)");
+  }
+
+  // 2. Unicode replacements for quotes & dashes
   const unicodeMap = {
-    '’': "'", '‘': "'", '“': '"', '”': '"', '–': '-', '—': '-', '\u00a0': ' ', '\ufeff': ''
+    '’': "'", '‘': "'", '“': '"', '”': '"', '–': '-', '—': '-', '\u00a0': ' '
   };
   let replacedUnicode = false;
   for (const [k, v] of Object.entries(unicodeMap)) {
@@ -57,34 +72,97 @@ export function preprocessTextLocal(rawText) {
     }
   }
   if (replacedUnicode) {
-    changes.append ? changes.append("Normalized Unicode characters") : changes.push("Normalized Unicode quotes/dashes to standard ASCII");
+    changes.push("Normalized Unicode curly quotes, smart apostrophes, and typographical dashes to ASCII");
   }
 
-  // Spacing around punctuation
-  const spacedPunct = text.replace(/([a-zA-Z])([,;])([a-zA-Z])/g, '$1$2 $3')
-                          .replace(/([a-zA-Z])(\.)([A-Z])/g, '$1. $2');
-  if (spacedPunct !== text) {
-    changes.push("Resolved concatenated words around punctuation");
-    text = spacedPunct;
+  // 3. Spacing around commas: letter,letter or letter,digit or digit,letter
+  const commaRegex1 = /([a-zA-Z]),([a-zA-Z0-9])/g;
+  const commaRegex2 = /([0-9]),([a-zA-Z])/g;
+  let hasCommaFixed = false;
+  text = text.replace(commaRegex1, (m, p1, p2) => {
+    hasCommaFixed = true;
+    changes.push(`Fixed comma spacing: '${m}' -> '${p1}, ${p2}'`);
+    return `${p1}, ${p2}`;
+  });
+  text = text.replace(commaRegex2, (m, p1, p2) => {
+    hasCommaFixed = true;
+    changes.push(`Fixed comma spacing: '${m}' -> '${p1}, ${p2}'`);
+    return `${p1}, ${p2}`;
+  });
+
+  // 4. Resolve squished sentence boundaries after periods (e.g. 'her.no plan' -> 'her. No plan', 'glaucoma.almost' -> 'glaucoma. Almost')
+  const periodRegex = /([a-zA-Z]{2,})\.([a-zA-Z])/g;
+  text = text.replace(periodRegex, (m, before, after) => {
+    const lowerBefore = before.toLowerCase();
+    if (['dr', 'mr', 'ms', 'mrs', 'vs', 'eg', 'ie', 'st'].includes(lowerBefore)) {
+      return m;
+    }
+    const capitalized = after.toUpperCase();
+    changes.push(`Fixed sentence boundary spacing & capitalization: '${before}.${after}' -> '${before}. ${capitalized}'`);
+    return `${before}. ${capitalized}`;
+  });
+
+  // 5. Normalize doctor titles/honorifics (e.g. 'DR Smith' -> 'Dr. Smith')
+  const doctorRegex = /\b(?:DR|dr)\s+([A-Z])/g;
+  text = text.replace(doctorRegex, (m, initial) => {
+    changes.push(`Standardized doctor honorific: '${m}' -> 'Dr. ${initial}'`);
+    return `Dr. ${initial}`;
+  });
+
+  // 6. Whitespace normalization: collapse multiple consecutive spaces
+  if (/[ \t\r\n]{2,}/.test(text)) {
+    changes.push("Collapsed redundant consecutive whitespace into single spaces");
+    text = text.replace(/[ \t\r\n]+/g, ' ');
   }
 
-  // Whitespace normalization
-  const normalizedSpace = text.replace(/[ \t\r\n]+/g, ' ').trim();
-  if (normalizedSpace !== text) {
-    changes.push("Normalized multiple consecutive whitespace and newlines");
-    text = normalizedSpace;
+  // 7. Trim leading/trailing whitespace
+  const trimmed = text.trim();
+  if (trimmed !== text) {
+    changes.push("Trimmed leading/trailing whitespace");
+    text = trimmed;
+  }
+
+  // 8. Record non-destructive clinical preservation guarantees
+  const preserved = [];
+  if (/[@\+_]/.test(text)) {
+    preserved.push("Preserved clinically meaningful symbols (@, +, _)");
+  }
+  if (/\b\d+(\.\d+)?\s*(mg|mcg|g|ml|mmol|%|bpm|mmHg)?\b/i.test(text)) {
+    preserved.push("Preserved numerical dosages, vitals (e.g. BP, BGL) and clinical measurement units");
+  }
+  if (/\b[A-Z]{2,}\b/.test(text)) {
+    preserved.push("Preserved clinical acronyms (GCS, BP, IV, COPD) without destructive lowercasing");
+  }
+  if (/\b(no|not|denies|without|none|never)\b/i.test(text)) {
+    preserved.push("Preserved negative assertion terms ('no', 'without') to prevent dangerous false-positive inferences");
   }
 
   if (changes.length === 0) {
-    changes.push("Input text formatting already conforms to clinical preprocessing standards");
+    changes.push("Input text formatting conforms to clinical preprocessing standards");
   }
 
-  changes.push("Preserved clinical symbols (@, +, _) and measurement dosages");
+  // Split sentences for inspection
+  const safeText = text.replace(/\b(Dr|Mr|Mrs|Ms|vs|eg|ie|St)\./gi, '$1<DOT>');
+  const rawParts = safeText.split(/[.!?]+\s+/);
+  const sentences = rawParts.map(p => {
+    let cleanP = p.replaceAll('<DOT>', '.').trim();
+    if (cleanP && !cleanP.endsWith('.') && !cleanP.endsWith('!') && !cleanP.endsWith('?')) {
+      cleanP += '.';
+    }
+    return cleanP;
+  }).filter(Boolean);
+
+  const tokens = (text.match(/\b\w+\b/g) || []);
 
   return {
     raw_text: rawText,
     preprocessed_text: text,
-    changes_made: changes
+    changes_made: changes,
+    preserved_clinical_elements: preserved,
+    sentences: sentences,
+    token_count: tokens.length,
+    char_count: text.length,
+    philosophy_note: "Non-destructive clinical normalization: unlike traditional text mining, clinical NLP must never destroy clinical acronyms, vital numbers/dosages, or negations."
   };
 }
 
@@ -698,6 +776,10 @@ export function getLocalReport(reportId) {
     char_count: r.char_count,
     raw_text: r.raw_text,
     preprocessed_text: prep.preprocessed_text,
-    changes_made: prep.changes_made
+    changes_made: prep.changes_made,
+    preserved_clinical_elements: prep.preserved_clinical_elements,
+    sentences: prep.sentences,
+    token_count: prep.token_count,
+    philosophy_note: prep.philosophy_note
   };
 }

@@ -31,74 +31,117 @@ class ClinicalPreprocessor:
             '\ufeff': '',   # Zero-width no-break space (BOM)
         }
 
+    def split_sentences(self, text: str) -> List[str]:
+        """Splits clinical text into grammatical sentences preserving abbreviations."""
+        if not text:
+            return []
+        safe = re.sub(r'\b(Dr|Mr|Mrs|Ms|vs|eg|ie|St)\.', r'\1<DOT>', text, flags=re.IGNORECASE)
+        parts = re.split(r'[.!?]+\s+', safe)
+        sentences = []
+        for p in parts:
+            clean_p = p.replace('<DOT>', '.').strip()
+            if clean_p:
+                if not clean_p.endswith(('.', '!', '?')):
+                    clean_p = clean_p + '.'
+                sentences.append(clean_p)
+        return sentences
+
     def preprocess(self, raw_text: str) -> Dict[str, Any]:
         """
         Executes non-destructive clinical formatting normalization.
-        Returns:
-            {
-                "raw_text": raw_text,
-                "preprocessed_text": cleaned_text,
-                "changes_made": list_of_descriptions
-            }
+        Preserves critical clinical symbols, acronyms, dosages, and negations.
         """
         if not raw_text:
             return {
                 "raw_text": "",
                 "preprocessed_text": "",
-                "changes_made": ["Received empty input string"]
+                "changes_made": ["Received empty input string"],
+                "sentences": [],
+                "token_count": 0,
+                "char_count": 0,
+                "preserved_clinical_elements": []
             }
 
         changes = []
         text = raw_text
 
-        # 1. Normalize unicode characters (curly quotes, dashes, non-breaking spaces)
+        # 1. Strip UTF-8 BOM if present
+        if '\ufeff' in text:
+            text = text.replace('\ufeff', '')
+            changes.append("Stripped hidden UTF-8 Byte Order Mark (BOM)")
+
+        # 2. Normalize unicode characters (curly quotes, dashes, non-breaking spaces)
         replaced_unicode = False
         for char, repl in self.unicode_replacements.items():
             if char in text:
                 text = text.replace(char, repl)
                 replaced_unicode = True
         if replaced_unicode:
-            changes.append("Normalized Unicode curly quotes, smart apostrophes, and typographical dashes to standard ASCII")
+            changes.append("Normalized Unicode curly quotes, smart apostrophes, and typographical dashes to ASCII")
 
-        # 2. Normalize whitespace between punctuation if squished without space
-        # e.g., 'pains,asthma' -> 'pains, asthma', 'Liu.He' -> 'Liu. He'
-        # BUT carefully avoid altering decimals (e.g. 5.5), dates (12/04/2022), blood pressure (120/80), or ratios
-        spaced_punctuation = re.sub(r'([a-zA-Z])([,;])([a-zA-Z])', r'\1\2 \3', text)
-        spaced_punctuation = re.sub(r'([a-zA-Z])(\.)([A-Z])', r'\1. \3', spaced_punctuation)
-        if spaced_punctuation != text:
-            changes.append("Resolved concatenated words around punctuation (e.g. comma/period spacing)")
-            text = spaced_punctuation
+        # 3. Resolve concatenated words and numbers around commas (e.g. 'Abbott,93' -> 'Abbott, 93', 'pains,asthma' -> 'pains, asthma')
+        def comma_spacing(m):
+            changes.append(f"Fixed comma spacing: '{m.group(0)}' -> '{m.group(1)}, {m.group(2)}'")
+            return f"{m.group(1)}, {m.group(2)}"
 
-        # 3. Normalize multiple whitespace sequences and newlines into a single space
-        normalized_space = re.sub(r'[ \t\r\n]+', ' ', text)
-        if normalized_space != text:
-            changes.append("Normalized multiple consecutive whitespace characters and newlines into single spaces")
-            text = normalized_space
+        text = re.sub(r'([a-zA-Z]),([a-zA-Z0-9])', comma_spacing, text)
+        text = re.sub(r'([0-9]),([a-zA-Z])', comma_spacing, text)
 
-        # 4. Strip leading and trailing whitespace
+        # 4. Resolve squished sentence boundaries after periods (e.g. 'her.no plan' -> 'her. No plan', 'glaucoma.almost' -> 'glaucoma. Almost')
+        def period_spacing(m):
+            before, after = m.group(1), m.group(2)
+            if before.lower() in ['dr', 'mr', 'ms', 'mrs', 'vs', 'eg', 'ie', 'st']:
+                return m.group(0)
+            capitalized = after.upper()
+            changes.append(f"Fixed sentence boundary spacing & capitalization: '{before}.{after}' -> '{before}. {capitalized}'")
+            return f"{before}. {capitalized}"
+
+        text = re.sub(r'([a-zA-Z]{2,})\.([a-zA-Z])', period_spacing, text)
+
+        # 5. Normalize doctor titles/honorifics (e.g. 'DR Smith' -> 'Dr. Smith')
+        def doctor_norm(m):
+            changes.append(f"Standardized doctor honorific: '{m.group(0)}' -> 'Dr. {m.group(1)}'")
+            return f"Dr. {m.group(1)}"
+
+        text = re.sub(r'\b(?:DR|dr)\s+([A-Z])', doctor_norm, text)
+
+        # 6. Normalize multiple consecutive whitespace and newlines
+        if re.search(r'[ \t\r\n]{2,}', text):
+            changes.append("Collapsed redundant consecutive whitespace into single spaces")
+            text = re.sub(r'[ \t\r\n]+', ' ', text)
+
+        # 7. Strip leading and trailing whitespace
         stripped = text.strip()
         if stripped != text:
-            changes.append("Removed leading and trailing whitespace")
+            changes.append("Trimmed leading/trailing whitespace")
             text = stripped
 
-        # 5. Verify preserved clinical notations
-        preserved_notes = []
+        # 8. Record non-destructive clinical preservation guarantees
+        preserved = []
         if re.search(r'[@\+_]', text):
-            preserved_notes.append("Preserved clinically meaningful symbols (@, +, _)")
+            preserved.append("Preserved clinically meaningful symbols (@, +, _)")
         if re.search(r'\b\d+(\.\d+)?\s*(mg|mcg|g|ml|mmol|%|bpm|mmHg)?\b', text, re.IGNORECASE):
-            preserved_notes.append("Preserved numerical dosages and clinical measurement units")
+            preserved.append("Preserved numerical dosages, vitals (e.g. BP, BGL) and clinical measurement units")
         if re.search(r'\b[A-Z]{2,}\b', text):
-            preserved_notes.append("Preserved clinical acronyms and abbreviations without destructive lowercase conversion")
+            preserved.append("Preserved clinical acronyms (GCS, BP, IV, COPD) without destructive lowercasing")
+        if re.search(r'\b(no|not|denies|without|none|never)\b', text, re.IGNORECASE):
+            preserved.append("Preserved negative assertion terms ('no', 'without') to prevent dangerous false-positive inferences")
 
         if not changes:
-            changes.append("Input text formatting already conforms to clinical preprocessing standards")
+            changes.append("Input text formatting conforms to clinical preprocessing standards")
 
-        changes.extend(preserved_notes)
+        sentences = self.split_sentences(text)
+        tokens = re.findall(r'\b\w+\b', text)
 
         return {
             "raw_text": raw_text,
             "preprocessed_text": text,
-            "changes_made": changes
+            "changes_made": changes,
+            "preserved_clinical_elements": preserved,
+            "sentences": sentences,
+            "token_count": len(tokens),
+            "char_count": len(text),
+            "philosophy_note": "Non-destructive clinical normalization: unlike traditional text mining, clinical NLP must never destroy clinical acronyms, vital numbers/dosages, or negations."
         }
 
 # Global singleton instance
